@@ -1,0 +1,35 @@
+{
+  "batch": {
+    "processes": [
+      {
+        "algorithmDescription": {
+          "en-US": "Predict the customer status",
+          "pt-BR": "Predict the customer status",
+          "pt-br": "Predict the customer status"
+        },
+        "algorithmName": "test_script",
+        "algorithmTitle": {
+          "en-US": "Predict the customer status"
+        },
+        "instanceProperties": {
+          "environments": {
+            "EXAMPLE_ENV_1": "value_1",
+            "EXAMPLE_ENV_2": "value_2"
+          },
+          "keepInstance": "false",
+          "luigi": {
+            "workers": "4"
+          },
+          "profile": "",
+          "properties": {
+            "dockerImage": "carol-repository",
+            "instanceMemory": "2",
+            "instanceSize": "20G",
+            "instanceVCPUs": "4"
+          }
+        },
+        "name": "customerChurn"
+      }
+    ]
+  }
+}
