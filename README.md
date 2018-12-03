@@ -115,4 +115,4 @@ Additional information
 ---
 
 Both Carol App (Online/Batch) need pyCarol (https://github.com/totvslabs/pyCarol).
-Python 3 is required for both Carol App (Online/Batch).
+Python 3.6 is required for both Carol App (Online/Batch).
