@@ -7,12 +7,19 @@ No special preparation is needed.
 Running the application locally
 ---
 
-Just run the following command:
+On the Python file with the endpoints (the one on the manifest file), uncomment the next line:
+
+```
+flask = OnlineApi('run_me').get_api()
+```
+
+The previous line is pointing the Python file that has the services.
+
+After, run the following command to start the server:
 
 ```
 gunicorn -w 1 -b :5000 run_me:flask
 ```
-
 
 These endpoints will be available for all Online Carol App:
 
