@@ -28,15 +28,11 @@ class execution(luigi.Task):
         osvarslist = ['FILENAME','FUNCTIONNAME','WORKERS','CAROLUSERNAME','CAROLPASSWORD','CAROLDOMAIN','CAROLCONNECTORID','CAROLAPPNAME','CAROLAPPVERSION','CAROLAPPOAUTH','REQUIREMENTS','URL','FILEPATH','BRANCHNAME','PYCAROL','LOGIN','DEBUG','RESULTSPATH','RAWPATH','SENTPATH']
 
         apiAuth = ApiKeyAuth(api_key = os.environ['CAROLAPPOAUTH'])
+        connectorId = os.environ['CAROLCONNECTORID']
 
-        #default connector ID: 0a0829172fc2433c9aa26460c31b78f0
-
-        #demotry01
-        #connector token: 2d0d2ee0908c11e888933a7feb81f191
-        #connector ID: 040f33e08fc311e8a3f18e47a8f11d70
-
+        print("ConnectorID: ", connectorId)
         print("API Token: ", apiAuth)
-        carol_instance = Carol(os.environ['CAROLTENANT'], 'myapp', apiAuth, connector_id='0a0829172fc2433c9aa26460c31b78f0')
+        carol_instance = Carol(os.environ['CAROLTENANT'], 'myapp', apiAuth, connector_id=connectorId)
         #Carol()
         #param, settings (quando executado local: "app_config.json", setting tem varias tenants), variavel ambiente.
         #TODO:
