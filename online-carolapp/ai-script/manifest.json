@@ -4,12 +4,14 @@
       {
         "name": "sample",
         "algorithmName": "ai-script.run_me.py",
-        "namespace": "",
+        "namespace": "t",
         "algorithmTitle": {
-          "pt-br": "Demo service"
+          "pt-br": "Demo service",
+          "en-US": "Demo service",
         },
         "algorithmDescription": {
-          "pt-br": "Basic algorithm"
+          "pt-br": "Basic algorithm",
+          "en-US": "Basic algorithm"
         },
         "instanceProperties": {
           "profile": "",
