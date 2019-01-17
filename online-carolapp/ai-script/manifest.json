@@ -4,7 +4,7 @@
       {
         "name": "sample",
         "algorithmName": "ai-script.run_me.py",
-        "namespace": "t",
+        "namespace": "",
         "algorithmTitle": {
           "pt-br": "Demo service",
           "en-US": "Demo service",
