@@ -13,8 +13,6 @@ from pycarol.staging import *
 from pycarol.connectors import Connectors
 
 
-#testing a comment.
-
 namespace = 'main'
 luigi.namespace(namespace)
 
