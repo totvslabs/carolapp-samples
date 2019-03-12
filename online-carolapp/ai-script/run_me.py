@@ -47,5 +47,5 @@ def sum(request):
     return result
 
 #To run the application locally, uncomment the next line
-#flask = OnlineApi('run_me').get_api()
+flask = OnlineApi('run_me').get_api()
 
