@@ -7,7 +7,7 @@
         "namespace": "",
         "algorithmTitle": {
           "pt-br": "Demo service",
-          "en-US": "Demo service",
+          "en-US": "Demo service"
         },
         "algorithmDescription": {
           "pt-br": "Basic algorithm",
@@ -16,7 +16,7 @@
         "instanceProperties": {
           "profile": "",
           "properties": {
-            "dockerImage": "ai/nlp_spacy:2.1.2",
+            "dockerImage": "ai/nlp_spacy:2.6.0",
             "instanceMemory": "1024",
             "instanceVCPUs": "300"
           },
