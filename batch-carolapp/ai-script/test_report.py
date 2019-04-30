@@ -55,7 +55,7 @@ class execution(luigi.Task):
         print(">>>>> RESPONSE HERE: ")
         print(connector['mdmId'])
 
-        # from .commons import *
+        # Starting the report here:
 
         report_template = "report-template.html"
         notebook = 'test-jupyter-notebook.ipynb'
