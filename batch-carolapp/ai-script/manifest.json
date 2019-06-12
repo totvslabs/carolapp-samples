@@ -22,13 +22,13 @@
           },
           "profile": "",
           "properties": {
-            "dockerImage": "carol-repository",
-            "instanceMemory": "2",
+            "dockerImage": "gcr.io/labs-ai-apps-explore/tests/carolapp-simple",
+            "instanceMemory": "2048",
             "instanceSize": "20G",
             "instanceVCPUs": "4"
           }
         },
-        "name": "customerChurn"
+        "name": "hello17"
       }
     ]
   }

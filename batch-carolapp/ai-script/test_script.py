@@ -1,4 +1,3 @@
-import luigi
 import os
 import pycarol
 import datetime
@@ -13,80 +12,59 @@ from pycarol.staging import *
 from pycarol.connectors import Connectors
 
 
-namespace = 'main'
-luigi.namespace(namespace)
+def run():
+	print(">>>>> RUNNING THE METHOD RUN INSIDE EXECUTION")
+	osvarslist = ['FILENAME','FUNCTIONNAME','WORKERS','CAROLUSERNAME','CAROLPASSWORD','CAROLDOMAIN','CAROLCONNECTORID','CAROLAPPNAME','CAROLAPPVERSION','CAROLAPPOAUTH','REQUIREMENTS','URL','FILEPATH','BRANCHNAME','PYCAROL','LOGIN','DEBUG','RESULTSPATH','RAWPATH','SENTPATH']
 
-class runMe(luigi.WrapperTask):
-    def requires(self):
-        print(">>>>> RUNNING THE METHOD REQUIRES")
-        return execution()
+	apiAuth = ApiKeyAuth(api_key = os.environ['CAROLAPPOAUTH'])
+	connectorId = os.environ['CAROLCONNECTORID']
 
-class execution(luigi.Task):
-    print(">>>>> RUNNING THE METHOD EXECUTION")
-    finished = False
-    def run(self):
-        print(">>>>> RUNNING THE METHOD RUN INSIDE EXECUTION")
-        osvarslist = ['FILENAME','FUNCTIONNAME','WORKERS','CAROLUSERNAME','CAROLPASSWORD','CAROLDOMAIN','CAROLCONNECTORID','CAROLAPPNAME','CAROLAPPVERSION','CAROLAPPOAUTH','REQUIREMENTS','URL','FILEPATH','BRANCHNAME','PYCAROL','LOGIN','DEBUG','RESULTSPATH','RAWPATH','SENTPATH']
+	print("Connecting to Carol...")
+	carol_instance = Carol(os.environ['CAROLDOMAIN'], 'myapp', apiAuth, connector_id=connectorId)
 
-        apiAuth = ApiKeyAuth(api_key = os.environ['CAROLAPPOAUTH'])
-        connectorId = os.environ['CAROLCONNECTORID']
+	print("Connected...")
+	tasks = Tasks(carol_instance)
+	if(os.environ['LONGTASKID'] != "TBD"):
+		task = tasks.get_task(os.environ['LONGTASKID'])
+		task.set_progress(50)
 
-        print("ConnectorID: ", connectorId)
-        print("API Token: ", apiAuth)
-        carol_instance = Carol(os.environ['CAROLTENANT'], 'myapp', apiAuth, connector_id=connectorId)
-        #Carol()
-        #param, settings (quando executado local: "app_config.json", setting tem varias tenants), variavel ambiente.
-        #TODO:
-        #download de settings.
+	for var in osvarslist:
+		if var in os.environ:
+			print(var, os.environ[var])
 
-        tasks = Tasks(carol_instance)
-        if(os.environ['LONGTASKID'] != "TBD"):
-            task = tasks.get_task(os.environ['LONGTASKID'])
-            task.set_progress(50)
+	connectors = Connectors(carol_instance)
+	connector = connectors.get_by_name("carolml")
 
-        for var in osvarslist:
-            if var in os.environ:
-                print(var, os.environ[var])
+	print(">>>>> RESPONSE HERE: ")
+	print(connector['mdmId'])
 
-        connectors = Connectors(carol_instance)
-        connector = connectors.get_by_name("carolml")
+	query = Query(carol=carol_instance)
+	data = query.all(dm_name="customer").go().results
 
-        print(">>>>> RESPONSE HERE: ")
-        print(connector['mdmId'])
+	predictedData = list()
 
-        query = Query(carol=carol_instance)
-        data = query.all(dm_name="customer").go().results
+	print(">>>>> data read from carol: ")
+	for row in data:
+		print(row)
+		predictedData.append({
+			'date': datetime.now().replace(microsecond=0).isoformat(),
+			'taxid': row['mdmtaxid'],
+			'customercode': row['customercode'],
+			'customername': row['customershortname'],
+			'risk': (random.randint(1,9))/9
+			})
 
-        predictedData = list()
+	print(">>>>> data generated: ")
+	for row in predictedData:
+		print(row)
 
-        print(">>>>> data read from carol: ")
-        for row in data:
-            print(row)
-            predictedData.append({
-                'date': datetime.now().replace(microsecond=0).isoformat(),
-                'taxid': row['mdmtaxid'],
-                'customercode': row['customercode'],
-                'customername': row['customershortname'],
-#                'state': row['mdmaddress'][0]['mdmstate'],
-                'risk': (random.randint(1,9))/9
-                })
+	sender = Staging(carol_instance)
+	sender.send_data('prediction', data=predictedData, print_stats=True, auto_create_schema=False, crosswalk_auto_create=['date', 'taxid'], connector_id=connector['mdmId'])
 
-        print(">>>>> data generated: ")
-        for row in predictedData:
-            print(row)
-
-        sender = Staging(carol_instance)
-        sender.send_data('prediction', data=predictedData, print_stats=True, auto_create_schema=False, crosswalk_auto_create=['date', 'taxid'], connector_id=connector['mdmId'])
-
-        if(os.environ['LONGTASKID'] != "TBD"):
-            task.add_log(log_message="Everything went well.", log_level="INFO")
-            task.set_progress(100)
-
-        self.finished = True
-
-    def complete(self):
-        print(">>>>> RUNNING THE METHOD COMPLETE INSIDE EXECUTION")
-        return self.finished
+	if(os.environ['LONGTASKID'] != "TBD"):
+		task.add_log(log_message="Everything went well.", log_level="INFO")
+		task.set_progress(100)
 
 if __name__ == '__main__':
-    luigi.run()
+    print(">>>>> MAIN!")
+    run()
