@@ -2,12 +2,12 @@
   "online": {
     "processes": [
       {
-        "name": "sample",
-        "algorithmName": "ai-script.run_me.py",
+        "name": "sample001c",
+        "algorithmName": "run_me",
         "namespace": "",
         "algorithmTitle": {
           "pt-br": "Demo service",
-          "en-US": "Demo service"
+          "en-US": "Demo service",
         },
         "algorithmDescription": {
           "pt-br": "Basic algorithm",
@@ -16,9 +16,9 @@
         "instanceProperties": {
           "profile": "",
           "properties": {
-            "dockerImage": "ai/nlp_spacy:2.6.0",
-            "instanceMemory": "1024",
-            "instanceVCPUs": "300"
+            "dockerImage": "carol/base-online",
+            "instanceMemory": "1",
+            "instanceVCPUs": "4"
           },
           "environments": {
             "EXAMPLE_ENV_1": "value_1",
