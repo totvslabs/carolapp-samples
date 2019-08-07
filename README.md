@@ -26,6 +26,12 @@ Language supported: any HTML framework (T-Faces).
 
 Goal: Allow the Carol App to provide a customizable experience to the final user through Web technologies and frameworks.
 
+Dynamic Report
+---
+
+Language supported: Python.
+
+Goal: Create a simple web page using the Dash python library. The Dynamic Report runs like a online carol app with flask backend. The template is ready to execute the flask and dash servers, you just have to update the file dynamic-report/app/dashapp/dash_visualization.py with your code.
 
 How to package the app?
 ---

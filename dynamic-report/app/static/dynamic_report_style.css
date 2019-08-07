@@ -1,0 +1,208 @@
+/*----- RESET CSS ------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----- RESET CSS ------*/
+.bg_div{
+    background-color: #22182a;
+    height:100%;
+    width:100%;
+}
+
+.modal {
+    align-items: center;
+    background: #352c3c;
+    color: #dedede;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+input{
+    width: 400px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border-width:0;
+    background-color:#dedede;
+    margin-bottom: 20px;
+}
+
+.widget-title{
+    /*color: #dedede;
+    font-family: "interstate", sans-serif;
+    font-size: 18px;*/
+    font-family: "interstate", sans-serif;
+    color: #38414e;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+label{
+  color: #dedede;
+  font-family: "interstate", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input[type="submit"]{
+    border-radius: 5px;
+    width: 200px;
+    background-color: #3425A5;
+    color: #fff;
+    border-width: 0;
+    padding: 10px;
+    font-family: "interstate", sans-serif;
+}
+
+.logo{
+    height: 176px;
+    width: 594px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+
+.login_c{
+  width: 594px;
+  margin: auto;
+}
+
+.header {
+  align-items: center;
+  background-color: #0F0A37;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 40px;
+}
+
+.content{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.header__label {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.header__logos {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  height: 48px;
+}
+
+.header__logo {
+  display: block;
+  padding: 0 16px;
+}
+
+.header__logo img {
+  transition: 0.8s transform ease;
+}
+
+.logo-carol {
+  width: 190px;
+  height: auto;
+}
+
+.logout_btn{
+    border-radius: 5px;
+    background-color: #3425A5;
+    color: #fff;
+    border-width: 0;
+    padding: 0 12px;
+    font-family: "interstate", sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    width: 80px;
+    display: block;
+    height: 25px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.card {
+	font-size: 14px;
+	line-height: 24px;
+	padding: 16px;
+	margin: 5px 0 10px!important;
+}
+
+.card-title {
+	color: #38414e!important;
+	font-size: 20px!important;
+	font-weight: 400!important;
+	text-align: center;
+}
+
+.card-value{
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 6px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 2px 8px;
+    display: block;
+    color: #555555;
+    /*color: #fff;
+    background-color: #34258F;
+    margin: 10px 20%;*/
+}
+
+.combo-container{
+  margin: 10px;
+}
+
+.Select.has-value.is-clearable.Select--single > .Select-control .Select-value{
+  padding-top: 6px;
+}
