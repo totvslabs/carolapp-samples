@@ -18,9 +18,11 @@ def run():
 
 	apiAuth = ApiKeyAuth(api_key = os.environ['CAROLAPPOAUTH'])
 	connectorId = os.environ['CAROLCONNECTORID']
+	appName = os.environ['CAROLAPPNAME']
+	connectorName = os.environ['CONNECTORNAME']
 
 	print("Connecting to Carol...")
-	carol_instance = Carol(os.environ['CAROLDOMAIN'], 'myapp', apiAuth, connector_id=connectorId)
+	carol_instance = Carol(os.environ['CAROLDOMAIN'], appName, apiAuth, connector_id=connectorId)
 
 	print("Connected...")
 	tasks = Tasks(carol_instance)
@@ -33,7 +35,7 @@ def run():
 			print(var, os.environ[var])
 
 	connectors = Connectors(carol_instance)
-	connector = connectors.get_by_name("carolml")
+	connector = connectors.get_by_name(connectorName)
 
 	print(">>>>> RESPONSE HERE: ")
 	print(connector['mdmId'])

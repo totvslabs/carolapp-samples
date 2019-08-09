@@ -13,7 +13,7 @@
         },
         "instanceProperties": {
           "environments": {
-            "EXAMPLE_ENV_1": "value_1",
+            "CONNECTORNAME": "carolml",
             "EXAMPLE_ENV_2": "value_2"
           },
           "keepInstance": "false",
@@ -22,13 +22,39 @@
           },
           "profile": "",
           "properties": {
-            "dockerImage": "gcr.io/labs-ai-apps-explore/tests/carolapp-simple",
-            "instanceMemory": "2048",
-            "instanceSize": "20G",
+            "dockerImage": "carol/base-batch",
+            "instanceMemory": "2",
             "instanceVCPUs": "4"
           }
         },
-        "name": "hello17"
+        "name": "testbatch"
+      },
+      {
+        "algorithmDescription": {
+          "en-US": "Generate custom report",
+          "pt-BR": "Generate custom report",
+          "pt-br": "Generate custom report"
+        },
+        "algorithmName": "test_report",
+        "algorithmTitle": {
+          "en-US": "Generate a custom report"
+        },
+        "instanceProperties": {
+          "environments": {
+            "CONNECTORNAME": "carolml"
+          },
+          "keepInstance": "false",
+          "luigi": {
+            "workers": "4"
+          },
+          "profile": "",
+          "properties": {
+            "dockerImage": "carol/base-batch",
+            "instanceMemory": "2",
+            "instanceVCPUs": "4"
+          }
+        },
+        "name": "testreport"
       }
     ]
   }
