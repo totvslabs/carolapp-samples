@@ -1,0 +1,16 @@
+{
+  "user": "${APP}",
+  "app": "build",
+  "cpu": 8,
+  "memory": 16000,
+  "source": {
+    "type": "git",
+    "path": "https://${GHTOKEN}@github.com/totvslabs/dynamic-reports-d3",
+    "branch": "master"
+  },
+  "dockerfile": "Dockerfile",
+  "cwd": ".",
+  "target": {
+    "image": "gcr.io/${ENVIRONMENT}/${IMAGE}"
+  }
+}

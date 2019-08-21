@@ -1,0 +1,5102 @@
+[
+    {
+        "_id": "5d5715067f1fd9227fc6ac98",
+        "index": 0,
+        "guid": "9a47ccf9-b6da-4436-9b97-b770445f6ccd",
+        "segment": "SEM CLASSIFICACAO",
+        "quantity": 264,
+        "categories": [
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$766.42"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$125.64"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$104.18"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$86.48"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$774.94"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "FITAS CREPE",
+                "quantity": "$424.85"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$446.92"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$551.14"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "FITAS CREPE",
+                "quantity": "$821.27"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$620.23"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "SPRAY",
+                "quantity": "$559.77"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$636.01"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "SPRAY",
+                "quantity": "$630.04"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "SPRAY",
+                "quantity": "$743.72"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "SPRAY",
+                "quantity": "$363.35"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$514.27"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$285.81"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "TRENAS",
+                "quantity": "$48.02"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$168.26"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$557.65"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$717.95"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$97.74"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "CORANTES",
+                "quantity": "$233.40"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$122.42"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "FITAS CREPE",
+                "quantity": "$959.83"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$273.48"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$239.96"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "CORANTES",
+                "quantity": "$994.76"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$783.55"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$244.39"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$114.43"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$393.99"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$369.77"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$885.13"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$329.16"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "FITAS CREPE",
+                "quantity": "$63.74"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "TRENAS",
+                "quantity": "$572.31"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$846.25"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$183.93"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$933.94"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "FITAS CREPE",
+                "quantity": "$166.14"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$49.28"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$246.17"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$98.34"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$7.82"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$166.28"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$571.19"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$444.60"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$877.47"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$904.24"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "FITAS CREPE",
+                "quantity": "$537.91"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$291.03"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$251.82"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BOTAS EPI",
+                "quantity": "$1.42"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$121.24"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$187.45"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$484.01"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$565.43"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$393.62"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$741.83"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$406.31"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "CORANTES",
+                "quantity": "$841.65"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$528.20"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "TRENAS",
+                "quantity": "$951.82"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "SPRAY",
+                "quantity": "$713.92"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$837.48"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "CORANTES",
+                "quantity": "$32.63"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$45.25"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BOTAS EPI",
+                "quantity": "$559.01"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$41.06"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$951.23"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$703.88"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$234.11"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$86.13"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$486.75"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$925.15"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$737.08"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$709.76"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "CADEADOS",
+                "quantity": "$557.34"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$718.91"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$337.81"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$407.47"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$925.38"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "CORANTES",
+                "quantity": "$640.24"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "TRENAS",
+                "quantity": "$436.10"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$601.61"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "TRENAS",
+                "quantity": "$887.56"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$690.28"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$9.61"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$161.02"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$646.40"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$327.43"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "TRENAS",
+                "quantity": "$267.55"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$421.14"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$171.79"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$395.73"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$200.11"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$781.84"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$297.60"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "SPRAY",
+                "quantity": "$913.35"
+            }
+        ],
+        "churnRisk": "BAIXO"
+    },
+    {
+        "_id": "5d57150668d970098f523f72",
+        "index": 1,
+        "guid": "94cfc498-0aa0-4991-b57f-26e2e675fcfe",
+        "segment": "INDÚSTRIA",
+        "quantity": 5,
+        "categories": [
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$464.37"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "SPRAY",
+                "quantity": "$822.10"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BOTAS EPI",
+                "quantity": "$49.44"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$271.26"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BOTAS EPI",
+                "quantity": "$898.69"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$661.96"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$812.85"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "CADEADOS",
+                "quantity": "$4.92"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "SPRAY",
+                "quantity": "$642.11"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$895.41"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "CORANTES",
+                "quantity": "$106.03"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$73.22"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$426.53"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "FITAS CREPE",
+                "quantity": "$632.67"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$421.33"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$194.47"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COLAS SILICONE",
+                "quantity": "$813.50"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BOTAS EPI",
+                "quantity": "$540.92"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$356.62"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$902.39"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$306.93"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$826.14"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$685.94"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "COLAS SILICONE",
+                "quantity": "$341.72"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COLAS SILICONE",
+                "quantity": "$969.85"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$158.97"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$462.02"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$995.91"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$883.27"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "CORANTES",
+                "quantity": "$324.65"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$750.60"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS SILICONE",
+                "quantity": "$754.88"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "FITAS CREPE",
+                "quantity": "$543.33"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$482.45"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$396.23"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$728.73"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$11.34"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$550.95"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$923.13"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$353.26"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$330.18"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$549.73"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "SPRAY",
+                "quantity": "$617.00"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$446.37"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "TRENAS",
+                "quantity": "$452.75"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$18.81"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$892.56"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$762.36"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$321.49"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BOTAS EPI",
+                "quantity": "$170.39"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "TRENAS",
+                "quantity": "$936.95"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BOTAS EPI",
+                "quantity": "$31.44"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "CORANTES",
+                "quantity": "$150.95"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$768.90"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "SPRAY",
+                "quantity": "$492.86"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$144.79"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$341.11"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$178.57"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "SPRAY",
+                "quantity": "$434.81"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$659.46"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$76.63"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BOTAS EPI",
+                "quantity": "$249.17"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$864.04"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "BOTAS EPI",
+                "quantity": "$868.68"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "FITAS CREPE",
+                "quantity": "$291.13"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$349.56"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$228.86"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "TRENAS",
+                "quantity": "$87.38"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BOTAS EPI",
+                "quantity": "$549.19"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "COLAS SILICONE",
+                "quantity": "$232.89"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$849.99"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$260.99"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$226.62"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "SPRAY",
+                "quantity": "$952.59"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$989.40"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$600.49"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COLAS SILICONE",
+                "quantity": "$812.61"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$979.88"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COLAS SILICONE",
+                "quantity": "$159.59"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$763.57"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "TRENAS",
+                "quantity": "$669.09"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COLAS SILICONE",
+                "quantity": "$328.94"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$737.22"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$188.49"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$840.05"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$472.70"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CORANTES",
+                "quantity": "$693.84"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$235.22"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$413.26"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$790.32"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "TRENAS",
+                "quantity": "$582.62"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$65.82"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$130.07"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$959.25"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$966.83"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$184.15"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$358.48"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CORANTES",
+                "quantity": "$445.04"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$602.14"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$971.77"
+            }
+        ],
+        "churnRisk": "BAIXO"
+    },
+    {
+        "_id": "5d5715066aac41e992961ce8",
+        "index": 2,
+        "guid": "d987d60c-67ec-4065-94e3-ed93aaeff4e4",
+        "segment": "FUNCIONÁRIO",
+        "quantity": 219,
+        "categories": [
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$378.25"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "SPRAY",
+                "quantity": "$823.16"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$72.08"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "CADEADOS",
+                "quantity": "$769.77"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$507.47"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$514.63"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$986.21"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$640.00"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$828.97"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$436.82"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$883.32"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CADEADOS",
+                "quantity": "$13.46"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$514.20"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$989.97"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$689.38"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$74.39"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "COLAS SILICONE",
+                "quantity": "$965.45"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$142.31"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$690.09"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$473.27"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$884.08"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BOTAS EPI",
+                "quantity": "$448.18"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$91.59"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$614.44"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$379.36"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$142.72"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "TRENAS",
+                "quantity": "$30.17"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$145.09"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$300.11"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$154.36"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$354.46"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$558.50"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$340.60"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$68.80"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "CORANTES",
+                "quantity": "$330.85"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$827.96"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$675.66"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$486.88"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$782.27"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$654.44"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COLAS SILICONE",
+                "quantity": "$812.22"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "FITAS CREPE",
+                "quantity": "$582.99"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BOTAS EPI",
+                "quantity": "$59.98"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$375.90"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$815.31"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$862.86"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$510.73"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$508.46"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$782.06"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$843.08"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$850.82"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$18.16"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "FITAS CREPE",
+                "quantity": "$991.84"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$918.17"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "CADEADOS",
+                "quantity": "$331.40"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$656.29"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "FITAS CREPE",
+                "quantity": "$241.87"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$620.16"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BOTAS EPI",
+                "quantity": "$387.32"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$662.52"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$568.51"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$662.67"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$362.03"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "CADEADOS",
+                "quantity": "$806.83"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS SILICONE",
+                "quantity": "$687.87"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$22.61"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$562.53"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "FITAS CREPE",
+                "quantity": "$195.33"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$431.98"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BOTAS EPI",
+                "quantity": "$14.00"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$766.25"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "SPRAY",
+                "quantity": "$197.82"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$556.33"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "CADEADOS",
+                "quantity": "$984.06"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$219.22"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$205.93"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "SPRAY",
+                "quantity": "$848.55"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$180.76"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$784.63"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BOTAS EPI",
+                "quantity": "$511.63"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$795.31"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$943.26"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "TRENAS",
+                "quantity": "$388.42"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$180.66"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$65.30"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "TRENAS",
+                "quantity": "$456.22"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$80.65"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$767.46"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$649.02"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$13.67"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$380.66"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "SPRAY",
+                "quantity": "$296.60"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$464.51"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "SPRAY",
+                "quantity": "$575.24"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$730.39"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "FITAS CREPE",
+                "quantity": "$838.51"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$63.98"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$394.44"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$573.62"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$583.25"
+            }
+        ],
+        "churnRisk": "BAIXO"
+    },
+    {
+        "_id": "5d5715061eb680f8dca00fa9",
+        "index": 3,
+        "guid": "78b3fac7-4646-4c42-8cd2-703edfcd8f5f",
+        "segment": "ORG  PÚBLICO",
+        "quantity": 252,
+        "categories": [
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$727.14"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$937.96"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$15.74"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$274.75"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$161.27"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$400.24"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "CADEADOS",
+                "quantity": "$503.88"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "SPRAY",
+                "quantity": "$854.92"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$528.08"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$510.80"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$288.47"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$759.15"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$360.02"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BOTAS EPI",
+                "quantity": "$740.56"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "FITAS CREPE",
+                "quantity": "$699.70"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$948.73"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "CORANTES",
+                "quantity": "$350.23"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "FITAS CREPE",
+                "quantity": "$941.20"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "COLAS SILICONE",
+                "quantity": "$906.54"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$743.80"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$645.30"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$67.72"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$503.07"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COLAS SILICONE",
+                "quantity": "$757.88"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$492.08"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$443.11"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$310.41"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$690.33"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "CADEADOS",
+                "quantity": "$489.99"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$397.30"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BOTAS EPI",
+                "quantity": "$281.27"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS SILICONE",
+                "quantity": "$879.32"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$980.60"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$304.34"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$161.91"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$261.21"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$173.23"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$748.81"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BOTAS EPI",
+                "quantity": "$913.67"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$429.84"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$849.60"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$398.16"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$422.73"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$324.29"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$297.39"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$130.42"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$24.50"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "CADEADOS",
+                "quantity": "$525.71"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$467.73"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "SPRAY",
+                "quantity": "$1.05"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$743.14"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$142.91"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$504.93"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$307.25"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$205.09"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$790.19"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$376.34"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$213.78"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$977.69"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "CADEADOS",
+                "quantity": "$220.65"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$1.51"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$159.88"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BOTAS EPI",
+                "quantity": "$186.47"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "CORANTES",
+                "quantity": "$181.41"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COLAS SILICONE",
+                "quantity": "$534.27"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$787.25"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$871.81"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$561.52"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$714.23"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BOTAS EPI",
+                "quantity": "$433.32"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "CADEADOS",
+                "quantity": "$177.26"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$885.74"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$476.84"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "CORANTES",
+                "quantity": "$618.31"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$480.99"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "CORANTES",
+                "quantity": "$953.06"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$334.99"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$131.74"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$510.36"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$359.12"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$402.07"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "CADEADOS",
+                "quantity": "$373.02"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "FITAS CREPE",
+                "quantity": "$590.60"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COLAS SILICONE",
+                "quantity": "$456.62"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "TRENAS",
+                "quantity": "$802.06"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$350.51"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$827.86"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "TRENAS",
+                "quantity": "$465.60"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$603.53"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$679.37"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$719.31"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$543.26"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$570.42"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$35.33"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$500.43"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$970.31"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$829.48"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$216.50"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$162.44"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "SPRAY",
+                "quantity": "$668.60"
+            }
+        ],
+        "churnRisk": "MÉDIO"
+    },
+    {
+        "_id": "5d5715066d7fab95ee423e9e",
+        "index": 4,
+        "guid": "9564e696-c4f7-4fa7-aab0-c9c44abf6cb3",
+        "segment": "SEGURANÇA",
+        "quantity": 71,
+        "categories": [
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$377.77"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$484.22"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$57.04"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$843.84"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$111.67"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$227.71"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$407.46"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "CADEADOS",
+                "quantity": "$317.49"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$837.21"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$366.82"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$973.86"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$916.05"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "CADEADOS",
+                "quantity": "$297.99"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$287.29"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$244.75"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$986.83"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$757.99"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$263.55"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$912.11"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$960.19"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BOTAS EPI",
+                "quantity": "$934.41"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "CORANTES",
+                "quantity": "$969.61"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "SPRAY",
+                "quantity": "$752.49"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$630.81"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$552.46"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$521.41"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$233.65"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$10.90"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$783.19"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$63.61"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$231.31"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$351.73"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$674.58"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "TRENAS",
+                "quantity": "$24.72"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "TRENAS",
+                "quantity": "$575.11"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "CADEADOS",
+                "quantity": "$426.43"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$511.43"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "CORANTES",
+                "quantity": "$18.95"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$607.91"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$643.89"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$242.37"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "TRENAS",
+                "quantity": "$604.95"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$474.54"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$47.63"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "TRENAS",
+                "quantity": "$397.70"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$279.43"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$692.28"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "TRENAS",
+                "quantity": "$683.88"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$34.20"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$872.73"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$802.80"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$585.97"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "CADEADOS",
+                "quantity": "$663.59"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$100.37"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BOTAS EPI",
+                "quantity": "$944.05"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$274.28"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "SPRAY",
+                "quantity": "$195.90"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BOTAS EPI",
+                "quantity": "$37.78"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "COLAS SILICONE",
+                "quantity": "$448.35"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$452.84"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$624.64"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$524.88"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$22.26"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$417.03"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$591.08"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$782.21"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$737.27"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$86.55"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "CORANTES",
+                "quantity": "$578.44"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$970.55"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$276.58"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "SPRAY",
+                "quantity": "$400.43"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$875.68"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$786.05"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$286.04"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$597.81"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "CADEADOS",
+                "quantity": "$403.26"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$856.14"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$714.35"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$78.08"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "FITAS CREPE",
+                "quantity": "$989.96"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$26.17"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$932.93"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "SPRAY",
+                "quantity": "$472.44"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$278.53"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "SPRAY",
+                "quantity": "$869.48"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$617.07"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BOTAS EPI",
+                "quantity": "$524.04"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$474.65"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$551.09"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$470.62"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$557.49"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$422.89"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$75.79"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$225.82"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "TRENAS",
+                "quantity": "$744.01"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$863.38"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "FITAS CREPE",
+                "quantity": "$930.01"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "CORANTES",
+                "quantity": "$23.07"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$231.60"
+            }
+        ],
+        "churnRisk": "BAIXO"
+    },
+    {
+        "_id": "5d57150684eab3325a301b4e",
+        "index": 5,
+        "guid": "f1448e6a-6a56-4e69-a0c8-ba98a0fe49dd",
+        "segment": "LOJA DE FERRAGENS",
+        "quantity": 251,
+        "categories": [
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$386.25"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$737.52"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$907.95"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$123.46"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "FITAS CREPE",
+                "quantity": "$957.73"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "CORANTES",
+                "quantity": "$376.63"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "SPRAY",
+                "quantity": "$957.97"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$720.51"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$808.27"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COLAS SILICONE",
+                "quantity": "$943.44"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$304.13"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$499.42"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "SPRAY",
+                "quantity": "$519.78"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$313.71"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "FITAS CREPE",
+                "quantity": "$227.81"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$68.38"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "CADEADOS",
+                "quantity": "$952.03"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$308.16"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$434.02"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "FITAS CREPE",
+                "quantity": "$443.32"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "CORANTES",
+                "quantity": "$811.13"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$240.04"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$796.68"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "CORANTES",
+                "quantity": "$942.76"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "TRENAS",
+                "quantity": "$806.38"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$128.34"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$63.50"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$900.22"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "FITAS CREPE",
+                "quantity": "$468.12"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$311.24"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "TRENAS",
+                "quantity": "$151.43"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BOTAS EPI",
+                "quantity": "$621.35"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "SPRAY",
+                "quantity": "$547.92"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$842.49"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$776.10"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$799.81"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$257.14"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$423.69"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$405.39"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$785.81"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COLAS SILICONE",
+                "quantity": "$193.48"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$629.18"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BOTAS EPI",
+                "quantity": "$34.77"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$122.63"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$821.58"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$695.86"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "SPRAY",
+                "quantity": "$285.71"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$618.08"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "TRENAS",
+                "quantity": "$349.58"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$861.53"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$312.86"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$663.74"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$66.05"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$678.45"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "SPRAY",
+                "quantity": "$189.81"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "TRENAS",
+                "quantity": "$660.99"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$677.97"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "CADEADOS",
+                "quantity": "$36.26"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$514.26"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "CADEADOS",
+                "quantity": "$247.62"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$78.09"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "CADEADOS",
+                "quantity": "$223.57"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "CORANTES",
+                "quantity": "$443.00"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$826.26"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "SPRAY",
+                "quantity": "$61.93"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$94.53"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$560.35"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$328.32"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$420.89"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$816.62"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$357.51"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$689.73"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$62.47"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$4.50"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$347.94"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$569.15"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$29.42"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "FITAS CREPE",
+                "quantity": "$369.53"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$618.34"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "TRENAS",
+                "quantity": "$547.11"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "CORANTES",
+                "quantity": "$926.56"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "SPRAY",
+                "quantity": "$625.67"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$845.87"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$83.90"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$311.98"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "SPRAY",
+                "quantity": "$710.62"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "FITAS CREPE",
+                "quantity": "$433.83"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$272.30"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$789.22"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "CORANTES",
+                "quantity": "$440.05"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$700.27"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$16.33"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$908.62"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "CADEADOS",
+                "quantity": "$796.82"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BOTAS EPI",
+                "quantity": "$550.28"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$371.25"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$91.73"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "SPRAY",
+                "quantity": "$983.63"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "SPRAY",
+                "quantity": "$64.09"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$175.11"
+            }
+        ],
+        "churnRisk": "MÉDIO"
+    },
+    {
+        "_id": "5d571506c44a3af5e5859f41",
+        "index": 6,
+        "guid": "39f5bde3-90cd-4bd1-9501-7af5213fc97c",
+        "segment": "OUTROS",
+        "quantity": 25,
+        "categories": [
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "CORANTES",
+                "quantity": "$863.10"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$555.04"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$402.35"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$742.72"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$913.60"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$966.22"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$377.97"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$537.32"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$397.50"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "FITAS CREPE",
+                "quantity": "$650.42"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$425.49"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "TRENAS",
+                "quantity": "$182.62"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$674.97"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "TRENAS",
+                "quantity": "$467.48"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "SPRAY",
+                "quantity": "$517.82"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "CORANTES",
+                "quantity": "$167.92"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "FITAS CREPE",
+                "quantity": "$478.11"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "FITAS CREPE",
+                "quantity": "$183.65"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$439.12"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$464.16"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$597.81"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$542.25"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$966.10"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$638.00"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$821.58"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$166.55"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$889.76"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "SPRAY",
+                "quantity": "$529.07"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$41.63"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS SILICONE",
+                "quantity": "$268.51"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "SPRAY",
+                "quantity": "$398.03"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$33.89"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$419.74"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$569.09"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "TRENAS",
+                "quantity": "$670.61"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$752.32"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "CADEADOS",
+                "quantity": "$817.03"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$536.58"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$934.18"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$274.67"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$604.31"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$897.08"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "FITAS CREPE",
+                "quantity": "$544.23"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$780.49"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$728.62"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$182.12"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$941.72"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$687.21"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$872.66"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$855.00"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "SPRAY",
+                "quantity": "$659.10"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$125.74"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$19.85"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$229.09"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$179.10"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$577.93"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "BOTAS EPI",
+                "quantity": "$71.73"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$544.16"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$777.17"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$353.15"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "TRENAS",
+                "quantity": "$764.95"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$53.95"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COLAS SILICONE",
+                "quantity": "$634.63"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$185.77"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CADEADOS",
+                "quantity": "$368.97"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "FITAS CREPE",
+                "quantity": "$905.96"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$404.22"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CORANTES",
+                "quantity": "$3.70"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$205.35"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "CORANTES",
+                "quantity": "$431.07"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "BOTAS EPI",
+                "quantity": "$640.00"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$308.54"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$11.75"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "CADEADOS",
+                "quantity": "$886.40"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$491.59"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$868.31"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$625.71"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$260.47"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COLAS SILICONE",
+                "quantity": "$449.95"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$658.03"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$995.96"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$181.89"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$313.19"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$429.74"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$746.49"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$879.59"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "TRENAS",
+                "quantity": "$609.54"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$388.03"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$878.46"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$240.99"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CADEADOS",
+                "quantity": "$868.10"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$738.02"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$857.87"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$501.07"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$346.85"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "SPRAY",
+                "quantity": "$431.69"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "SPRAY",
+                "quantity": "$430.01"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "CADEADOS",
+                "quantity": "$981.69"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$6.85"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$705.91"
+            }
+        ],
+        "churnRisk": "MÉDIO"
+    },
+    {
+        "_id": "5d571506a362470c534c7249",
+        "index": 7,
+        "guid": "59def120-5c74-47d1-ac70-517126c0b9bb",
+        "segment": "ECOMMERCE",
+        "quantity": 39,
+        "categories": [
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$419.52"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$652.70"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$656.19"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$536.19"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CORANTES",
+                "quantity": "$115.81"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$432.27"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COLAS SILICONE",
+                "quantity": "$235.91"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$93.96"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$647.00"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "CADEADOS",
+                "quantity": "$312.37"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$867.58"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "CORANTES",
+                "quantity": "$646.88"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$504.44"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$574.51"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "CADEADOS",
+                "quantity": "$408.33"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$478.41"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$308.62"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "CORANTES",
+                "quantity": "$69.57"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$982.13"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$432.73"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$134.67"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "FITAS CREPE",
+                "quantity": "$132.77"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$573.47"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$812.09"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$769.40"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BOTAS EPI",
+                "quantity": "$70.00"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$37.73"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "SPRAY",
+                "quantity": "$684.16"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CADEADOS",
+                "quantity": "$429.63"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "FITAS CREPE",
+                "quantity": "$135.30"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "CORANTES",
+                "quantity": "$769.74"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$252.88"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$832.64"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$610.17"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "SPRAY",
+                "quantity": "$667.00"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$781.31"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "CORANTES",
+                "quantity": "$186.01"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "CADEADOS",
+                "quantity": "$212.16"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CADEADOS",
+                "quantity": "$502.70"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$483.03"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BOTAS EPI",
+                "quantity": "$742.72"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$486.10"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$217.26"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "SPRAY",
+                "quantity": "$519.50"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$777.55"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BOTAS EPI",
+                "quantity": "$464.72"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$957.90"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "TRENAS",
+                "quantity": "$39.04"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$856.82"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$862.91"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "SPRAY",
+                "quantity": "$255.47"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "BOTAS EPI",
+                "quantity": "$758.12"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COLAS SILICONE",
+                "quantity": "$71.85"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$292.99"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$2.14"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$758.58"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$429.02"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$65.70"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "CADEADOS",
+                "quantity": "$930.04"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$275.17"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$625.36"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$730.50"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$935.41"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$685.79"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$545.33"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$139.45"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$41.68"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$688.92"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "CORANTES",
+                "quantity": "$713.91"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "SPRAY",
+                "quantity": "$466.86"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$305.67"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "TRENAS",
+                "quantity": "$517.93"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$772.13"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$323.72"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$476.78"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$753.30"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CORANTES",
+                "quantity": "$328.98"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$426.69"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$407.84"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$566.87"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COLAS SILICONE",
+                "quantity": "$107.89"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$505.34"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$727.82"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$339.83"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "TRENAS",
+                "quantity": "$809.15"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$803.78"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "SPRAY",
+                "quantity": "$170.98"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$726.07"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BOTAS EPI",
+                "quantity": "$251.49"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$976.89"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$574.77"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$803.88"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$230.54"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$101.58"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$306.18"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$234.40"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "CORANTES",
+                "quantity": "$877.26"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$243.46"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$300.03"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$767.74"
+            }
+        ],
+        "churnRisk": "ALTO"
+    },
+    {
+        "_id": "5d57150694db9cf162403801",
+        "index": 8,
+        "guid": "3ff99a1f-ea50-41b4-8c9f-005823f888e0",
+        "segment": "LOJA MAT CONST",
+        "quantity": 172,
+        "categories": [
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$484.15"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$750.27"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$607.17"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$365.40"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$810.58"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$998.62"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$127.97"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$677.57"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$740.24"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$968.43"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$905.04"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$427.38"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "SPRAY",
+                "quantity": "$363.59"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$86.67"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "SPRAY",
+                "quantity": "$421.57"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$89.55"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "CORANTES",
+                "quantity": "$162.31"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "COLAS SILICONE",
+                "quantity": "$547.58"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BOTAS EPI",
+                "quantity": "$245.93"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BOTAS EPI",
+                "quantity": "$765.73"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$908.84"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$621.77"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$769.93"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$549.35"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$669.11"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "TRENAS",
+                "quantity": "$563.26"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$780.01"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$916.41"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$793.24"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$417.04"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$196.10"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$442.52"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$314.58"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$939.23"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$173.74"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$473.92"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$323.30"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$538.48"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$242.42"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$487.85"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$309.97"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$866.28"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$422.05"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "CADEADOS",
+                "quantity": "$81.32"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "CADEADOS",
+                "quantity": "$294.14"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CORANTES",
+                "quantity": "$262.97"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$141.87"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$976.00"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "TRENAS",
+                "quantity": "$15.86"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$610.28"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "TRENAS",
+                "quantity": "$563.17"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "FITAS CREPE",
+                "quantity": "$938.13"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$398.87"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BOTAS EPI",
+                "quantity": "$952.04"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$348.85"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$627.44"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "CADEADOS",
+                "quantity": "$841.13"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "SPRAY",
+                "quantity": "$481.90"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "CADEADOS",
+                "quantity": "$840.61"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "CADEADOS",
+                "quantity": "$673.43"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CORANTES",
+                "quantity": "$610.71"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "BOTAS EPI",
+                "quantity": "$910.72"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "SPRAY",
+                "quantity": "$845.39"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$969.62"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$671.32"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "FITAS CREPE",
+                "quantity": "$326.32"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$201.75"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$433.63"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$660.38"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$419.25"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CORANTES",
+                "quantity": "$687.58"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "CADEADOS",
+                "quantity": "$938.20"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "TRENAS",
+                "quantity": "$127.56"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$577.40"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$46.58"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$435.29"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$879.07"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "TRENAS",
+                "quantity": "$949.79"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "CORANTES",
+                "quantity": "$876.71"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$731.98"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$388.55"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$484.41"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$303.38"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$194.45"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$731.82"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "CADEADOS",
+                "quantity": "$470.08"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$709.02"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$953.61"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BOTAS EPI",
+                "quantity": "$393.93"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$510.54"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "BOTAS EPI",
+                "quantity": "$200.13"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$73.25"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BOTAS EPI",
+                "quantity": "$189.64"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BOTAS EPI",
+                "quantity": "$229.76"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$68.64"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "TRENAS",
+                "quantity": "$83.41"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$215.60"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$286.56"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$978.81"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$103.61"
+            }
+        ],
+        "churnRisk": "ALTO"
+    },
+    {
+        "_id": "5d5715064df75c23807ac861",
+        "index": 9,
+        "guid": "a3a49135-e5f2-4d46-9dc6-746adcaf3eab",
+        "segment": "LOJA ELÉTRICA",
+        "quantity": 3,
+        "categories": [
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$406.84"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$930.27"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$731.53"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$708.74"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$90.16"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$246.85"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$341.66"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$919.10"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$976.57"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$501.55"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$378.25"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$812.30"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "CADEADOS",
+                "quantity": "$664.20"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$343.93"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$914.02"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$503.56"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "SPRAY",
+                "quantity": "$968.00"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$154.86"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "FITAS CREPE",
+                "quantity": "$676.28"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$99.35"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$787.19"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CADEADOS",
+                "quantity": "$267.65"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$269.46"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$747.99"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$507.88"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "SPRAY",
+                "quantity": "$876.97"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "MASCARAS DESCARTAVEIS",
+                "quantity": "$28.77"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$87.88"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "CORANTES",
+                "quantity": "$850.25"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "TRENAS",
+                "quantity": "$602.16"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$675.77"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CADEADOS",
+                "quantity": "$524.35"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$842.93"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "BOTAS EPI",
+                "quantity": "$134.68"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$161.92"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$265.80"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$114.23"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$95.24"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$942.53"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "SPRAY",
+                "quantity": "$923.54"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$956.98"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "CORANTES",
+                "quantity": "$745.55"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$641.29"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$221.44"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$613.72"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$569.67"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$628.85"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BOTAS EPI",
+                "quantity": "$957.27"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "LIXAS DE MASSA",
+                "quantity": "$943.87"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "CADEADOS",
+                "quantity": "$170.42"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "TRENAS",
+                "quantity": "$908.87"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "SPRAY",
+                "quantity": "$70.72"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$327.45"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$183.04"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "CADEADOS",
+                "quantity": "$122.74"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$207.96"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$761.16"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$632.02"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$193.45"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$718.33"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "CADEADOS",
+                "quantity": "$849.36"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "BOTAS EPI",
+                "quantity": "$328.25"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$515.70"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BOTAS EPI",
+                "quantity": "$487.34"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "COLAS SILICONE",
+                "quantity": "$26.65"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$608.40"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "BROCAS VIDEA P/CONCRETO",
+                "quantity": "$711.42"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "ARRUELAS LISA ZINCADA",
+                "quantity": "$204.25"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$328.69"
+            },
+            {
+                "typeOfCategory": "INSTALADOR",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$978.95"
+            },
+            {
+                "typeOfCategory": "OUTROS",
+                "category": "FITAS CREPE",
+                "quantity": "$962.49"
+            },
+            {
+                "typeOfCategory": "MÁQUINAS",
+                "category": "FITAS CREPE",
+                "quantity": "$819.23"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "COLAS TUBO PVC",
+                "quantity": "$735.72"
+            },
+            {
+                "typeOfCategory": "ECOMMERCE",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$983.76"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "CORANTES",
+                "quantity": "$968.40"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "FITAS CREPE",
+                "quantity": "$309.69"
+            },
+            {
+                "typeOfCategory": "LOJA DE FERRAGENS",
+                "category": "COTOVELOS CONEXAO ESGOTO",
+                "quantity": "$673.29"
+            },
+            {
+                "typeOfCategory": "SEGURANÇA",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$198.92"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "CADEADOS",
+                "quantity": "$141.53"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$342.27"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "BOTAS EPI",
+                "quantity": "$732.58"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "COTOVELOS CONEXAO MARROM",
+                "quantity": "$260.49"
+            },
+            {
+                "typeOfCategory": "INDÚSTRIA",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$617.78"
+            },
+            {
+                "typeOfCategory": "LOJA MAT CONST",
+                "category": "SPRAY",
+                "quantity": "$94.35"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "BOTAS EPI",
+                "quantity": "$643.78"
+            },
+            {
+                "typeOfCategory": "FUNCIONÁRIO",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$360.40"
+            },
+            {
+                "typeOfCategory": "SEM CLASSIFICACAO",
+                "category": "BROCAS ACO RAPIDO P/METAIS",
+                "quantity": "$540.35"
+            },
+            {
+                "typeOfCategory": "LOJA DE HIDRÁULICA",
+                "category": "COLAS SILICONE",
+                "quantity": "$633.46"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "COLAS SILICONE",
+                "quantity": "$479.01"
+            },
+            {
+                "typeOfCategory": "LOJA DE TINTAS",
+                "category": "BUCHAS DE FIXACAO P/TIJOLO BAIANO",
+                "quantity": "$199.18"
+            },
+            {
+                "typeOfCategory": "REVENDEDOR",
+                "category": "MECANISMOS P/CAIXA DESC. ACOPLADA",
+                "quantity": "$581.15"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "PARAFUSOS SEXTAVADO ROSCA SOBERBA",
+                "quantity": "$709.71"
+            },
+            {
+                "typeOfCategory": "DISTRIBUIDOR",
+                "category": "LUVAS CONEXAO MARROM",
+                "quantity": "$120.43"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "SPRAY",
+                "quantity": "$176.30"
+            },
+            {
+                "typeOfCategory": "CLIENTE REVENDEDOR",
+                "category": "TRENAS",
+                "quantity": "$488.38"
+            },
+            {
+                "typeOfCategory": "CONSTRUTORA",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$277.62"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "ADAPTADORES CONEXAO MARROM",
+                "quantity": "$541.49"
+            },
+            {
+                "typeOfCategory": "CONSTRUTOR",
+                "category": "PARAFUSOS JOMARFIX (C.CHATA)",
+                "quantity": "$206.48"
+            },
+            {
+                "typeOfCategory": "ORG PÚBLICO",
+                "category": "CADEADOS",
+                "quantity": "$879.39"
+            },
+            {
+                "typeOfCategory": "LOJA ELÉTRICA",
+                "category": "LIXAS DE FERRO",
+                "quantity": "$347.55"
+            }
+        ],
+        "churnRisk": "ALTO"
+    }
+]

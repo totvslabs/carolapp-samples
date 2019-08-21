@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dynamic_report_style.css') }}">
+<link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}"/>
+
+
+<div>
+
+  {% block content %}
+  {% endblock %}
+</div>

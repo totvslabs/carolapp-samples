@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Carol Churn Dynamic Report</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"
+        media="screen,projection" />
+    <link href="{{url_for('static', filename='css/styleD3.css')}}" type="text/css" rel="stylesheet"
+        media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/dc.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/jquery.loading.min.css')}}" />
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}" />
+
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-wrapper ">
+            <a id="logo-container" href="#" class="brand-logo">
+                <img class="logo_img" src="{{url_for('static', filename='images/carol--type-white.png')}}"></img>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <!-- <li><a href="sass.html">Sass</a></li> -->
+            <li><a href="/logout">Logout</a></li>
+            <!-- <li><a href="collapsible.html">Cofema Churn</a></li> -->
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

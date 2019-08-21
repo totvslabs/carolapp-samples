@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+
+
+
+
+    <div class="row"  id="error" style="display:none">
+      <div class="col s12 m12">
+        <div class="card-panel white">
+          <h5 class="center">Erro. Por favor, contate o administrador.</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" id="">
+      <div class="col s4 m4">
+
+        <!-- risk panel -->
+        <div class="card-panel white" id="chart-area1">
+          <h5 class="title">Risk</h5><a href="javascript:dc.filterAll();
+            dc.renderAll();">Reset All</a>
+          <div id="dc-pie"></div>
+        </div> <!-- / risk panel -->
+
+        <!-- type of categories x categories  panel -->
+        <div class="card-panel white" id="chart-area2">
+          <h5 class="title">Type of Categories x Categories</h5>
+          <div id="dc-sun"></div>
+        </div><!-- /type of categories x categories  -->
+
+      </div>
+      <!--/ col s4 m4-->
+
+      <!-- churn by segment panel  -->
+      <div class="col s8 m8">
+        <div class="card-panel white" id="chart-area3">
+          <h5 class="title">Churn by segment</h5>
+          <div id="dc-row"></div>
+        </div>
+      </div> <!-- / churn by segment panel  -->
+
+    </div>
+    <!--/ row -->
+
+  </div>
+</div>
+
+<!--  Scripts-->
+<script src="{{url_for('static', filename='js/materialize.js')}}"></script>
+<script src="{{url_for('static', filename='./js/d3.min.js')}}"></script>
+<script src="{{url_for('static', filename='./js/crossfilter.js')}}"></script>
+<script src="{{url_for('static', filename='./js/dc.js')}}"></script>
+<script src="{{url_for('static', filename='./js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{url_for('static', filename='./js/jquery.loading.min.js')}}"></script>
+
+<script>
+  function wait(ms) {
+    var start = new Date().getTime();
+    var end = start;
+    while (end < start + ms) {
+      end = new Date().getTime();
+    }
+  }
+
+  $('#chart-area1').loading('start');
+  $('#chart-area2').loading('start');
+  $('#chart-area3').loading('start');
+
+  //7 seconds in milliseconds
+
+  dc.config.defaultColors(d3.schemeSet2);
+
+  var segPieChart = dc.pieChart('#dc-pie');
+  var churnBySegmentChart = dc.rowChart("#dc-row");
+  var chart = dc.sunburstChart("#dc-sun");
+
+  // d3.csv("{{url_for('static', filename='data/churn2.csv')}}").then(function (data) {
+  d3.csv("/getChurnDataInCSV")
+    // .then(function (data) {
+    //   wait(7000); 
+    //   return data;
+    // })
+    .then(function (data) {
+      var cross = crossfilter(data);
+
+      var numOfElements = cross.groupAll().reduceCount().value();
+      var segmentDimension = cross.dimension(function (d) { return d.segment; });
+      var segmentQuantityGroup = segmentDimension.group().reduceSum(function (d) { return d.quantity; });
+      var categorytDimension = cross.dimension(function (d) {
+        return d.category;
+      });
+      var categoryQuantityGroup = categorytDimension.group().reduceSum(function (d) { return d.quantity; });
+      var categorytTypeDimension = cross.dimension(function (d) {
+        return d.type_of_category;
+      });
+      var categoryTypeQuantityGroup = categorytTypeDimension.group().reduceSum(function (d) { return d.quantity; });
+      var riskDimension = cross.dimension(function (d) { return d.churn_risk; });
+      var riskQuantityGroup = riskDimension.group();
+      var allRisk = cross.groupAll().reduceCount();
+      var all = cross.groupAll().reduceSum(function (d) { return d.quantity; });
+
+      var categoryAndType = cross.dimension(function (d) {
+        return [d.category, d.type_of_category];
+      });
+      var categoryAndTypeSumGroup = categoryAndType.group().reduceSum(function (d) {
+        return d.quantity;
+      });
+
+      var colorScale = d3.scaleOrdinal()
+        .domain(["ALTO", "MÉDIO", "BAIXO"])
+        .range(["#E57373", "#ffa726", "#51b1b7"]);
+
+      segPieChart
+        .colors(colorScale)
+        .colorAccessor(function (d) { return d.key; })
+        .height(240)
+        .radius(120)
+        .innerRadius(40)
+        .dimension(riskDimension)
+        .title(function (d) {
+          return d.value;
+        })
+        .group(riskQuantityGroup)
+        .label(function (d) {
+          if (segPieChart.hasFilter() && !segPieChart.hasFilter(d.key)) {
+            return d.key + '(0%)';
+          }
+          var label = '(' + d.value + ') ' + d.key;
+          if (allRisk.value()) {
+            label += '(' + Math.floor(d.value / allRisk.value() * 100) + '%)';
+          }
+          return label;
+        })
+
+
+      churnBySegmentChart.width(768)
+        .height(580)
+        .elasticX(true)
+        .dimension(segmentDimension)
+        .group(segmentQuantityGroup)
+        .render();
+
+
+      chart
+        // .width(240)
+        .height(240)
+        .innerRadius(40)
+        .radius(240)
+        .dimension(categoryAndType)
+        .group(categoryAndTypeSumGroup)
+        // .legend(dc.legend())
+        ;
+
+      $('#chart-area1').loading('stop');
+      $('#chart-area2').loading('stop');
+      $('#chart-area3').loading('stop');
+
+      dc.renderAll();
+
+    }).catch(function () {
+      console.log();
+      $('#chart-area1').loading('stop');
+      $('#chart-area2').loading('stop');
+      $('#chart-area3').loading('stop');
+      $('#chart-area1').hide();
+      $('#chart-area2').hide();
+      $('#chart-area3').hide();
+      $('#error').css('display', 'inline');
+    });
+
+</script>
+
+{% endblock content %}
