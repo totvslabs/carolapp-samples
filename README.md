@@ -31,14 +31,14 @@ Dynamic Report
 
 Language supported: Python.
 
-Goal: Create a simple web page using the Dash python library. The Dynamic Report runs like a online carol app with flask backend. The template is ready to execute the flask and dash servers, you just have to update the file dynamic-report/app/dashapp/dash_visualization.py with your code.
+Goal: Create a simple web page using the Dash python library. The Dynamic Report runs like an online carol app with flask backend. The template is ready to execute the flask and dash servers, you just have to update the file dynamic-report/app/dashapp/dash_visualization.py with your code.
 
 Dynamic Report - D3
 ---
 
 Languages supported: Python and Html/Javascript.
 
-Goal: Create an interactive data visualization web page built on top of D3 (v5), DC and Crossfilter. This Dynamic Report runs like a online Carol app with Flask backend. The template is ready to execute Flask and serve endpoints (available in app/webapp.py).
+Goal: Create an interactive data visualization web page built on top of D3 (v5), DC and Crossfilter. This Dynamic Report runs like an online Carol app with Flask backend. The template is ready to execute Flask and serve endpoints (available in app/webapp.py).
 
 How to package the app?
 ---
