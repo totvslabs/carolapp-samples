@@ -38,7 +38,7 @@ Dynamic Report - D3
 
 Languages supported: Python and Html/Javascript.
 
-Goal: Create an interactive data visualization web page built on top of  [D3](https://d3js.org/)  (v5), [DC](https://dc-js.github.io/dc.js/) and [Crossfilter](https://square.github.io/crossfilter/). This Dynamic Report runs like an online Carol app with Flask backend. The template is ready to execute Flask and serve endpoints (available in app/webapp.py).
+Goal: Create an interactive data visualization web  [page](dynamic-report-d3/dynamicReportD3Preview.png),built on top of  [D3](https://d3js.org/)  (v5), [DC](https://dc-js.github.io/dc.js/) and [Crossfilter](https://square.github.io/crossfilter/). This Dynamic Report runs like an online Carol app with Flask backend. The template is ready to execute Flask and serve endpoints (available in app/webapp.py).
 
 How to package the app?
 ---
