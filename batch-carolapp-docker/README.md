@@ -1,8 +1,7 @@
 # batch-carolapp-docker
 
-This project contains one app: process.py.
+This sample project contains one app: process.py.
 
-Each one is responsible of part of the Clock in Caroll App processing.
 
 # Project Structure
 <pre>
