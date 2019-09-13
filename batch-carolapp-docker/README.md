@@ -34,7 +34,7 @@ The files on this folder are an interface for the GPC Operator API
 
 ### Makefile
 The make file have three different methods to be called:
-- build: Will build the Docker image and deploy it on GCP. E.g: <pre>make build -e TOKEN=<token> -e USER=<git_user> -e GHTOKEN=<git_token></pre>
+- build: Will build the Docker image and deploy it on GCP. E.g: <pre>make build -e TOKEN=<token> -e GHTOKEN=<git_token></pre>
 
 ### spec.json
 The definition on the spec.json will identify wich resources are nedded to run the build machine.
