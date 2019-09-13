@@ -1,0 +1,32 @@
+{
+  "batch": {
+    "processes": [
+      {
+        "algorithmDescription": {
+          "en-US": "Processing.",
+          "pt-BR": "Processamento.",
+          "pt-br": "Processamento.",
+        },
+        "algorithmName": "process",
+        "algorithmTitle": {
+          "en-US": "Processing",
+          "pt-BR": "Processamento"
+        },
+        "instanceProperties": {
+          "keepInstance": "false",
+          "luigi": {
+            "workers": "1"
+          },
+          "profile": "",
+          "properties": {
+            "dockerImage": "carolapp_sample_docker",
+            "instanceMemory": "250M",
+            "instanceSize": "10G",
+            "instanceVCPUs": "0.5"
+          }
+        },
+        "name": "process"
+      }
+    ]
+  }
+}

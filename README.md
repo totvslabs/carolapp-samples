@@ -19,6 +19,14 @@ Language supported: python.
 
 Goal: Execute an application that will process the data in batch. The process can be scheduled to run automatically.
 
+Batch Carol App with Docker
+---
+
+Language supported: python.
+
+Goal: Execute a Python application that will process the data in batch, and has the example to submit the build through Operator. The process can be scheduled to run automatically.
+
+
 Web Carol App
 ---
 
