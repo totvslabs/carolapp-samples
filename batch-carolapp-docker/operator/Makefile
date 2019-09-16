@@ -1,7 +1,7 @@
 IMAGE = carolapp_sample_docker
 APP = sample
 OPERATOR ?= api.operator.carol.ai
-ENVIRONMENT ?= labs-app-mdm-production
+ENVIRONMENT ?= labs-ai-apps-production
 
 TOKEN ?=
 USER ?=

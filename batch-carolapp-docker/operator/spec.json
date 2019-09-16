@@ -1,7 +1,7 @@
 {
   "user": "${APP}",
   "app": "build",
-  "cpu": 1,
+  "cpu": 2,
   "memory": 4000,
   "source": {
     "type": "git",
