@@ -1,0 +1,25 @@
+{
+  "online": {
+    "processes": [
+      {
+        "algorithmDescription": {
+          "en-US": "Demo Web App using NodeJS"
+        },
+        "algorithmName": "run_me",
+        "algorithmTitle": {
+          "en-US": "Demo Web App using NodeJS"
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "dockerImage": "docker.io/robsonpoffo/node-web-app:latest",
+            "instanceMemory": "1",
+            "instanceVCPUs": "0.5"
+          }
+        },
+        "name": "onlineapp",
+        "namespace": ""
+      }
+    ]
+  }
+}

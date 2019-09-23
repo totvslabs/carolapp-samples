@@ -1,0 +1,14 @@
+{
+  "author": "First Last <first.last@example.com>",
+  "dependencies": {
+    "express": "^4.16.1",
+    "request-to-curl": "^0.1.5"
+  },
+  "description": "Node.js on Docker",
+  "main": "server.js",
+  "name": "docker_web_app",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "1.0.0"
+}
