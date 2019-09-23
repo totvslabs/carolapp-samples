@@ -28,23 +28,6 @@ app.get('/data', (req, res) => {
 	console.info("token: " + token);
 	console.info("connectorId: " + connectorId);
 
-	for(var i=0; i<variables.length; i++) {
-		var variable = variables[i];
-
-		if(response["vars"] == undefined) {
-			response["vars"] = [];
-		}
-
-		if(process.env[variable] != undefined && process.env[variable].length > 0) {
-			var obj = {};
-			obj[variable] = process.env[variable];
-
-			response["vars"].push(obj);
-		}
-
-		console.info(variable + " => " + process.env[variable]);
-	}
-
 	response["message"] = 'Hello world';
 	console.info('Hello world');
 
@@ -57,11 +40,16 @@ app.get('/data', (req, res) => {
 	  ]
 	};
 
-	carol.filter(domain, {'token': token, 'connectorId': connectorId}, "MASTER", filter, 10, false, function(records) {
-		response["data"] = records;
+	if(token != undefined && connectorId != undefined) {
+		carol.filter(domain, {'token': token, 'connectorId': connectorId}, "MASTER", filter, 10, false, function(records) {
+			response["data"] = records;
 
-		res.json(response);
-	});
+			res.json(response);
+		});
+	}
+	else {
+		res.send(500, "Invalid authentication to Carol.");
+	}
 });
 
 app.listen(PORT, HOST);
