@@ -69,7 +69,7 @@ pandas==0.23.4
 pandocfilters==1.4.2
 papermill==1.1.0
 partd==1.0.0
-Pillow==6.1.0
+Pillow==6.2.0
 pluggy==0.12.0
 protobuf==3.9.1
 psutil==5.6.3
@@ -192,7 +192,7 @@ pandas==0.23.4
 pandocfilters==1.4.2
 papermill==1.1.0
 partd==1.0.0
-Pillow==6.1.0
+Pillow==6.2.0
 pluggy==0.12.0
 protobuf==3.9.1
 psutil==5.6.3
