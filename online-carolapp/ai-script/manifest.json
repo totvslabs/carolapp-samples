@@ -2,7 +2,7 @@
   "online": {
     "processes": [
       {
-        "name": "sample001c",
+        "name": "sample001",
         "algorithmName": "run_me",
         "namespace": "",
         "algorithmTitle": {
@@ -17,8 +17,7 @@
           "profile": "",
           "properties": {
             "dockerImage": "carol/base-online",
-            "instanceMemory": "1",
-            "instanceVCPUs": "4"
+			"flavor": "c1.medium"
           },
           "environments": {
             "EXAMPLE_ENV_1": "value_1",
