@@ -8,13 +8,15 @@ from .extensions import login
 
 import requests
 
+dict_environment = {'organization':'global',
+                    'tenant':'cofema'}
 
 @login.user_loader
 def load_user(id):
     print(id)
     headers = {'accept': 'application/json'}
 
-    resp = requests.request(method='GET', url='https://clockin.carol.ai/api/v2/oauth2/token/'+id, headers=headers)
+    resp = requests.request(method='GET', url=f'https://{dict_environment["organization"]}.carol.ai/api/v2/oauth2/token/'+id, headers=headers)
 
     if resp.ok:
         caroluser = CarolUser(id)
@@ -23,9 +25,13 @@ def load_user(id):
         return None
 
 
-def carol_login(tenant="", username="", password=""):
+def carol_login(username, password):
+    if dict_environment["organization"] == "":
+        raise Exception("Please, configure the variable dict_environment on carol_login.py.")
+
     try:
-        login_carol = Carol(domain=tenant,
+        login_carol = Carol(organization=dict_environment["organization"],
+                  domain=dict_environment["tenant"],
                   app_name='',
                   auth=PwdAuth(username, password),
                   connector_id='0a0829172fc2433c9aa26460c31b78f0')
@@ -47,7 +53,7 @@ def carol_logout(id):
     params = {'access_token': id}
 
     resp = requests.request(method='POST',
-                            url='https://clockin.carol.ai/api/v2/oauth2/logout',
+                            url=f'https://{dict_environment["organization"]}.carol.ai/api/v2/oauth2/logout',
                             headers=headers,
                             params=params)
 

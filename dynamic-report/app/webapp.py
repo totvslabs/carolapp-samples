@@ -31,11 +31,10 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
 
-        token = carol_login(tenant=form.tenant.data, username=form.username.data, password=form.password.data)
+        token = carol_login(username=form.username.data, password=form.password.data)
 
         if form.username.data is None or \
                 form.password.data is None or \
-                form.tenant.data is None or \
                 token is None:
 
             error = 'Invalid tenant, username or password'
