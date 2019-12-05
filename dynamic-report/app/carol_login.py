@@ -8,8 +8,8 @@ from .extensions import login
 
 import requests
 
-dict_environment = {'organization':'global',
-                    'tenant':'cofema'}
+dict_environment = {'organization':'',
+                    'tenant':''}
 
 @login.user_loader
 def load_user(id):
