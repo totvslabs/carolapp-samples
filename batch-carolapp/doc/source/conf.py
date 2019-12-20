@@ -23,6 +23,14 @@ project = 'Carol Project'
 copyright = '2019, TOTVS Labs'
 author = 'Author'
 
+# Create variables to be used on rst files
+rst_variables = {'author': author,
+                 'copyright': copyright,
+                 'project': project}
+
+rst_epilog = '\n'.join([f'.. |{var}| replace:: {val}' for var, val in rst_variables.items()])
+
+
 # The short X.Y version
 version = app.__version__
 
