@@ -4,7 +4,7 @@
 :github_url: https://github.com/totvslabs/carol_project
 
 
-Carol Project
+|project|
 ============================
 
 Hello world!
