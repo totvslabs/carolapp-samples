@@ -17,7 +17,7 @@
           "profile": "",
           "properties": {
             "dockerImage": "carol/base-online",
-		    "flavor": "c1.medium"
+            "flavor": "c1.medium"
           },
           "environments": {
             "EXAMPLE_ENV_1": "value_1",
