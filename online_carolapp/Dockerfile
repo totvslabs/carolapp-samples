@@ -1,5 +1,5 @@
 
-FROM totvslabs/pycarol:0.1.0
+FROM totvslabs/pycarol:2.30.0
 
 env SRCFOLDER=online_carolapp
 

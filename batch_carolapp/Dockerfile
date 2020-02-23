@@ -1,5 +1,5 @@
 
-FROM totvslabs/pycarol:latest
+FROM totvslabs/pycarol:2.30.0
 
 WORKDIR /app
 ADD requirements.txt /app/
