@@ -1,0 +1,11 @@
+{
+  "connectorId": "0a0829172fc2433c9aa26460c31b78f0",
+  "organization": "poffo",
+  "environment": "poffo",
+  "/api/*": {
+      "target": "https://poffo.carol.ai",
+      "secure": true,
+      "logLevel": "debug",
+      "changeOrigin": true
+  }
+}

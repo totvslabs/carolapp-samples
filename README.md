@@ -3,11 +3,13 @@ Content
 
 This project has a sample for the three types of Carol Apps: Online, Batch and Web.
 
+All Carol Apps on this project have been created through the cookie-cutter project: https://docs.carol.ai/docs/carol-app-dev
+
 
 Online Carol App
 ---
 
-Language supported: python.
+Language supported: python, nodeJS, and anything that can be embedded in a Docker Image.
 
 Goal: Execute an application online. This kind of application will provide a custom back-end.
 
@@ -15,24 +17,18 @@ Goal: Execute an application online. This kind of application will provide a cus
 Batch Carol App
 ---
 
-Language supported: python.
+Language supported: python, nodeJS, and anything that can be embedded in a Docker Image.
 
 Goal: Execute an application that will process the data in batch. The process can be scheduled to run automatically.
-
-Batch Carol App with Docker
----
-
-Language supported: python.
-
-Goal: Execute a Python application that will process the data in batch, and has the example to submit the build through Operator. The process can be scheduled to run automatically.
 
 
 Web Carol App
 ---
 
-Language supported: any HTML framework (T-Faces).
+Language supported: any HTML framework. On this example, we are sharing a sample using Portinari (https://portinari.io/).
 
 Goal: Allow the Carol App to provide a customizable experience to the final user through Web technologies and frameworks.
+
 
 Dynamic Report
 ---
@@ -48,92 +44,16 @@ Languages supported: Python and Html/Javascript.
 
 Goal: Create an interactive data visualization web  [page](dynamic-report-d3/dynamicReportD3Preview.png), built on top of  [D3](https://d3js.org/)  (v5), [DC](https://dc-js.github.io/dc.js/) and [Crossfilter](https://square.github.io/crossfilter/). This Dynamic Report runs like an online Carol app with Flask backend. The template is ready to execute Flask and serve endpoints (available in app/webapp.py).
 
+
 How to package the app?
 ---
 
-Carol App divide the resources into the three types:
-
-### Web Carol app - folder structure
-
-The Web resource, related to the Front-end, should be zipped, and the app content should be inside a folder named `site`, as follow:
-
-```
-site/
-├── NunitoSans-Bold.51066f4d1d33630cd761.ttf
-├── NunitoSans-ExtraLight.bc36a8726e20804a94da.ttf
-├── NunitoSans-Regular.fb98ed1700e8dfaf0764.ttf
-├── TotvsIcon.1642008454153acd9ef7.svg
-├── TotvsIcon.4e1607e6f3f53fbb5e01.woff
-├── TotvsIcon.683aa55aa3feb2d437b7.ttf
-├── TotvsIcon.ab04e6bef307c5a4847d.eot
-├── assets
-│   ├── arrows
-│   │   ├── arrow-down.png
-│   │   ├── arrow-up.png
-│   │   └── arrow-zero.png
-│   ├── campaigns.png
-│   ├── face.png
-│   ├── flags
-│   │   ├── EN.png
-│   │   ├── PT.png
-│   │   ├── china.png
-│   │   ├── en-uk.png
-│   │   └── spain.png
-│   ├── general.png
-│   ├── icon.png
-│   ├── images
-│   │   ├── order-ascending.svg
-│   │   ├── order-descending.svg
-│   │   ├── order-unselected.svg
-│   │   ├── totvs-avatar-default.svg
-│   │   ├── totvs-loading-icon.svg
-│   │   ├── totvs-logo-grey.svg
-│   │   ├── totvs-logo-menu.svg
-│   │   └── totvs-logo-page-login.svg
-│   ├── logo.png
-│   └── zoom.png
-├── favicon.ico
-├── index.html
-├── inline.bundle.js
-├── inline.bundle.js.map
-├── main.bundle.js
-├── main.bundle.js.map
-├── polyfills.bundle.js
-├── polyfills.bundle.js.map
-├── scripts.bundle.js
-├── scripts.bundle.js.map
-├── styles.bundle.js
-├── styles.bundle.js.map
-├── vendor.bundle.js
-└── vendor.bundle.js.map
-```
-
-
-### Online Carol App - folder structure
-
-The content of an Online Carol App should be zipped, and the app content should be inside a folder named `ai-script`, as follow:
-
-```
-ai-script
-├── manifest.json
-├── requirements.yml
-└── run_me.py
-```
-
-### Batch Carol App - folder structure
-
-```
-ai-script/
-├── logging.cfg
-├── luigi.cfg
-├── manifest.json
-├── requirements.yml
-└── test_script.py
-```
+To package and deploy the Carol App, please, follow the documentation https://docs.carol.ai/docs/carol-app-dev
 
 
 Additional information
 ---
 
-Both Carol App (Online/Batch) need pyCarol (https://github.com/totvslabs/pyCarol).
-Python 3.6 is required for both Carol App (Online/Batch).
+- Carol Documentation: docs.carol.ai
+- Both Carol App (Online/Batch) need pyCarol (https://github.com/totvslabs/pyCarol).
+- Python 3.6 is required for both Carol App (Online/Batch).

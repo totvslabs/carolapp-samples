@@ -1,0 +1,17 @@
+{
+  "user": "${APP}",
+  "app": "build",
+  "cpu": 2,
+  "memory": 4000,
+  "source": {
+    "type": "git",
+    "path": "https://${GHTOKEN}@github.com/totvslabs/batch_carolapp",
+    "branch": "master"
+  },
+  "dockerfile": "Dockerfile",
+  "cwd": ".",
+  "cache": true,
+  "target": {
+    "image": "gcr.io/${ENVIRONMENT}/batch_carolapp:0.1.0"
+  }
+}

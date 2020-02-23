@@ -1,0 +1,10 @@
+--requirement requirements.txt
+pytest
+pytest-cov
+nose
+sphinx
+pyreleaser
+flake8
+autopep8
+isort
+coverage

@@ -1,0 +1,30 @@
+{
+  "online": {
+    "processes": [
+      {
+        "name": "online_carolapp",
+        "algorithmName": "alg_online_carolapp",
+        "namespace": "",
+        "algorithmTitle": {
+          "en-US": "Algorithm Description",
+          "pt-BR": "Descrição do Algoritmo",
+          "pt-br": "Descrição do Algoritmo"
+        },
+        "algorithmDescription": {
+          "en-US": "Carol App Boilerplate contains all the boilerplate you need to create a Carol App."
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "dockerImage": "carol/online_carolapp:0.1.0:latest",
+            "flavor": "c1.nano"
+          },
+          "environments": {
+            "EXAMPLE_ENV_1": "value_1",
+            "EXAMPLE_ENV_2": "value_2"
+          }
+        }
+      }
+    ]
+  }
+}
