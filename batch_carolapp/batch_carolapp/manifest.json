@@ -18,12 +18,23 @@
             "workers": "4"
           },
           "properties": {
-            "dockerImage": "carol/batch_carolapp-batch_carolapp_algorithm:0.1.0",
-            "flavor": "c1.nano"
+            "dockerName": "batch_carolapp-batch_carolapp_algorithm",
+            "instanceType": "c1.nano"
           }
         },
         "name": "batch_carolapp"
       }
     ]
-  }
+  },
+  "docker": [
+    {
+      "dockerName": "batch_carolapp-batch_carolapp_algorithm",
+      "dockerTag": "0.1.0",
+      "gitBranch": "app_review",
+      "gitPath": "/batch_carolapp",
+      "instanceType": "c1.small",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples"
+    }
+  ]
 }
