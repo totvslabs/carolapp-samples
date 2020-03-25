@@ -1,5 +1,5 @@
 # https://github.com/buildkite/agent/blob/master/packaging/docker/ubuntu-linux/Dockerfile
-FROM totvslabs/pycarol
+FROM totvslabs/pycarol:2.30.0
 
 ENV LANG "en_US.UTF-8"
 ENV LANGUAGE "en_US.UTF-8"
