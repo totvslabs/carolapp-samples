@@ -1,11 +1,11 @@
 
 FROM totvslabs/pycarol:2.30.0
 
+RUN pip install -r requirements.txt
+
 WORKDIR /app
 ADD requirements.txt /app/
 ADD batch_carolapp/ /app/batch_carolapp/
-
-RUN pip install -r requirements.txt
 
 VOLUME [ "/app" ]
 
