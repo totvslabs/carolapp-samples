@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!doctype html>
+<div>
+
+  <header class='header'>
+    <div class='header__logos col-lg-9'>
+      <div class='header__logo'>
+        <img class="logo-carol" src='https://raw.githubusercontent.com/totvslabs/MDMStatic/master/reports/carol--type-white.png'></img>
+      </div>
+    </div>
+    <div id="header__title col-lg-3">
+      <h1 class="header__label">Title</h1>
+      <div class="class-rightbutton">
+        <a href='/logout' class="logout_btn">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1 class="hello_world">Hello World!</h1>
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  padding: 55px 25px;
+  background-color: #0F0A37;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1 span {
+  font-size: 13px;
+  display: block;
+  padding-left: 4px;
+}
+
+.hello_world {
+  position: relative;
+  margin-top: 25%;
+  margin-left: 25%;
+}
+
+.container {
+  position: relative;
+}
+
+.hello_world {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.logout_btn:hover{
+  background: rgb(165, 37, 137);
+}
+</style>
+
+{% endblock %}

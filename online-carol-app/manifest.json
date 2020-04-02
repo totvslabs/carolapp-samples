@@ -1,0 +1,30 @@
+{
+  "online": {
+    "processes": [
+      {
+        "name": "somoseducacao",
+        "algorithmName": "somoseducacao",
+        "namespace": "",
+        "algorithmTitle": {
+          "pt-br": "Demo service",
+          "en-US": "Demo service"
+        },
+        "algorithmDescription": {
+          "pt-br": "Basic algorithm",
+          "en-US": "Basic algorithm"
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "dockerImage": "somoseducacao/somoseducacao",
+            "flavor": "c1.small"
+          },
+          "environments": {
+            "EXAMPLE_ENV_1": "value_1",
+            "EXAMPLE_ENV_2": "value_2"
+          }
+        }
+      }
+    ]
+  }
+}
