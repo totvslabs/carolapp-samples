@@ -38,7 +38,7 @@ LONGTASKID=
 
 Build the image
 
-````
+```
 make docker_image
 ``` 
 
