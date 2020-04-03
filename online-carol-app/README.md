@@ -1,7 +1,31 @@
-To build the image
+Creating your own online Carol App
+---
+Add new endpoints to `routes.py`.
 
-`docker build . -t somos`
+If necessary, add new html templates to `/app/templates`.
 
-to run
+Add all additional installed packages to `requirements.txt`. 
 
-`docker run --rm --env-file .env  -p 5000:5000 somos`
+Testing locally
+---
+
+Create a file named `.env`, paste the information below and fill each key with their values:
+
+ENV_DOMAIN=carol.ai
+CAROLTENANT=
+CAROLORGANIZATION=
+API_SUBDOMAIN=
+CAROLAPPNAME=
+CAROLAPPVERSION=
+ALGORITHM_NAME=
+CAROLAPPOAUTH=
+CAROLCONNECTORID=
+LONGTASKID=
+
+Build the image
+
+`make docker_image`
+
+Run a container
+
+`make docker_run`

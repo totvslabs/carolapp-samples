@@ -6,10 +6,11 @@ from flask import session
 from flask_login import UserMixin
 from .extensions import login
 
+import os
 import requests
 
-dict_environment = {'organization': ORG,
-                    'tenant': TENANT}
+dict_environment = {'organization': os.environ('CAROLTENANT'),
+                    'tenant': os.environ('CAROLORGANIZATION')}
 
 @login.user_loader
 def load_user(id):
