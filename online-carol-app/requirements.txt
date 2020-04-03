@@ -2,3 +2,4 @@ flask
 flask-login
 flask-wtf
 gunicorn
+pycarol>=2.32.1

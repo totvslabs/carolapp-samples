@@ -1,16 +1,7 @@
 import logging
-import os
-import shutil
-from dotenv import load_dotenv, find_dotenv
 from flask import Blueprint, current_app, flash, jsonify, request, redirect, render_template, url_for
-from pycarol import Carol
-from pycarol.auth.ApiKeyAuth import ApiKeyAuth
-from pycarol.storage import Storage
-from werkzeug.utils import secure_filename
-from zipfile import ZipFile
 from flask_login import current_user, login_required, login_user, logout_user
 from werkzeug.urls import url_parse
-import tempfile
 from .carol_login import carol_login, CarolUser, carol_logout
 from .forms import LoginForm
 
@@ -24,7 +15,6 @@ console.setFormatter(formatter)
 logger.addHandler(console)
 
 server_bp = Blueprint('main', __name__)
-
 
 @server_bp.route('/')
 @login_required
@@ -76,7 +66,3 @@ def logout():
     logout_user()
 
     return redirect(url_for('main.index'))
-
-
-def allowed_file(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS

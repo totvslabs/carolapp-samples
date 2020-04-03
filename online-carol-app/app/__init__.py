@@ -2,7 +2,7 @@ import dash
 from flask import Flask
 from flask.helpers import get_root_path
 from flask_login import login_required
-from .extensions import login
+from app.extensions import login
 from os.path import join, dirname, realpath
 
 def create_app():
