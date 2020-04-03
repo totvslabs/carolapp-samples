@@ -2,7 +2,7 @@ import logging
 import os
 import shutil
 from dotenv import load_dotenv, find_dotenv
-from flask import Blueprint, current_app, flash, request, redirect, render_template, url_for
+from flask import Blueprint, current_app, flash, jsonify, request, redirect, render_template, url_for
 from pycarol import Carol
 from pycarol.auth.ApiKeyAuth import ApiKeyAuth
 from pycarol.storage import Storage
@@ -30,6 +30,15 @@ server_bp = Blueprint('main', __name__)
 @login_required
 def index():
     return render_template('main.html')
+
+
+@server_bp.route('/hello_world', methods=['GET'])
+@login_required
+def hello_world():
+    message = {
+        'message': 'Hello World'
+    }
+    return jsonify(message)
 
 
 @server_bp.route('/login', methods=['GET', 'POST'])

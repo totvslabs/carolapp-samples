@@ -1,4 +1,4 @@
-FROM totvslabs/pycarol:2.28.1
+FROM totvslabs/pycarol:2.29.2
 
 RUN mkdir /app
 WORKDIR /app
