@@ -1,0 +1,34 @@
+steps:
+  - label: ":docker: Build"
+    commands:
+      - echo "~~~ Build CI docker image"
+      - make build_ci
+    timeout_in_minutes: 20
+    retry:
+      automatic:
+        - exit_status: -1
+          limit: 1
+        - exit_status: 255
+          limit: 1
+  - wait: ~
+  - label: ":hammer: Tests"
+    commands:
+      - echo "~~~ Unit Tests"
+      - docker run -it --rm -e SONAR_TOKEN=${SONAR_TOKEN} -e BUILDKITE_BRANCH=${BUILDKITE_BRANCH} -e SONAR_URL=${SONAR_URL} -v ${PWD}:/src ci_image make test coverage code_scan
+    timeout_in_minutes: 20
+    retry:
+      automatic:
+        - exit_status: -1
+          limit: 1
+        - exit_status: 255
+          limit: 1
+  - wait: ~
+  - label: ":hammer: Lint"
+    commands:
+      - echo "~~~ Linting"
+      - docker run -it --rm -e SONAR_TOKEN=${SONAR_TOKEN} -e BUILDKITE_BRANCH=${BUILDKITE_BRANCH} -v ${PWD}:/src ci_image make lint
+  - wait: ~
+
+  - label: ":recycle: Clean up"
+    commands:
+      - docker rmi ci_image
