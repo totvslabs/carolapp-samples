@@ -1,5 +1,5 @@
 # https://github.com/buildkite/agent/blob/master/packaging/docker/ubuntu-linux/Dockerfile
-FROM totvslabs/pycarol:2.30.0
+FROM totvslabs/pycarol:2.33.1
 
 ENV LANG "en_US.UTF-8"
 ENV LANGUAGE "en_US.UTF-8"
@@ -16,5 +16,3 @@ RUN set -x &&\
     pip install -r requirements-dev.txt
 
 VOLUME [ "/src" ]
-
-
