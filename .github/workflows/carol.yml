@@ -9,7 +9,7 @@ on:
     branches: [ master ]
 
 env:
-  CAROL_APP_NAME: sampleapp
+  CAROL_APP_NAME: onlinecarolapp
   CONNECTOR_ID: ${{ secrets.CONNECTOR_ID }}
   API_KEY: ${{ secrets.API_KEY }}
 
@@ -20,7 +20,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
         python-version: '3.7'
@@ -47,5 +47,13 @@ jobs:
     - name: Build the Docker image
       run: |
         cd online-carol-app
-        docker build . --file Dockerfile --tag $CAROL_APP_NAME:$(date +%s)
+        docker build . --file Dockerfile --tag $CAROL_APP_NAME:$(date +%s)  
+        
+    - uses: mr-smithers-excellent/docker-build-push@v3
+      with:
+        image: labs-poc/${{ CAROL_APP_NAME }}
+        registry: gcr.io
+        username: _json_key 
+        password: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }} 
+
 
