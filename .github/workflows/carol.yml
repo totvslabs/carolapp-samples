@@ -51,7 +51,7 @@ jobs:
         
     - uses: mr-smithers-excellent/docker-build-push@v3
       with:
-        image: labs-poc/${{ CAROL_APP_NAME }}
+        image: labs-poc/${{ env.CAROL_APP_NAME }}
         registry: gcr.io
         username: _json_key 
         password: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }} 
