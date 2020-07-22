@@ -11,8 +11,7 @@
           "en-US": "Batch task Description",
           "pt-BR": "Descrição do Tarefa Batch"
         },
-        "dataModels": [
-        ],
+        "dataModels": [],
         "instanceProperties": {
           "luigi": {
             "workers": "4"

@@ -29,7 +29,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pycarol flake8
-        
+
     - name: Lint with flake8
       run: |
         cd online-carol-app
@@ -37,25 +37,32 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-        
+
+    - name: Lint JSON files
+      run: |
+        wget https://github.com/caarlos0/jsonfmt/releases/download/v0.2.2/jsonfmt_0.2.2_linux_amd64.deb
+        sudo dpkg -i jsonfmt_0.2.2_linux_amd64.deb
+        rm jsonfmt_0.2.2_linux_amd64.deb
+        jsonfmt
+
     #TODO(bruno): no tests yet
     #- name: Test with pytest
     #  run: |
     #    cd online-carol-app
     #    pytest
-        
+
     - name: Build the Docker image
       run: |
         cd online-carol-app
-        docker build . --file Dockerfile --tag $CAROL_APP_NAME:$(date +%s)  
-        
+        docker build . --file Dockerfile --tag $CAROL_APP_NAME:$(date +%s)
+
     - uses: mr-smithers-excellent/docker-build-push@v3
       with:
         image: labs-poc/${{ env.CAROL_APP_NAME }}
-        dockerfile: online-carol-app/Dockerfile 
+        dockerfile: online-carol-app/Dockerfile
         directory: online-carol-app
         registry: gcr.io
-        username: _json_key 
-        password: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }} 
+        username: _json_key
+        password: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
 
 
