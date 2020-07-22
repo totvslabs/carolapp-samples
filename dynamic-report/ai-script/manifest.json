@@ -1,27 +1,27 @@
 {
-    "online": {
-      "processes": [
-        {
-          "name": "dynamic-report",
-          "algorithmName": "dynamic-report-sample",
-          "namespace": "",
-          "algorithmTitle": {
-            "pt-br": "Dynamic Report",
-            "en-US": "Dynamic Report"
-          },
-          "algorithmDescription": {
-            "pt-br": "Dynamic Report",
-            "en-US": "Dynamic Report"
-          },
-          "instanceProperties": {
-            "profile": "",
-            "properties": {
-              "dockerImage": "",
-              "instanceMemory": "4",
-              "instanceVCPUs": "2"
-            }
+  "online": {
+    "processes": [
+      {
+        "name": "dynamic-report",
+        "algorithmName": "dynamic-report-sample",
+        "namespace": "",
+        "algorithmTitle": {
+          "pt-br": "Dynamic Report",
+          "en-US": "Dynamic Report"
+        },
+        "algorithmDescription": {
+          "pt-br": "Dynamic Report",
+          "en-US": "Dynamic Report"
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "dockerImage": "",
+            "instanceMemory": "4",
+            "instanceVCPUs": "2"
           }
         }
-      ]
-    }
+      }
+    ]
   }
+}
