@@ -41,7 +41,7 @@ jobs:
     - name: Lint JSON files
       run: |
         wget https://github.com/caarlos0/jsonfmt/releases/download/v0.2.2/jsonfmt_0.2.2_linux_amd64.deb
-        dpkg -i jsonfmt_0.2.2_linux_amd64.deb
+        sudo dpkg -i jsonfmt_0.2.2_linux_amd64.deb
         rm jsonfmt_0.2.2_linux_amd64.deb
         jsonfmt
 
