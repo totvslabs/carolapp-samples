@@ -1,3 +1,4 @@
+dash
 flask
 flask-login
 flask-wtf
