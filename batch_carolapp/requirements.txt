@@ -1,1 +1,1 @@
-pycarol==2.30.0
+pycarol>=2.40.1

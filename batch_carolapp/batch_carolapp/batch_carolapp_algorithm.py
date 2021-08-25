@@ -1,7 +1,7 @@
 import os
 import logging
 import sys
-from pycarol import Carol, CarolHandler, Tasks
+from pycarol import Carol, CarolHandler, Tasks, Apps
 
 print("Connecting to Carol...")
 carol_instance = Carol()
@@ -24,6 +24,12 @@ def run():
     logger.info('Running the method run...')
 
     task.set_progress(50)
+
+    _settings = Apps(carol_instance).get_settings()
+    if _settings:
+        logger.info('These are the settings values:')
+        for key, value in _settings.items():
+            logger.info(f'{key} -> {value}')
 
     logger.warning('This is a warning message')
     logger.error('This is an error message')

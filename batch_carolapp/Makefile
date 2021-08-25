@@ -80,6 +80,9 @@ all_tests: tests coverage code_scan ## Runs all test related tasks
 docker_image: ## Build the Carol App docker image
 	docker build -t ${IMAGE} .
 
+docker_run: ## Runs Carol app docker image
+	@docker run --rm -it -p 5000:5000 --env-file .env ${IMAGE}
+
 dist: clean ## Create the dist file to deploy on Carol
 	@mkdir dist
 	@mkdir dist/ai-script

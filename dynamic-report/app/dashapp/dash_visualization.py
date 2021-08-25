@@ -9,6 +9,8 @@ import pandas as pd
 from .templates import add_topbar, add_card
 import locale
 
+carol = Carol()
+df = staging(carol).fetch_parquet()
 
 # page base tamplate (topbar, cards and dropdown)
 layout = html.Div(children=[
