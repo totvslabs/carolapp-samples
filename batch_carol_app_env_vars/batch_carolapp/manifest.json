@@ -1,0 +1,39 @@
+{
+  "batch": {
+    "processes": [
+      {
+        "algorithmDescription": {
+          "en-US": "Batch task Description",
+          "pt-BR": "Descrição do Tarefa Batch"
+        },
+        "algorithmName": "batch_carolapp_algorithm",
+        "algorithmTitle": {
+          "en-US": "Batch task Description",
+          "pt-BR": "Descrição do Tarefa Batch"
+        },
+        "dataModels": [],
+        "instanceProperties": {
+          "luigi": {
+            "workers": "4"
+          },
+          "properties": {
+            "dockerName": "batch_carolapp-batch_carolapp_algorithm",
+            "instanceType": "c1.nano"
+          }
+        },
+        "name": "batch_carolapp"
+      }
+    ]
+  },
+  "docker": [
+    {
+      "dockerName": "batch_carolapp-batch_carolapp_algorithm",
+      "dockerTag": "0.1.0",
+      "gitBranch": "app_review",
+      "gitPath": "/batch_carolapp",
+      "instanceType": "c1.small",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples"
+    }
+  ]
+}

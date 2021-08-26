@@ -1,0 +1,11 @@
+--requirement requirements.txt
+pytest
+cookiecutter
+pytest-cov
+nose
+sphinx
+pyreleaser
+flake8
+autopep8
+isort
+coverage
