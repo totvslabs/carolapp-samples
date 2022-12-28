@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 
+from dotenv import load_dotenv
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from pycarol import Carol, Staging
 
 from .templates import add_topbar, add_card
 
 
-carol = Carol(dotenv_path=".env")
+load_dotenv()
+carol = Carol()
 df = Staging(carol).fetch_parquet("execution_history", connector_name="model")
 
 # page base tamplate (topbar, cards and dropdown)
