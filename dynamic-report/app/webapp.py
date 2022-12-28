@@ -1,17 +1,9 @@
-from flask import Blueprint
-from flask import redirect
-from flask import render_template
-from flask import request
-from flask import url_for
-from flask_login import current_user
-from flask_login import login_required
-from flask_login import login_user
-from flask_login import logout_user
+from flask import Blueprint, redirect, render_template, request, url_for
+from flask_login import current_user, login_required, login_user, logout_user
 
 from werkzeug.urls import url_parse
 
 from .forms import LoginForm
-
 from .carol_login import carol_login, CarolUser, carol_logout
 
 server_bp = Blueprint('main', __name__)
@@ -20,13 +12,17 @@ server_bp = Blueprint('main', __name__)
 @server_bp.route('/')
 @login_required
 def index():
-    return redirect('/dashboard')
+    dash_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard"
+    return redirect(dash_root)
 
 
 @server_bp.route('/login', methods=['GET', 'POST'])
 def login():
+    print(url_for("main.index"))
+    print(request.url)
     if current_user.is_authenticated:
-        return redirect(url_for('main.index'))
+        https_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/"
+        return redirect(https_root)
 
     form = LoginForm()
     if form.validate_on_submit():
@@ -46,6 +42,7 @@ def login():
         next_page = request.args.get('next')
         if not next_page or url_parse(next_page).netloc != '':
             next_page = url_for('main.index')
+            next_page = "https://" + request.url.replace("http://", "").split("/")[0] + "/"
         return redirect(next_page)
 
     return render_template('login.html', title='Sign In', form=form)
@@ -57,6 +54,7 @@ def logout():
     carol_logout(current_user.id)
     logout_user()
 
-    return redirect(url_for('main.index'))
+    https_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/"
+    return redirect(https_root)
 
 
