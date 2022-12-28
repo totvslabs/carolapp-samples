@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from os.path import join, dirname, realpath
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-import dash_table
-import pandas as pd
-from .templates import add_topbar, add_card
-import locale
+from pycarol import Carol, Staging
 
-carol = Carol()
-df = staging(carol).fetch_parquet()
+from .templates import add_topbar, add_card
+
+
+carol = Carol(dotenv_path=".env")
+df = Staging(carol).fetch_parquet("execution_history", connector_name="model")
 
 # page base tamplate (topbar, cards and dropdown)
 layout = html.Div(children=[

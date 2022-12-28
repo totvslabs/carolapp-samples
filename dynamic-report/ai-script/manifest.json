@@ -16,12 +16,23 @@
         "instanceProperties": {
           "profile": "",
           "properties": {
-            "dockerImage": "",
+            "dockerName": "dynamic-report",
             "instanceMemory": "4",
             "instanceVCPUs": "2"
           }
         }
       }
     ]
-  }
+  },
+  "docker": [
+    {
+      "dockerName": "dynamic-report",
+      "dockerTag": "0.0.1",
+      "gitBranch": "fix-https",
+      "gitPath": "./dynamic-report/",
+      "instanceType": "c1.medium",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples.git"
+    }
+  ]
 }
