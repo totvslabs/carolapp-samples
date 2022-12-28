@@ -2,8 +2,8 @@
   "online": {
     "processes": [
       {
-        "name": "dynamic-report",
-        "algorithmName": "dynamic-report-sample",
+        "name": "dynamic_report",
+        "algorithmName": "dynamic_report_sample",
         "namespace": "",
         "algorithmTitle": {
           "pt-br": "Dynamic Report",
@@ -16,7 +16,7 @@
         "instanceProperties": {
           "profile": "",
           "properties": {
-            "dockerName": "dynamic-report",
+            "dockerName": "dynamic_report",
             "instanceMemory": "4",
             "instanceVCPUs": "2"
           }
@@ -26,7 +26,7 @@
   },
   "docker": [
     {
-      "dockerName": "dynamic-report",
+      "dockerName": "dynamic_report",
       "dockerTag": "0.0.1",
       "gitBranch": "fix-https",
       "gitPath": "./dynamic-report/",
