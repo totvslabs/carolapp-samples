@@ -7,20 +7,20 @@ from .carol_login import carol_login, CarolUser, carol_logout
 server_bp = Blueprint('main', __name__)
 
 
-@server_bp.route('/')
-def index():
-    if not current_user.is_authenticated:
-        https_login = "https://" + request.url.replace("http://", "").split("/")[0] + "/login/"
-        return redirect(https_login)
+# @server_bp.route('/')
+# def index():
+#     if not current_user.is_authenticated:
+#         https_login = "https://" + request.url.replace("http://", "").split("/")[0] + "/login/"
+#         return redirect(https_login)
 
-    https_dash = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard/"
-    return redirect(https_dash)    
+#     https_dash = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard/"
+#     return redirect(https_dash)    
 
 
-@server_bp.route('/login', methods=['GET', 'POST'])
+@server_bp.route('/', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        https_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/"
+        https_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard/"
         return redirect(https_root)
 
     form = LoginForm()
