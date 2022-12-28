@@ -1,7 +1,5 @@
-from flask import Blueprint, redirect, render_template, request, url_for
+from flask import Blueprint, redirect, render_template, request
 from flask_login import current_user, login_required, login_user, logout_user
-
-from werkzeug.urls import url_parse
 
 from .forms import LoginForm
 from .carol_login import carol_login, CarolUser, carol_logout
@@ -10,16 +8,17 @@ server_bp = Blueprint('main', __name__)
 
 
 @server_bp.route('/')
-@login_required
 def index():
-    dash_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard/"
-    return redirect(dash_root)
+    if not current_user.is_authenticated:
+        https_login = "https://" + request.url.replace("http://", "").split("/")[0] + "/login/"
+        return redirect(https_login)
+
+    https_dash = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard/"
+    return redirect(https_dash)    
 
 
 @server_bp.route('/login', methods=['GET', 'POST'])
 def login():
-    print(url_for("main.index"))
-    print(request.url)
     if current_user.is_authenticated:
         https_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/"
         return redirect(https_root)
@@ -46,12 +45,13 @@ def login():
 
 
 @server_bp.route('/logout')
-@login_required
 def logout():
+    if not current_user.is_authenticated:
+        https_login = "https://" + request.url.replace("http://", "").split("/")[0] + "/login/"
+        return redirect(https_login)
+
     carol_logout(current_user.id)
     logout_user()
 
     https_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/"
     return redirect(https_root)
-
-

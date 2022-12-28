@@ -20,7 +20,7 @@ def create_app():
     login.init_app(server)
     login.login_view = 'main.login'
 
-    register_blueprints(server)
+    server.register_blueprint(server_bp)
 
     return server
 
@@ -45,7 +45,3 @@ def _protect_dashviews(dashapp):
     for view_func in dashapp.server.view_functions:
         if view_func.startswith(dashapp.config.url_base_pathname):
             dashapp.server.view_functions[view_func] = login_required(dashapp.server.view_functions[view_func])
-
-
-def register_blueprints(server):
-    server.register_blueprint(server_bp)
