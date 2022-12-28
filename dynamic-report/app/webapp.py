@@ -39,10 +39,7 @@ def login():
             user = CarolUser(token)
 
         login_user(user.id, remember=form.remember_me.data)
-        next_page = request.args.get('next')
-        if not next_page or url_parse(next_page).netloc != '':
-            next_page = url_for('main.index')
-            next_page = "https://" + request.url.replace("http://", "").split("/")[0] + "/"
+        next_page = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard/"
         return redirect(next_page)
 
     return render_template('login.html', title='Sign In', form=form)
