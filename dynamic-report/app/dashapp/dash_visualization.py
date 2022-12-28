@@ -9,9 +9,9 @@ from pycarol import Carol, Staging
 from .templates import add_topbar, add_card
 
 
-load_dotenv()
-carol = Carol()
-df = Staging(carol).fetch_parquet("execution_history", connector_name="model")
+# load_dotenv()
+# carol = Carol()
+# df = Staging(carol).fetch_parquet("execution_history", connector_name="model")
 
 # page base tamplate (topbar, cards and dropdown)
 layout = html.Div(children=[
