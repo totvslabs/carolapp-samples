@@ -1,11 +1,15 @@
+from os.path import join, dirname, realpath
+
 import dash
 from flask import Flask
-from flask.helpers import get_root_path
 from flask_login import login_required
-from .extensions import login
 
 from config import BaseConfig
-from os.path import join, dirname, realpath
+from .dashapp.dash_visualization import layout
+from .dashapp.dash_visualization import register_callbacks
+from .extensions import login
+from .webapp import server_bp
+
 
 def create_app():
     server = Flask(__name__)
@@ -22,11 +26,6 @@ def create_app():
 
 
 def register_dashapps(app):
-    #from .dashapp1.layout import layout
-    #from .dashapp1.callbacks import register_callbacks
-    from .dashapp.dash_visualization import layout
-    from .dashapp.dash_visualization import register_callbacks
-    
     # Meta tags for viewport responsiveness
     meta_viewport = {"name": "viewport", "content": "width=device-width, initial-scale=1, shrink-to-fit=no"}
 
@@ -49,6 +48,4 @@ def _protect_dashviews(dashapp):
 
 
 def register_blueprints(server):
-    from .webapp import server_bp
-
     server.register_blueprint(server_bp)
