@@ -12,7 +12,7 @@ server_bp = Blueprint('main', __name__)
 @server_bp.route('/')
 @login_required
 def index():
-    dash_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard"
+    dash_root = "https://" + request.url.replace("http://", "").split("/")[0] + "/dashboard/"
     return redirect(dash_root)
 
 
