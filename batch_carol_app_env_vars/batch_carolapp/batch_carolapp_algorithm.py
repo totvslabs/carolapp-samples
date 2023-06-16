@@ -5,7 +5,8 @@ import time
 from pycarol import Carol, CarolHandler, Tasks, Apps
 
 print("Connecting to Carol...")
-carol_instance = Carol()
+carol_instance = Carol(environment=os.environ['ENV_DOMAIN'])
+print(carol_instance.get_current())
 
 carol_handler = CarolHandler(carol_instance)
 
