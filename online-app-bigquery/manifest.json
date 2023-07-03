@@ -1,0 +1,38 @@
+{
+  "online": {
+    "processes": [
+      {
+        "name": "onlineappbigquery",
+        "algorithmName": "main",
+        "namespace": "",
+        "algorithmTitle": {
+          "pt-br": "Online Carol APP Big Query",
+          "en-US": "Online Carol APP Big Query"
+        },
+        "algorithmDescription": {
+          "pt-br": "Online Carol APP Big Query",
+          "en-US": "Online Carol APP Big Query"
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "dockerImage": "onlineappbigquery/onlineappbigquery:1.0.0",
+            "instanceType": "c1.small",
+            "preemptible": false
+          }
+        }
+      }
+    ]
+  },
+  "docker": [
+    {
+      "dockerName": "onlineappbigquery",
+      "dockerTag": "1.0.0",
+      "gitBranch": "main",
+      "gitPath": "/online-app-bigquery",
+      "instanceType": "c1.small",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples"
+    }
+  ]
+}
