@@ -10,6 +10,8 @@ from pycarol.app.online_api import request
 
 online = Online()
 
+accessToken = "VGhpcyBpcyBqdXN0IGEgdGVzdCwgbm90IGEgdmFsaWQgdG9rZW4gOikg"
+
 @online.route("hello_world")
 def hello_world():
     message = {
