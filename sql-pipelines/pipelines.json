@@ -1,0 +1,52 @@
+{
+    "defaults":
+    {
+        "cronExpressions":
+        [
+            "0 */5 0 ? * * *"
+        ],
+        "prepareScripts":
+        [
+            ""
+        ]
+    },
+    "pipelines":
+    [
+        {
+            "pipelineName": "organization_pipeline",
+            "pipelineDescription": "Pipeline para processar dados de Organization",
+            "outputDataModelName": "organization",
+            "overlapDeltaMinutes": 3600,
+            "saveToCds": true,
+            "saveToUnified": true,
+            "sendToSubscriptions": true,
+            "cronExpressions":
+            [
+                "0 5,15,25,35,45,55 * * * ?"
+            ],
+            "timeZone": "America/Sao_Paulo",
+            "prepareScripts":
+            [
+                ""
+            ],
+            "processScript": "organization.csql",
+            "sourceEntities":
+            {
+                "dataModels":
+                [
+                ],
+                "stagings":
+                [
+                    {
+                        "connectorName": "protheus_carol",
+                        "stagingName": "organization"
+                    },
+                    {
+                        "connectorName": "protheus_carol",
+                        "stagingName": "company"
+                    }
+                ]
+            }
+        }
+    ]
+}

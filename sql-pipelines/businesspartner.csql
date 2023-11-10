@@ -1,0 +1,66 @@
+-- pk: businesspartner_id
+
+CREATE TEMP FUNCTION rejection_rules(arr ANY TYPE) AS (
+    (SELECT [
+        STRUCT( "REJECTION_RULE" as mdmStage,
+                "O campo businesspartner_id é inválido." as mdmErrorMsg,
+                ((record.businesspartner_id is Null) or (record.businesspartner_id = '')) as mdmActive)
+                ,
+        STRUCT( "REJECTION_RULE" as mdmStage,
+                "O campo erp_id é inválido." as mdmErrorMsg,
+                ((record.erp_id is null) or (record.erp_id = '')) as mdmActive)
+                ,
+        STRUCT( "RELATIONSHIP_CONSTRAINT" as mdmStage,
+                "O campo _orgid não existe na ST mapping." as mdmErrorMsg,
+                ((record._orgid is Null) or (record._orgid = '')) as mdmActive)
+                ,
+        STRUCT( "REJECTION_RULE" as mdmStage,
+                "O campo businesspartnergroup_id é inválido." as mdmErrorMsg,
+                ((record.field1 is Null) or (record.field1 = '')) as mdmActive)
+                ,      
+        STRUCT( "REJECTION_RULE" as mdmStage,
+                "O campo alias é inválido." as mdmErrorMsg,
+                ((record.alias is Null) or (record.alias = '')) as mdmActive)
+                ,        
+        STRUCT( "REJECTION_RULE" as mdmStage,
+                "O campo deleted é inválido." as mdmErrorMsg,
+                (record.deleted is Null) as mdmActive)
+    ] FROM UNNEST(arr) AS record)
+);
+
+with sa2_mdbusinesspartner as (
+    SELECT 
+        stg.mdmTenantId as stgTenantId,
+        stg.a2_cgc as _orgid, 
+         `labs-app-mdm-production.a_techfin`.hash(stg.a2_cod, 'mdbusinesspartner_supplier') as businesspartner_id,
+        stg.A2_NREDUZ as alias,
+         `labs-app-mdm-production.a_techfin`.hash(stg.a2_cod, 'mdaddress_supplier') as addres_id,
+         `labs-app-mdm-production.a_techfin`.hash(stg.a2_cod, 'mdbusinesspartnergroup_supplier') as businesspartnergroup_id,
+        stg.a2_cod as protheus_id,
+        false as deleted,
+        stg.a2_cod as erp_id
+        --metadata--
+    from (select * except(ranking) from (select row_number() over (partition by mdmTenantId, a2_cod, a2_cgc ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking, * from stg_protheus_carol_sa2
+    --timestamp-- WHERE mdmCounterForEntity__DATETIME__ > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    ) where ranking = 1 ) as stg
+),
+mdbusinesspartner as (
+    select * from sa2_mdbusinesspartner
+)
+
+SELECT *,
+    (EXISTS(SELECT 1 FROM UNNEST(mdmErrors) WHERE mdmActive = true)) AS mdmDeleted
+FROM
+(
+select dm.* except(alias, stgTenantId),
+REGEXP_REPLACE(dm.alias, r'([^\p{ASCII}]+)', '') AS alias,
+  (rejection_rules(ARRAY((SELECT AS STRUCT  
+      dm.businesspartner_id,
+      dm.erp_id,
+      dm._orgid,
+      dm.businesspartnergroup_id as field1,
+      dm.alias,
+      dm.deleted
+  )))) AS mdmErrors
+  from mdbusinesspartner dm
+)
