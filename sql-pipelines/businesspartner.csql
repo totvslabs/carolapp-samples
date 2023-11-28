@@ -41,7 +41,7 @@ with sa2_mdbusinesspartner as (
         stg.a2_cod as erp_id
         --metadata--
     from (select * except(ranking) from (select row_number() over (partition by mdmTenantId, a2_cod, a2_cgc ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking, * from stg_protheus_carol_sa2
-    --timestamp-- WHERE mdmCounterForEntity__DATETIME__ > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
     ) where ranking = 1 ) as stg
 ),
 mdbusinesspartner as (
