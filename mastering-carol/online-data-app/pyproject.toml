@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "llm-bot-api"
+version = "0.0.1"
+description = ""
+authors = ["Robson Poffo <robson.poffo@totvs.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+goblet-gcp = "^0.11.1"
+lark = "^1.1.5"
+langchain = "^0.0.200"
+tabulate = "^0.9.0"
+google-cloud-aiplatform = "^1.26.0"
+geopandas = "^0.13.2"
+rtree = "^1.0.1"
+geopy = "^2.3.0"
+db-dtypes = "^1.1.1"
+openai = "^0.27.8"
+flask-cors = "^3.0.10"
+pygeos = "^0.14"
+configparser = "^6.0.0"
+pycarol = "^2.54.18"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

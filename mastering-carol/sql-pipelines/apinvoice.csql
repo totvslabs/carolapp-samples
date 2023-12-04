@@ -1,3 +1,23 @@
+CREATE TEMP FUNCTION rejection_rules(arr ANY TYPE) AS (
+    (SELECT [
+        STRUCT( "RELATIONSHIP_CONSTRAINT" as mdmStage,
+                "O campo _orgid não existe na ST mapping." as mdmErrorMsg,
+                ((record._orgid is null) or (record._orgid = '')) as mdmActive)
+                ,
+        STRUCT( "REJECTION_RULE" as mdmStage,
+                "O campo docissue é inválido." as mdmErrorMsg,
+                (record.docissue is Null) as mdmActive)
+                ,
+        STRUCT( "RELATIONSHIP_CONSTRAINT" as mdmStage,
+                "O campo uuid não existe no DM organization." as mdmErrorMsg,
+                (record.uuid is Null) as mdmActive)
+                ,
+        STRUCT( "RELATIONSHIP_CONSTRAINT" as mdmStage,
+                "O campo businesspartner_id não existe no DM mdbusinesspartner." as mdmErrorMsg,
+                (record.businesspartner_id is Null) as mdmActive)
+    ] FROM UNNEST(arr) AS record)
+);
+
 with 
 protheus_mapping as (
     SELECT * EXCEPT(ranking) FROM (
@@ -8,14 +28,16 @@ protheus_mapping as (
 protheus_sharing as (     
     SELECT mdmTenantId, company_group, 
       (SELECT sharing.branch_code_size FROM UNNEST(arr) AS sharing
-        WHERE sharing.table = 'SA1') AS sa1
+        WHERE sharing.table = 'SED') AS sed,
+      (SELECT sharing.branch_code_size FROM UNNEST(arr) AS sharing
+        WHERE sharing.table = 'SA2') AS sa2
     FROM (
         SELECT mdmTenantId, company_group, ARRAY_AGG(stg) AS arr
         FROM (
           SELECT mdmTenantId, mdmDeleted, company_group, `TABLE`, branch_code_size,
             ROW_NUMBER() OVER (PARTITION BY mdmTenantId, company_group, `TABLE` ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking
           FROM stg_protheus_carol_protheus_sharing
-          WHERE `TABLE` IN ('SA1')) stg
+          WHERE `TABLE` IN ('SED','SA2')) stg
         WHERE ranking = 1 AND (mdmDeleted = False OR mdmDeleted IS NULL)
         GROUP BY mdmTenantId, company_group)
 ),
@@ -34,8 +56,17 @@ lookup_mdbusinesspartner as (
 ),
 apinvoice as (
     SELECT 
+        stg.mdmTenantId as stgTenantId,
         mapping.uuid as _orgid,
-         `labs-app-mdm-production.a_techfin`.hash( `labs-app-mdm-production.a_techfin`.businesspartner_id_rule(CAST(sharing.sa1 as int64), stg.company_group, stg.E1_FILIAL, stg.E1_CLIENTE, stg.E1_LOJA), "mdbusinesspartner") as businesspartner_id,
+        --`labs-app-mdm-production.a_techfin`.hash( `labs-app-mdm-production.a_techfin`.businesspartner_id_rule(SAFE_CAST(if(trim(stg.company_group) = '', '0', stg.company_group) as int64), stg.company_group, stg.E2_FILIAL, stg.E2_FORNECE, stg.E2_LOJA), "mdbusinesspartner_supplier") as businesspartner_id,
+        --`labs-app-mdm-production.a_techfin`.hash( `labs-app-mdm-production.a_techfin`.businesspartner_id_rule(CAST(sharing.sa2 as int64), stg.company_group, stg.E2_FILIAL, stg.E2_FORNECE, stg.E2_LOJA), "mdbusinesspartner_supplier") as businesspartner_id,
+        `labs-app-mdm-production.a_techfin`.hash( `labs-app-mdm-production.a_techfin`.businesspartner_id_rule( CAST(sharing.sa2 as int64), 
+                                                                                                                stg.company_group, 
+                                                                                                                stg.E2_FILIAL, 
+                                                                                                                stg.E2_FORNECE, 
+                                                                                                                stg.E2_LOJA
+                                                                                                              ), 
+                                                                                                              "mdbusinesspartner_supplier") as businesspartner_id,
         stg.E2_NUM as docreference,
          `labs-app-mdm-production.a_techfin`.hash(CONCAT(stg.company_group,"|", RTRIM(stg.E2_FILIAL),"|", RTRIM(stg.E2_PREFIXO),"|", RTRIM(stg.E2_NUM),"|", RTRIM(stg.E2_FORNECE), "|", RTRIM(stg.E2_LOJA), "|", RTRIM(stg.E2_TIPO)), "apinvoice") as invoice_id,
         CONCAT(FORMAT_TIMESTAMP("%FT%R:%E3S", TIMESTAMP (DATETIME_ADD( `labs-app-mdm-production.a_techfin`.safe_date_as_datetime("%Y%m%d", stg.E2_EMISSAO), INTERVAL 3 HOUR))), "Z") as docissue,
@@ -49,14 +80,14 @@ apinvoice as (
     --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
     ) where ranking = 1 ) stg
     left join protheus_mapping as mapping
-      on mapping.mdmTenantId = stg.mdmTenantId
-        and mapping.company_group = stg.company_group
+      --on mapping.mdmTenantId = stg.mdmTenantId
+        on mapping.company_group = stg.company_group
         and mapping.company = coalesce(stg.company,'')
         and mapping.unity = coalesce(stg.unity,'')
         and mapping.branch = stg.branch
     left join protheus_sharing as sharing
-      on sharing.mdmTenantId = stg.mdmTenantId
-        and sharing.company_group = stg.company_group
+      --on sharing.mdmTenantId = stg.mdmTenantId
+        on sharing.company_group = stg.company_group
     WHERE NOT ENDS_WITH(E2_TIPO, '-')
 )
 

@@ -1,0 +1,39 @@
+{
+    "online": {
+        "processes": [{
+          "algorithmDescription": {
+            "en-US": "LLM Bot"
+          },
+          "algorithmName": "alg_llmbot",
+          "algorithmTitle": {
+            "en-US": "LLM Bot"
+          },
+          "instanceProperties": {
+            "profile": "",
+            "properties": {
+              "instanceType": "c1.small",
+              "dockerImage": "llmbot",
+              "autoscale": {
+                "enabled": true,
+                "minReplicas": 1,
+                "maxReplicas": 2
+              },
+              "healthcheck": {
+                "path": "/health"
+              },
+              "port": 8080,
+              "preemptible": true
+            }
+          },
+          "name": "llmbot_app"
+        }]
+      },
+    "docker": [{
+      "dockerName": "llmbot",
+      "dockerTag": "0.1.0",
+      "gitBranch": "master",
+      "gitPath": "/apps/labs/llm-bot",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/totvslabs/data-engineers"
+    }]
+  }

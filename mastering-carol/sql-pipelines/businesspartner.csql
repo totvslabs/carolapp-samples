@@ -32,7 +32,8 @@ with sa2_mdbusinesspartner as (
     SELECT 
         stg.mdmTenantId as stgTenantId,
         stg.a2_cgc as _orgid, 
-         `labs-app-mdm-production.a_techfin`.hash(stg.a2_cod, 'mdbusinesspartner_supplier') as businesspartner_id,
+        --`labs-app-mdm-production.a_techfin`.hash(stg.a2_cod, 'mdbusinesspartner_supplier') as businesspartner_id,
+        `labs-app-mdm-production.a_techfin`.hash(stg.protheus_pk, "mdbusinesspartner_supplier")      As businesspartner_id,--Mantem compativel a PK, com a que esta sendo geradda no DM antigo
         stg.A2_NREDUZ as alias,
          `labs-app-mdm-production.a_techfin`.hash(stg.a2_cod, 'mdaddress_supplier') as addres_id,
          `labs-app-mdm-production.a_techfin`.hash(stg.a2_cod, 'mdbusinesspartnergroup_supplier') as businesspartnergroup_id,
