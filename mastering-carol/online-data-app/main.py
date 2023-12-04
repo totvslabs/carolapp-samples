@@ -42,11 +42,11 @@ goblet_entrypoint(app)
 app.log.info('Right after starting the server!')
 
 def getData():
-    client = bigquery.Client(project='carol-5cdd6773b30644ff851b')
+    client = bigquery.Client(project='carol-00b66d7bb91a4e43ae8e')
 
     sql_query = f'''
 SELECT *
-FROM `carol-5cdd6773b30644ff851b.5cdd6773b30644ff851b4d4e4d878fcc.deduplicated_apinvoice`
+FROM `carol-00b66d7bb91a4e43ae8e.00b66d7bb91a4e43ae8e17649fb1a8fb.deduplicated_apinvoice`
 '''
 
     df = client.query(sql_query).to_dataframe()
