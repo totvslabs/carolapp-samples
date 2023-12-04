@@ -1,0 +1,642 @@
+{
+    "description": {
+        "en-US": ""
+    },
+    "entityTemplateName": "organization",
+    "entityTemplateType": [
+        {
+            "mdmDescription": {
+                "en-US": "Organization",
+                "pt-BR": "Empresa"
+            },
+            "mdmEntityType": "mdmEntityTemplateType",
+            "mdmId": "b4c1948c087fafc89a88450fcbb64c77",
+            "mdmModelEntityTemplateId": "",
+            "mdmName": "organization",
+            "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+        }
+    ],
+    "entityValidationRules": [],
+    "evictStaging": true,
+    "fieldMergeRules": [
+        [
+            {
+                "mdmConsiderEmpty": false,
+                "mdmEntityType": "mdmFieldMergeRule",
+                "mdmFuzzyConfiguration": {
+                    "mdmAutomaticThreshold": 0,
+                    "mdmRecommendationThreshold": 0
+                },
+                "mdmId": "0d2babc3788f49fca9f1ccedcbf15f2b",
+                "mdmMasterEntityId": "e4297231b2894bea85f1b2f19b1f608c",
+                "mdmMasterFieldId": "93ef7fe8be3d488c9e11644b5324e997",
+                "mdmMergeType": "EXACT_MATCH",
+                "mdmState": "NOT_CHANGED",
+                "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+            }
+        ]
+    ],
+    "fields": [
+        {
+            "mdmCustomDescription": {
+                "en-US": "uuid/guid de identificação da Organização."
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "uuid"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "298d4bd388c743b0b2f98cf807430fe7",
+                "04c37fa9d34d4d6d9bcfa2a9b213576f"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "93ef7fe8be3d488c9e11644b5324e997",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "value from the selected connector",
+                            "pt-BR": "valor de um connector específico"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                        "mdmLabel": {
+                            "en-US": "Connector"
+                        },
+                        "mdmName": "CONNECTOR",
+                        "mdmParameters": [
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select connector",
+                                    "pt-BR": "selecione um connector"
+                                },
+                                "name": "Connector",
+                                "optionValues": [],
+                                "required": true,
+                                "type": "STRING"
+                            },
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select staging type",
+                                    "pt-BR": "selecione um staging type"
+                                },
+                                "name": "Staging type",
+                                "optionValues": [],
+                                "required": false,
+                                "type": "STRING"
+                            }
+                        ],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                    "mdmId": "298d4bd388c743b0b2f98cf807430fe7",
+                    "mdmParameterValues": [
+                        "9dcd6c2ab0434248bfc0d77f34b84f61",
+                        "organization"
+                    ],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                },
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "93ef7fe8be3d488c9e11644b5324e997",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "04c37fa9d34d4d6d9bcfa2a9b213576f",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHidden": false,
+            "mdmId": "93ef7fe8be3d488c9e11644b5324e997",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "string",
+            "mdmMappings": [],
+            "mdmName": "uuid",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "Nome da organização"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "name"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "9f64a27c5dba466981ebc2e808694a38",
+                "aa5aee9373f6405982ef23ace620a8d5"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "c18f9847d3cc4d6b817a0e178d46530b",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "value from the selected connector",
+                            "pt-BR": "valor de um connector específico"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                        "mdmLabel": {
+                            "en-US": "Connector"
+                        },
+                        "mdmName": "CONNECTOR",
+                        "mdmParameters": [
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select connector",
+                                    "pt-BR": "selecione um connector"
+                                },
+                                "name": "Connector",
+                                "optionValues": [],
+                                "required": true,
+                                "type": "STRING"
+                            },
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select staging type",
+                                    "pt-BR": "selecione um staging type"
+                                },
+                                "name": "Staging type",
+                                "optionValues": [],
+                                "required": false,
+                                "type": "STRING"
+                            }
+                        ],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                    "mdmId": "9f64a27c5dba466981ebc2e808694a38",
+                    "mdmParameterValues": [
+                        "9dcd6c2ab0434248bfc0d77f34b84f61"
+                    ],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                },
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "c18f9847d3cc4d6b817a0e178d46530b",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "aa5aee9373f6405982ef23ace620a8d5",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHidden": false,
+            "mdmId": "c18f9847d3cc4d6b817a0e178d46530b",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "string",
+            "mdmMappings": [],
+            "mdmName": "name",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "Apelido da organização"
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "alias"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "ca424aae88084bdaabfe1ebdb30fc4cc",
+                "1accad24e3654facb4002e1dcc73fcac"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "19ee582c0c664ba5bb52935997dc1205",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "value from the selected connector",
+                            "pt-BR": "valor de um connector específico"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                        "mdmLabel": {
+                            "en-US": "Connector"
+                        },
+                        "mdmName": "CONNECTOR",
+                        "mdmParameters": [
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select connector",
+                                    "pt-BR": "selecione um connector"
+                                },
+                                "name": "Connector",
+                                "optionValues": [],
+                                "required": true,
+                                "type": "STRING"
+                            },
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select staging type",
+                                    "pt-BR": "selecione um staging type"
+                                },
+                                "name": "Staging type",
+                                "optionValues": [],
+                                "required": false,
+                                "type": "STRING"
+                            }
+                        ],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                    "mdmId": "ca424aae88084bdaabfe1ebdb30fc4cc",
+                    "mdmParameterValues": [
+                        "9dcd6c2ab0434248bfc0d77f34b84f61",
+                        "organization"
+                    ],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                },
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "19ee582c0c664ba5bb52935997dc1205",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "1accad24e3654facb4002e1dcc73fcac",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHidden": false,
+            "mdmId": "19ee582c0c664ba5bb52935997dc1205",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "string",
+            "mdmMappings": [],
+            "mdmName": "alias",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        },
+        {
+            "mdmCustomDescription": {
+                "en-US": "Id de identificação no país de origem da organização. Este campo pode receber valores nulos."
+            },
+            "mdmCustomEnumValues": [],
+            "mdmCustomLabel": {
+                "en-US": "federalId"
+            },
+            "mdmEnableAddressCleansing": false,
+            "mdmFieldSurvivorshipRuleIds": [
+                "566701954ab448d19458b9604b1160de",
+                "70fdfdd3461a4ab799700586a87b61e5"
+            ],
+            "mdmFieldSurvivorshipRules": [
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "22a09e15b717415eb1bcfaba684e8f20",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "value from the selected connector",
+                            "pt-BR": "valor de um connector específico"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                        "mdmLabel": {
+                            "en-US": "Connector"
+                        },
+                        "mdmName": "CONNECTOR",
+                        "mdmParameters": [
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select connector",
+                                    "pt-BR": "selecione um connector"
+                                },
+                                "name": "Connector",
+                                "optionValues": [],
+                                "required": true,
+                                "type": "STRING"
+                            },
+                            {
+                                "controlType": "DROPDOWN",
+                                "defaultValue": "",
+                                "description": {
+                                    "en-US": "select staging type",
+                                    "pt-BR": "selecione um staging type"
+                                },
+                                "name": "Staging type",
+                                "optionValues": [],
+                                "required": false,
+                                "type": "STRING"
+                            }
+                        ],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "0ec0a3f8aade8993f11fedcbaa0d8db6",
+                    "mdmId": "566701954ab448d19458b9604b1160de",
+                    "mdmParameterValues": [
+                        "9dcd6c2ab0434248bfc0d77f34b84f61",
+                        "organization"
+                    ],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                },
+                {
+                    "mdmEntityTemplateId": "e4297231b2894bea85f1b2f19b1f608c",
+                    "mdmEntityType": "mdmFieldSurvivorshipRule",
+                    "mdmFieldId": "22a09e15b717415eb1bcfaba684e8f20",
+                    "mdmFunction": {
+                        "mdmDescription": {
+                            "en-US": "the most recent value",
+                            "pt-BR": "o valor mais recente"
+                        },
+                        "mdmEntityType": "mdmSurvivorshipFunction",
+                        "mdmId": "27439baa3c0bbf323ca50b46fb95ea51",
+                        "mdmLabel": {
+                            "en-US": "Recency"
+                        },
+                        "mdmName": "RECENCY",
+                        "mdmParameters": [],
+                        "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+                    },
+                    "mdmFunctionId": "27439baa3c0bbf323ca50b46fb95ea51",
+                    "mdmId": "70fdfdd3461a4ab799700586a87b61e5",
+                    "mdmParameterValues": [],
+                    "mdmParentFieldId": "",
+                    "mdmState": "NOT_CHANGED",
+                    "mdmSurviveUsingFieldName": "",
+                    "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+                }
+            ],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFlagRuleIds": [],
+            "mdmFlagRules": [],
+            "mdmForeignKeyField": false,
+            "mdmHasMapping": false,
+            "mdmHidden": false,
+            "mdmId": "22a09e15b717415eb1bcfaba684e8f20",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmMappingDataType": "string",
+            "mdmMappings": [],
+            "mdmName": "federalid",
+            "mdmRequiredBy": "",
+            "mdmSizeLimit": 2048,
+            "mdmSkipRuleIds": [],
+            "mdmSkipRules": [],
+            "mdmTags": []
+        }
+    ],
+    "fieldsFull": {
+        "alias": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {},
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "19ee582c0c664ba5bb52935997dc1205",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "alias"
+            },
+            "mdmMappingDataType": "string",
+            "mdmName": "alias",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+        },
+        "federalid": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {},
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "22a09e15b717415eb1bcfaba684e8f20",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "federalId"
+            },
+            "mdmMappingDataType": "string",
+            "mdmName": "federalid",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+        },
+        "uuid": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {},
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "93ef7fe8be3d488c9e11644b5324e997",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "uuid"
+            },
+            "mdmMappingDataType": "string",
+            "mdmName": "uuid",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+        },
+        "name": {
+            "mdmAnalyzer": "standard",
+            "mdmDescription": {
+                "en-US": "Name"
+            },
+            "mdmEntityType": "mdmField",
+            "mdmEnumValues": [],
+            "mdmFieldType": "PRIMITIVE",
+            "mdmFields": [],
+            "mdmFieldsFull": {},
+            "mdmForeignKeyField": false,
+            "mdmHidden": false,
+            "mdmId": "c18f9847d3cc4d6b817a0e178d46530b",
+            "mdmIndex": "analyzed",
+            "mdmInternalField": false,
+            "mdmIsDateOnly": false,
+            "mdmLabel": {
+                "en-US": "Name"
+            },
+            "mdmMappingDataType": "string",
+            "mdmName": "name",
+            "mdmSizeLimit": 2048,
+            "mdmTags": [],
+            "mdmTenantId": "5cdd6773b30644ff851b4d4e4d878fcc"
+        }
+    },
+    "groupName": "TechFin Carol",
+    "label": {
+        "en-US": "fndOrganization"
+    },
+    "mdmClusterAndPartitioningBqOptions": {
+        "mdmClusteringBqOptions": {
+            "fieldsSelected": [
+                {
+                    "name": "mdmTenantId",
+                    "type": "string"
+                },
+                {
+                    "name": "mdmId",
+                    "type": "string"
+                }
+            ]
+        },
+        "mdmDefaultBqOptions": true,
+        "mdmPartitionBqOptions": {
+            "fieldName": "_ingestionDatetime",
+            "fieldType": "date",
+            "partitionedBy": "TIME_UNIT_COLUMN",
+            "unitTime": "DAILY"
+        }
+    },
+    "profileTitleFields": [],
+    "retentionField": "null",
+    "snapshotCreationTime": "2023-12-04T06:40:55.381Z",
+    "storageTypes": {
+        "CDS": {
+            "mdmEnabled": true,
+            "mdmRetentionEnabled": false,
+            "mdmRetentionPeriod": 0,
+            "mdmStorageType": "CDS",
+            "mdmTimeZone": "America/New_York"
+        }
+    },
+    "tags": [],
+    "verticals": [
+        {
+            "mdmDescription": {
+                "en-US": "Services",
+                "pt-BR": "Serviços"
+            },
+            "mdmEntityType": "mdmVertical",
+            "mdmId": "1fece0cb254f1f45891bc9ee9fed72a9",
+            "mdmName": "crm",
+            "mdmTenantId": "8cd6e43115e9416eb23609486fa053e3"
+        }
+    ]
+}
