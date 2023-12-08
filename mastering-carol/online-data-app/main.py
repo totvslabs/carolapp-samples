@@ -24,12 +24,12 @@ carol = Carol()
 app = Apps(carol)
 settings = app.get_settings()
 
-if not os.path.exists(os.environ["GOOGLE_APPLICATION_CREDENTIALS"]):
-    service_account = settings['g_serviceaccount']
-    with open(os.environ["GOOGLE_APPLICATION_CREDENTIALS"], "w") as json_file:
-        json.dump(json.loads(service_account), json_file, indent=4)
-else:
-    logging.info('using the standard file for Google SA.')
+# if not os.path.exists(os.environ["GOOGLE_APPLICATION_CREDENTIALS"]):
+#     service_account = settings['g_serviceaccount']
+#     with open(os.environ["GOOGLE_APPLICATION_CREDENTIALS"], "w") as json_file:
+#         json.dump(json.loads(service_account), json_file, indent=4)
+# else:
+#     logging.info('using the standard file for Google SA.')
 
 os.environ["OPENAI_ORGANIZATION"] = settings['openai_organization']
 os.environ["OPENAI_API_KEY"] = settings['openai_api_key']
