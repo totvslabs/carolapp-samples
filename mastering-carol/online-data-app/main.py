@@ -31,6 +31,9 @@ if not os.path.exists(os.environ["GOOGLE_APPLICATION_CREDENTIALS"]):
 else:
     logging.info('using the standard file for Google SA.')
 
+os.environ["OPENAI_ORGANIZATION"] = settings['openai_organization']
+os.environ["OPENAI_API_KEY"] = settings['openai_api_key']
+
 logging.info('Before starting the server!')
 
 # Goblet App
