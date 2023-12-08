@@ -103,7 +103,7 @@ Question:
     response = jsonify({"status": "OK", "q": q, "askedQuestion": question, "response": agentResponse, "elapsedTimeGetData": (end_time_data - start_time), "elapsedTime": (end_time - start_time), "now": datetime.datetime.now().isoformat()})
     return response
 
-@app.route("/health", methods=["GET"])
+@app.route("/health", methods=["GET", "POST"])
 def health():
     start_time = time.time()
     end_time = time.time()
