@@ -7,7 +7,7 @@
     {
       "pipelineName": "businesspartner_pipeline",
       "pipelineDescription": "Pipeline para processar dados de Business Partner",
-      "outputDataModelName": "businesspartner",
+      "outputDataModelName": "mdbusinesspartner",
       "overlapDeltaMinutes": 3600,
       "saveToCds": true,
       "saveToUnified": true,
