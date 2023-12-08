@@ -1,48 +1,30 @@
 {
-    "defaults":
+  "defaults": {
+    "cronExpressions": ["0 0 * * * ?"],
+    "prepareScripts": [""]
+  },
+  "pipelines": [
     {
-        "cronExpressions":
-        [
-            "0 0 * * * ?"
-        ],
-        "prepareScripts":
-        [
-            ""
+      "pipelineName": "businesspartner_pipeline",
+      "pipelineDescription": "Pipeline para processar dados de Business Partner",
+      "outputDataModelName": "businesspartner",
+      "overlapDeltaMinutes": 3600,
+      "saveToCds": true,
+      "saveToUnified": true,
+      "sendToSubscriptions": true,
+      "cronExpressions": ["0 0 * * * ?"],
+      "timeZone": "America/Sao_Paulo",
+      "prepareScripts": [""],
+      "processScript": "businesspartner.csql",
+      "sourceEntities": {
+        "dataModels": [],
+        "stagings": [
+          {
+            "connectorName": "protheus_carol",
+            "stagingName": "sa2"
+          }
         ]
-    },
-    "pipelines":
-    [
-        {
-            "pipelineName": "businesspartner_pipeline",
-            "pipelineDescription": "Pipeline para processar dados de Business Partner",
-            "outputDataModelName": "businesspartner",
-            "overlapDeltaMinutes": 3600,
-            "saveToCds": true,
-            "saveToUnified": true,
-            "sendToSubscriptions": true,
-            "cronExpressions":
-            [
-                "0 0 * * * ?"
-            ],
-            "timeZone": "America/Sao_Paulo",
-            "prepareScripts":
-            [
-                ""
-            ],
-            "processScript": "businesspartner.csql",
-            "sourceEntities":
-            {
-                "dataModels":
-                [
-                ],
-                "stagings":
-                [
-                    {
-                        "connectorName": "protheus_carol",
-                        "stagingName": "sa2"
-                    }
-                ]
-            }
-        }
-    ]
+      }
+    }
+  ]
 }
