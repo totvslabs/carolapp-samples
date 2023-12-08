@@ -15,7 +15,7 @@
             "instanceType": "c1.small",
             "dockerImage": "online-data-app",
             "autoscale": {
-              "enabled": true,
+              "enabled": false,
               "minReplicas": 1,
               "maxReplicas": 2
             },
