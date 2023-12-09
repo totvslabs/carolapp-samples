@@ -25,6 +25,28 @@
           }
         ]
       }
-    }
+    },
+    {
+        "pipelineName": "organization_pipeline",
+        "pipelineDescription": "Pipeline para processar dados de Organization",
+        "outputDataModelName": "organization",
+        "overlapDeltaMinutes": 3600,
+        "saveToCds": false,
+        "saveToUnified": true,
+        "sendToSubscriptions": true,
+        "cronExpressions": ["0 0 * * * ?"],
+        "timeZone": "America/Sao_Paulo",
+        "prepareScripts": [""],
+        "processScript": "organization.csql",
+        "sourceEntities": {
+          "dataModels": [],
+          "stagings": [
+            {
+              "connectorName": "protheus_carol",
+              "stagingName": "organization"
+            }
+          ]
+        }
+      }
   ]
 } 
