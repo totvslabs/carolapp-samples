@@ -9,7 +9,7 @@
       "pipelineDescription": "Pipeline para processar dados de Business Partner",
       "outputDataModelName": "mdbusinesspartner",
       "overlapDeltaMinutes": 3600,
-      "saveToCds": true,
+      "saveToCds": false,
       "saveToUnified": true,
       "sendToSubscriptions": true,
       "cronExpressions": ["0 0 * * * ?"],
