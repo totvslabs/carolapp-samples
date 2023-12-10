@@ -5,6 +5,7 @@
   },
   "pipelines": [
     {
+      "useBatchNotification": true,
       "pipelineName": "businesspartner_pipeline",
       "pipelineDescription": "Pipeline para processar dados de Business Partner",
       "outputDataModelName": "mdbusinesspartner",
@@ -27,6 +28,7 @@
       }
     },
     {
+        "useBatchNotification": true,
         "pipelineName": "organization_pipeline",
         "pipelineDescription": "Pipeline para processar dados de Organization",
         "outputDataModelName": "organization",
