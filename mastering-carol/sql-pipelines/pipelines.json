@@ -46,6 +46,14 @@
             {
               "connectorName": "protheus_carol",
               "stagingName": "organization"
+            },
+            {
+              "connectorName": "protheus_carol",
+              "stagingName": "company"
+            },
+            {
+              "connectorName": "protheus_carol",
+              "stagingName": "se2"
             }
           ]
         }
