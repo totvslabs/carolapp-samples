@@ -13,7 +13,7 @@
           "profile": "",
           "properties": {
             "instanceType": "c1.small",
-            "dockerImage": "online-data-app",
+            "dockerImage": "customerdataappp/online-data-app",
             "autoscale": {
               "enabled": false,
               "minReplicas": 1,

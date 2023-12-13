@@ -1,0 +1,34 @@
+{
+  "batch": {
+    "processes": [
+      {
+        "algorithmDescription": {
+          "en-US": "Linear Regression Model"
+        },
+        "algorithmName": "batch_data",
+        "algorithmTitle": {
+          "en-US": "Linear Regression Model"
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "instanceType": "c1.small",
+            "dockerImage": "customerdataappp/batch-data-app",
+            "preemptible": true
+          }
+        },
+        "name": "batch_data"
+      }
+    ]
+  },
+  "docker": [
+    {
+      "dockerName": "batch-data-app",
+      "dockerTag": "0.1.0",
+      "gitBranch": "master",
+      "gitPath": "/mastering-carol/batch-data-app",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples"
+    }
+  ]
+}

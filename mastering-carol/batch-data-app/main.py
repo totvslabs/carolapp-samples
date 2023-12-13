@@ -5,14 +5,16 @@ from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
+
 import matplotlib.pyplot as plt
+import numpy as np
 
 import logging
 
 from google.cloud import bigquery
 from dotenv import load_dotenv
 from pycarol.apps import Apps
-from pycarol import Carol
+from pycarol import Carol, Staging
 
 load_dotenv(".env")
 
@@ -96,4 +98,22 @@ plt.scatter(y_test, y_pred)
 plt.xlabel('Actual Values')
 plt.ylabel('Predicted Values')
 plt.title('Actual vs Predicted Values')
-plt.show()
+# plt.show()
+
+columns = [
+    'dt_invoice_weekday',
+    'businesspartner_id_fa426a07b9b70daaedbd7c85fd53901c',
+    'businesspartner_id_fd2b7dbe63b9cfc558eca54f494db2c2',
+    'predictValue'
+]
+
+df = pd.DataFrame(X_test, columns=columns[:-1])  # Exclude the last column from data_array
+df[columns[-1]] = y_pred
+df['executionDate'] = pd.Timestamp('now')
+df['rowNumber'] = np.arange(df.shape[0])
+
+print(df)
+
+staging = Staging(Carol())
+staging.send_data(staging_name = 'execution_history', data = df, step_size = 2,
+                 connector_id='f673daea3af94179b06b1db79b979430', print_stats = True)
