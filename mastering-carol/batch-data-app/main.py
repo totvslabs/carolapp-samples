@@ -1,5 +1,6 @@
 # Import necessary libraries
 import pandas as pd
+import os
 
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
@@ -20,6 +21,10 @@ load_dotenv(".env")
 
 carol = Carol()
 app = Apps(carol)
+settings = app.get_settings()
+
+os.environ["OPENAI_ORGANIZATION"] = settings['openai_organization']
+os.environ["OPENAI_API_KEY"] = settings['openai_api_key']
 
 client = bigquery.Client(project='carol-00b66d7bb91a4e43ae8e')
 
