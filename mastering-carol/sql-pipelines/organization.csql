@@ -17,7 +17,7 @@ with company_fndorganization as (
         org.federalid as federalid,
         stg.mdmCounterForEntity as _counter,
          `labs-app-mdm-production.a_techfin`.mdmIdStaging(stg.mdmConnectorId, 'company_organization', CONCAT('{"emitente":{"path":"', lower(path), '"}}')) as mdmStagingRecord
-        --metadataNoId--
+        --metadataNoId-v2--
     from  (select * except(ranking) from (select row_number() over (partition by mdmTenantId, mdmId ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking, * from stg_protheus_carol_company
     --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
     ) where ranking = 1 ) as stg
@@ -34,7 +34,7 @@ organization_fndorganization as (
         stg.federalid as federalid,
         stg.mdmCounterForEntity as _counter,
          `labs-app-mdm-production.a_techfin`.mdmIdStaging(stg.mdmConnectorId, 'organization_map', CONCAT('{"pk":{"uuid":"', lower(stg.uuid), '"}}')) as mdmStagingRecord
-        --metadataNoId--
+        --metadataNoId-v2--
     from (select * except(ranking) from (select row_number() over (partition by mdmTenantId, mdmId ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking, * from stg_protheus_carol_organization
     --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
     ) where ranking = 1 ) as stg

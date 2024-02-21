@@ -75,7 +75,7 @@ apinvoice as (
         stg.E2_TIPO as transactiontype,
         false as deleted,
          `labs-app-mdm-production.a_techfin`.mdmIdStaging(stg.mdmConnectorId, 'se2_invoice', CONCAT('{"se2_invoice":{"e2_filial":"', (stg.E2_FILIAL), '","e2_fornece":"', (stg.E2_FORNECE), '","e2_loja":"', (stg.E2_LOJA), '","e2_num":"', (stg.E2_NUM), '","e2_prefixo":"', (stg.E2_PREFIXO), '","e2_tipo":"', (stg.E2_TIPO), '","company_group":"', (stg.company_group) ,'"}}')) as mdmStagingRecord
-        --metadataNoId--
+        --metadataNoId-v2--
     from (select * except(ranking) from (select row_number() over (partition by company_group, rtrim(E2_FILIAL), rtrim(E2_FORNECE), rtrim(E2_LOJA), rtrim(E2_NUM), rtrim(E2_PREFIXO), rtrim(E2_TIPO) ORDER BY mdmCounterForEntity DESC) ranking, * from stg_protheus_carol_se2
     --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
     ) where ranking = 1 ) stg

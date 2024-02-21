@@ -30,7 +30,7 @@
     {
         "useBatchNotification": true,
         "pipelineName": "organization_pipeline",
-        "pipelineDescription": "Pipeline para processar dados de Organization",
+        "pipelineDescription": "Pipeline para processar dados de Organization.",
         "outputDataModelName": "organization",
         "overlapDeltaMinutes": 60,
         "saveToCds": false,
