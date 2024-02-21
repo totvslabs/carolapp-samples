@@ -28,29 +28,6 @@
       }
     },
     {
-      "useBatchNotification": true,
-      "pipelineName": "pipedemo",
-      "pipelineDescription": "Pipeline durante demo Carol",
-      "outputDataModelName": "organization",
-      "overlapDeltaMinutes": 60,
-      "saveToCds": false,
-      "saveToUnified": true,
-      "sendToSubscriptions": true,
-      "cronExpressions": ["0 0 * * * ?"],
-      "timeZone": "America/Sao_Paulo",
-      "prepareScripts": [""],
-      "processScript": "pipedemo.csql",
-      "sourceEntities": {
-        "dataModels": [],
-        "stagings": [
-          {
-            "connectorName": "protheus_carol",
-            "stagingName": "sa2"
-          }
-        ]
-      }
-    },
-    {
         "useBatchNotification": true,
         "pipelineName": "organization_pipeline",
         "pipelineDescription": "Pipeline para processar dados de Organization",
