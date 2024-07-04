@@ -1,0 +1,48 @@
+WITH organization_organization AS (
+  SELECT
+    stg.uuid as uuid,
+    null AS name,
+    null AS alias,
+    null AS federalid
+    --metadata--
+  FROM (
+    SELECT * EXCEPT(ranking)
+    FROM (
+      SELECT ROW_NUMBER() OVER (partition BY mdmId ORDER BY mdmCounterForEntity DESC) ranking, *
+      FROM stg_protheus_carol_organization
+      --timestamp-- WHERE mdmCounterForEntity__DATETIME__ > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    )
+    WHERE ranking = 1
+  ) AS stg
+),
+company_organization AS (
+  SELECT
+    stg.uuid as uuid,
+    null AS name,
+    null AS alias,
+    null AS federalid
+    --metadata--
+  FROM (
+    SELECT * EXCEPT(ranking)
+    FROM (
+      SELECT ROW_NUMBER() OVER (partition BY mdmId ORDER BY mdmCounterForEntity DESC) ranking, *
+      FROM stg_protheus_carol_company
+      --timestamp-- WHERE mdmCounterForEntity__DATETIME__ > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    )
+    WHERE ranking = 1
+  ) AS stg
+),
+combinedSources AS (
+  SELECT * FROM organization_organization
+  -- UNION ALL
+  -- SELECT * FROM company_organization
+),
+processedData AS (
+  SELECT *
+  FROM combinedSources
+  -- WHERE
+  -- rejection rules
+)
+
+SELECT * FROM processedData
+
