@@ -28,6 +28,33 @@
       }
     },
     {
+      "useBatchNotification": false,
+      "pipelineName": "pipeline_demo",
+      "pipelineDescription": "Pipeline Overview Carol.",
+      "outputDataModelName": "organization",
+      "overlapDeltaMinutes": 60,
+      "saveToCds": false,
+      "saveToUnified": true,
+      "sendToSubscriptions": true,
+      "cronExpressions": ["0 0 * * * ?"],
+      "timeZone": "America/Sao_Paulo",
+      "prepareScripts": [""],
+      "processScript": "teste-overview-carol.csql",
+      "sourceEntities": {
+        "dataModels": [],
+        "stagings": [
+          {
+            "connectorName": "protheus_carol",
+            "stagingName": "organization"
+          },
+          {
+            "connectorName": "protheus_carol",
+            "stagingName": "company"
+          }
+        ]
+      }
+    },
+    {
         "useBatchNotification": false,
         "pipelineName": "organization_pipeline",
         "pipelineDescription": "Pipeline para processar dados de Organization.",
