@@ -34,8 +34,8 @@ company_organization AS (
 ),
 combinedSources AS (
   SELECT * FROM organization_organization
-  -- UNION ALL
-  -- SELECT * FROM company_organization
+  UNION ALL
+  SELECT * FROM company_organization
 ),
 processedData AS (
   SELECT *
