@@ -6,6 +6,7 @@
   "pipelines": [
     {
       "useBatchNotification": false,
+      "checkExistsDataToProcess": true,
       "pipelineName": "businesspartner_pipeline",
       "pipelineDescription": "Pipeline para processar dados de Business Partner",
       "outputDataModelName": "mdbusinesspartner",
