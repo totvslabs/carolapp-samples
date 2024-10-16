@@ -1,0 +1,70 @@
+{
+  "defaults": {
+    "cronExpressions": ["0 0 * * * ?"],
+    "prepareScripts": [""]
+  },
+  "pipelines": [
+    {
+      "useBatchNotification": false,
+      "checkExistsDataToProcess": true,
+      "pipelineName": "businesspartner_pipeline",
+      "pipelineDescription": "Pipeline para processar dados de Business Partner",
+      "outputDataModelName": "mdbusinesspartner",
+      "overlapDeltaMinutes": 60,
+      "saveToCds": false,
+      "saveToUnified": true,
+      "sendToSubscriptions": true,
+      "cronExpressions": ["0 0 * * * ?"],
+      "timeZone": "America/Sao_Paulo",
+      "prepareScripts": [""],
+      "processScript": "businesspartner.csql",
+      "sourceEntities": {
+        "dataModels": [],
+        "stagings": [
+          {
+            "connectorName": "protheus_carol",
+            "stagingName": "sa1"
+          },
+          {
+            "connectorName": "protheus_carol",
+            "stagingName": "se1"
+          }
+        ]
+      }
+    },
+    {
+        "useBatchNotification": false,
+        "pipelineName": "organization_pipeline",
+        "pipelineDescription": "Pipeline para processar dados de Organization.",
+        "outputDataModelName": "organization",
+        "overlapDeltaMinutes": 60,
+        "saveToCds": false,
+        "saveToUnified": true,
+        "sendToSubscriptions": true,
+        "cronExpressions": ["0 0 * * * ?"],
+        "timeZone": "America/Sao_Paulo",
+        "additionalParameters" : {
+          "manifestVersion": "v2"
+        },
+        "prepareScripts": [""],
+        "processScript": "organization.csql",
+        "sourceEntities": {
+          "dataModels": [],
+          "stagings": [
+            {
+              "connectorName": "protheus_carol",
+              "stagingName": "organization"
+            },
+            {
+              "connectorName": "protheus_carol",
+              "stagingName": "company"
+            },
+            {
+              "connectorName": "protheus_carol",
+              "stagingName": "se2"
+            }
+          ]
+        }
+      }
+  ]
+} 
