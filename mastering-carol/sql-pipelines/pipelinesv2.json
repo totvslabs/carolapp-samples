@@ -1,70 +1,147 @@
 {
-  "defaults": {
-    "cronExpressions": ["0 0 * * * ?"],
-    "prepareScripts": [""]
-  },
-  "pipelines": [
+    "version": "V2",
+    "defaults":
     {
-      "useBatchNotification": false,
-      "checkExistsDataToProcess": true,
-      "pipelineName": "businesspartner_pipeline",
-      "pipelineDescription": "Pipeline para processar dados de Business Partner",
-      "outputDataModelName": "mdbusinesspartner",
-      "overlapDeltaMinutes": 60,
-      "saveToCds": false,
-      "saveToUnified": true,
-      "sendToSubscriptions": true,
-      "cronExpressions": ["0 0 * * * ?"],
-      "timeZone": "America/Sao_Paulo",
-      "prepareScripts": [""],
-      "processScript": "businesspartner.csql",
-      "sourceEntities": {
-        "dataModels": [],
-        "stagings": [
-          {
-            "connectorName": "protheus_carol",
-            "stagingName": "sa1"
-          },
-          {
-            "connectorName": "protheus_carol",
-            "stagingName": "se1"
-          }
+        "cronExpressions":
+        [
+            "0 0 * * * ?"
+        ],
+        "prepareScripts":
+        [
+            ""
         ]
-      }
     },
-    {
-        "useBatchNotification": false,
-        "pipelineName": "organization_pipeline",
-        "pipelineDescription": "Pipeline para processar dados de Organization.",
-        "outputDataModelName": "organization",
-        "overlapDeltaMinutes": 60,
-        "saveToCds": false,
-        "saveToUnified": true,
-        "sendToSubscriptions": true,
-        "cronExpressions": ["0 0 * * * ?"],
-        "timeZone": "America/Sao_Paulo",
-        "additionalParameters" : {
-          "manifestVersion": "v2"
-        },
-        "prepareScripts": [""],
-        "processScript": "organization.csql",
-        "sourceEntities": {
-          "dataModels": [],
-          "stagings": [
+    "pipelines":
+    [
+        {
+            "pipelineName": "businesspartner_pipeline",
+            "pipelineDescription": "Pipeline para processar dados de Business Partner",
+            "outputDataModelName": "mdbusinesspartner",
+            "checkExistsDataToProcess": true,
+            "overlapDeltaMinutes": 60,
+            "fanOut": true,
+            "useBatchNotification": false,
+            "tempTableRetentionPeriodDays": 1,
+            "sendTo":
             {
-              "connectorName": "protheus_carol",
-              "stagingName": "organization"
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": true,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": true,
+                    "unified": false
+                }
             },
+            "clear":
             {
-              "connectorName": "protheus_carol",
-              "stagingName": "company"
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": false,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": false,
+                    "unified": false
+                }
             },
+            "additionalParameters":
             {
-              "connectorName": "protheus_carol",
-              "stagingName": "se2"
+                "manifestVersion": "v2"
+            },
+            "cronExpressions":
+            [
+                "0 0 * * * ?"
+            ],
+            "processScript": "businesspartner.csql",
+            "sourceEntities":
+            {
+                "dataModels":
+                [],
+                "stagings":
+                [
+                    {
+                        "connectorName": "protheus_carol",
+                        "stagingName": "sa1"
+                    },
+                    {
+                        "connectorName": "protheus_carol",
+                        "stagingName": "se1"
+                    }
+                ]
             }
-          ]
+        },
+        {
+            "pipelineName": "organization_pipeline",
+            "pipelineDescription": "Pipeline para processar dados de Organization.",
+            "outputDataModelName": "organization",
+            "checkExistsDataToProcess": false,
+            "overlapDeltaMinutes": 60,
+            "fanOut": true,
+            "useBatchNotification": false,
+            "tempTableRetentionPeriodDays": 1,
+            "sendTo":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": true,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": true,
+                    "unified": false
+                }
+            },
+            "clear":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": false,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": false,
+                    "unified": false
+                }
+            },
+            "additionalParameters":
+            {
+                "manifestVersion": "v2"
+            },
+            "cronExpressions":
+            [
+                "0 0 * * * ?"
+            ],
+            "processScript": "organization.csql",
+            "sourceEntities":
+            {
+                "dataModels":
+                [],
+                "stagings":
+                [
+                    {
+                        "connectorName": "protheus_carol",
+                        "stagingName": "organization"
+                    },
+                    {
+                        "connectorName": "protheus_carol",
+                        "stagingName": "company"
+                    },
+                    {
+                        "connectorName": "protheus_carol",
+                        "stagingName": "se2"
+                    }
+                ]
+            }
         }
-      }
-  ]
-} 
+    ]
+}
