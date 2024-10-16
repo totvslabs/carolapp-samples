@@ -52,7 +52,7 @@
             },
             "additionalParameters":
             {
-                "manifestVersion": "v2"
+                "manifestVersion": ["v2"]
             },
             "cronExpressions":
             [
@@ -115,7 +115,7 @@
             },
             "additionalParameters":
             {
-                "manifestVersion": "v2"
+                "manifestVersion": ["v2"]
             },
             "cronExpressions":
             [
