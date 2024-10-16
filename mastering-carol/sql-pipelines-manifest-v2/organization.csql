@@ -1,0 +1,66 @@
+-- pk: uuid
+
+CREATE TEMP FUNCTION rejection_rules(arr ANY TYPE) AS (
+    (SELECT [
+        STRUCT( "REJECTION_RULE" as mdmStage,
+                "O campo uuid é inválido." as mdmErrorMsg,
+                (record.uuid is Null) as mdmActive)                
+    ] FROM UNNEST(arr) AS record)
+);
+
+with company_fndorganization as (
+    SELECT 
+        stg.mdmTenantId as stgTenantId,
+        stg.uuid as uuid,
+        stg.description as name,
+        stg.description as alias,
+        org.federalid as federalid,
+        stg.mdmCounterForEntity as _counter,
+         `labs-app-mdm-production.a_techfin`.mdmIdStaging(stg.mdmConnectorId, 'company_organization', CONCAT('{"emitente":{"path":"', lower(path), '"}}')) as mdmStagingRecord
+        --metadataNoId-v2--
+    from  (select * except(ranking) from (select row_number() over (partition by mdmTenantId, mdmId ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking, * from stg_protheus_carol_company
+    --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    ) where ranking = 1 ) as stg
+    left join (select * except(ranking) from (select *, row_number() over (partition by mdmTenantId, uuid ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking from stg_protheus_carol_organization) where ranking = 1) as org
+        on org.mdmTenantId = stg.mdmTenantId
+            and org.uuid = stg.uuid
+),
+organization_fndorganization as (
+    SELECT 
+        stg.mdmTenantId as stgTenantId,
+        stg.uuid as uuid,
+        stg.name as name,
+        stg.alias as alias,
+        stg.federalid as federalid,
+        stg.mdmCounterForEntity as _counter,
+         `labs-app-mdm-production.a_techfin`.mdmIdStaging(stg.mdmConnectorId, 'organization_map', CONCAT('{"pk":{"uuid":"', lower(stg.uuid), '"}}')) as mdmStagingRecord
+        --metadataNoId-v2--
+    from (select * except(ranking) from (select row_number() over (partition by mdmTenantId, mdmId ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking, * from stg_protheus_carol_organization
+    --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    ) where ranking = 1 ) as stg
+),
+organization as (
+    select *
+    from company_fndorganization stg
+    union all
+    select *
+    from organization_fndorganization stg
+)
+
+SELECT *,
+    (EXISTS(SELECT 1 FROM UNNEST(mdmErrors) WHERE mdmActive = true)) AS mdmDeleted
+FROM
+(
+    select dm.* except(mdmStagingRecord,_counter, name, alias, stgTenantId), 
+    dm.mdmStagingRecord as __mdmId,
+    (case length(trim(coalesce(dm.name,""))) -- adding a default value instead of rejecting it. Environment tenant70ead8d42e8111eba8f40a586461440e got a lot of rejections because of this validation.
+    when 0 then "<em branco>"
+    else dm.name
+    end) as name,
+    (case length(trim(coalesce(dm.alias,""))) -- adding a default value instead of rejecting it. Environment tenant70ead8d42e8111eba8f40a586461440e got a lot of rejections because of this validation.
+    when 0 then "<em branco>"
+    else dm.alias
+    end) as alias,
+    rejection_rules(ARRAY((SELECT AS STRUCT dm.uuid))) AS mdmErrors
+    from (select * except(ranking) from (select row_number() over (partition by stgTenantId, uuid ORDER BY _counter DESC) ranking, * from organization) where ranking = 1 ) dm
+)
