@@ -142,6 +142,60 @@
                     }
                 ]
             }
+        },
+        {
+            "pipelineName": "user_pipeline",
+            "pipelineDescription": "Pipeline para usuários com dados fixos",
+            "outputDataModelName": "mdmuser",
+            "checkExistsDataToProcess": false,
+            "overlapDeltaMinutes": 60,
+            "fanOut": true,
+            "useBatchNotification": false,
+            "tempTableRetentionPeriodDays": 1,
+            "sendTo":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": true,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": true,
+                    "unified": false
+                }
+            },
+            "clear":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": false,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": false,
+                    "unified": false
+                }
+            },
+            "additionalParameters":
+            {
+            },
+            "cronExpressions":
+            [
+                "0 0 * * * ?"
+            ],
+            "processScript": "user.csql",
+            "sourceEntities":
+            {
+                "dataModels":
+                [],
+                "stagings":
+                [
+                ]
+            }
         }
     ]
 }
