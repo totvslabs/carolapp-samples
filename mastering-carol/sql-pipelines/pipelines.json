@@ -15,6 +15,7 @@
       "saveToUnified": true,
       "sendToSubscriptions": true,
       "cronExpressions": ["0 0 * * * ?"],
+      "tempTableRetentionPeriodDays": 100,
       "timeZone": "America/Sao_Paulo",
       "prepareScripts": [""],
       "processScript": "businesspartner.csql",
