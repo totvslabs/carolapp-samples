@@ -1,40 +1,44 @@
-from functools import wraps
-from pycarol.carol import Carol
-from pycarol.auth.PwdAuth import PwdAuth
-from flask import session
-
+from dotenv import load_dotenv
 from flask_login import UserMixin
-from .extensions import login
-
+from pycarol import Carol
+from pycarol.auth.PwdAuth import PwdAuth
 import requests
 
-dict_environment = {'organization':'',
-                    'tenant':''}
+from .extensions import login
+
 
 @login.user_loader
 def load_user(id):
     print(id)
-    headers = {'accept': 'application/json'}
+    headers = {"accept": "application/json"}
 
-    resp = requests.request(method='GET', url=f'https://{dict_environment["organization"]}.carol.ai/api/v2/oauth2/token/'+id, headers=headers)
+    load_dotenv()
+    carol = Carol()
+    url = f"https://{carol.organization}.carol.ai/api/v2/oauth2/token/{id}"
+    resp = requests.request(method="GET", url=url, headers=headers)
 
     if resp.ok:
         caroluser = CarolUser(id)
         return caroluser
-    else:
-        return None
+    return None
 
 
 def carol_login(username, password):
-    if dict_environment["organization"] == "":
-        raise Exception("Please, configure the variable dict_environment on carol_login.py.")
+    load_dotenv()
+    carol = Carol()
+    if carol.organization == "":
+        raise Exception(
+            "Please, configure the variable CAROLORGANIZATION in your .env file."
+        )
 
     try:
-        login_carol = Carol(organization=dict_environment["organization"],
-                  domain=dict_environment["tenant"],
-                  app_name='',
-                  auth=PwdAuth(username, password),
-                  connector_id='0a0829172fc2433c9aa26460c31b78f0')
+        login_carol = Carol(
+            organization=carol.organization,
+            domain=carol.tenant["mdmName"],
+            app_name="",
+            auth=PwdAuth(username, password),
+            connector_id="0a0829172fc2433c9aa26460c31b78f0",
+        )
 
         token = login_carol.auth.get_access_token()
 
@@ -46,16 +50,18 @@ def carol_login(username, password):
 
 
 def carol_logout(id):
-    headers = {'accept': 'application/json',
-               'Authorization': id,
-               'content-type': 'application/x-www-form-urlencoded'}
+    headers = {
+        "accept": "application/json",
+        "Authorization": id,
+        "content-type": "application/x-www-form-urlencoded",
+    }
 
-    params = {'access_token': id}
+    params = {"access_token": id}
 
-    resp = requests.request(method='POST',
-                            url=f'https://{dict_environment["organization"]}.carol.ai/api/v2/oauth2/logout',
-                            headers=headers,
-                            params=params)
+    load_dotenv()
+    carol = Carol()
+    url = f"https://{carol.organization}.carol.ai/api/v2/oauth2/logout"
+    requests.request(method="POST", url=url, headers=headers, params=params)
 
 
 class CarolUser(UserMixin):
