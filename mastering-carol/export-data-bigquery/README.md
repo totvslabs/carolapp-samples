@@ -1,7 +1,7 @@
 How to run it
 ----
 
-Define a fine called .end with the following content:
+Define a fine called .env with the following content:
 
 ```
 CAROLAPPNAME=app_name
