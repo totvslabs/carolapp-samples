@@ -1,0 +1,14 @@
+WITH my_cte AS (
+    SELECT *
+    FROM stg_protheus_carol_se1
+    WHERE E1_TIPO = 'NF '
+)
+
+SELECT 
+    E1_TIPO, 
+    E1_PREFIXO, 
+    E1_DESCFIN, 
+    E1_LOTE, 
+    E1_VENCORI
+FROM my_cte
+WHERE branch = '01 '

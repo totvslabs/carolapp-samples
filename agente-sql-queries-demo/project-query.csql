@@ -1,0 +1,270 @@
+/* Integração Gesplan - Pipeline Movimento bancário Simples
+version: 2.8
+@author: TOTVS
+@since 08/2023
+@see https://tdn.totvs.com/pages/viewpage.action?pageId=716362952 
+*/
+-----------------------------------------------------------------------------------------------------------------------------
+
+--pk:externalCodeHeader,paymentNumber,eventType
+
+-- Retorna conteudo do campo indicado no cadastro do FlexField
+CREATE TEMP FUNCTION _TABLE_FIELD_VALUE(json_row STRING, field STRING)
+RETURNS STRING
+LANGUAGE js
+AS r"""
+  function GetField(obj, stg) {
+    for (var field in obj) {
+      if (stg == field && obj.hasOwnProperty(field) && obj[field] != null) {
+        return obj[field];
+      }
+    }
+  }
+  var row = JSON.parse(json_row);
+  return GetField(row, field);
+""";
+
+-----------------------------------------------------------------------------------------------------------------------------
+-- Filtra o 'fieldname' passado como parâmetro
+-- Obs.: _TABLE_FIELD_VALUE() retorna Null quando a configuração do flexField não corresponde à tabela passada no Array_Agg,
+-- como Array_concat irá duplicar o fieldName,  precisamos garantir aqui que filtre o obj.field com conteudo  '&& obj.value'
+CREATE TEMP FUNCTION _FLEX_FIELD_VALUE(json_array STRING)
+RETURNS STRING
+LANGUAGE js
+AS r"""
+  function GetPivot(arr) {
+    var pivot = {};
+    for (var key in arr) {
+      var obj = arr[key];
+      if (obj.hasOwnProperty('field') && obj.value) {
+        pivot[obj.field] = obj.value
+      }
+    }
+    return JSON.stringify(pivot);
+  }
+  var arr = JSON.parse(json_array);
+  return GetPivot(arr);
+""";
+
+
+----------------------------------------------------------------------------
+WITH
+----------------------------------------------------------------------------
+-- Lista os flexfields cadastrados no App settings da Carol
+Lookup_app_setting AS (
+  SELECT s.mdmTenantId, ARRAY_AGG(s) AS settings
+  FROM (
+    Select * Except(ranking)
+    From (
+        Select mdmDeleted, mdmTenantId,app_name, setting_name, setting_value,
+               ROW_NUMBER() Over (Partition By mdmTenantId, setting_name Order By mdmCounterForEntity Desc, mdmLastUpdated Desc) as ranking
+        From stg_internal_app_setting
+        Where 
+              app_name = 'gesplanprotheuslink' 
+              And group_name = "Movimento_Bancario_Simples"  -- Movimento_Bancario_Simples
+              And setting_name like 'movbcspsflex%' -- movbcspsflex
+              And Coalesce(setting_value,'') <> ''
+    )
+    WHERE ranking = 1 And (mdmDeleted Is Null Or mdmDeleted = false)
+  ) AS s
+  GROUP BY s.mdmTenantId
+) ,
+
+----------------------------------------------------------------------------
+-- Ultimo timestamp do registro da staging que foi gravado no Datamodel
+max_stg_counter AS (
+  SELECT COALESCE(MAX(mdmStagingCounter), 0) AS maxStagingCounter
+  FROM movimentobancariosimples
+  --timestamp-- WHERE mdmStagingCounter < {{start_from}}
+),
+
+currency as(
+  SELECT * EXCEPT(ranking) FROM (
+    SELECT mdmTenantId, company_group, mdmDeleted, protheus_pk, name, ROW_NUMBER() OVER (PARTITION BY mdmTenantId, protheus_pk ORDER BY mdmCounterForEntity DESC, mdmLastUpdated Desc) ranking
+    FROM stg_protheus_carol_currency
+      where TRIM(Deleted)='false'
+   ) WHERE ranking = 1 AND IFNull(mdmDeleted,False) = False
+),
+
+fk5_consolidate as(
+  SELECT * EXCEPT(ranking, mdmDeleted,protheus_pk ) FROM (
+    SELECT 
+      ROW_NUMBER() OVER (PARTITION BY mdmTenantId, protheus_pk ORDER BY mdmCounterForEntity DESC, mdmLastUpdated Desc) ranking, *
+    FROM stg_protheus_carol_fk5 
+    Cross Join max_stg_counter As max_counter    
+    where PARSE_DATE('%Y%m%d', FK5_DATA) >= DATE_SUB(CURRENT_DATE(), INTERVAL 2 YEAR)
+        And (
+          (Rtrim(FK5_ORIGEM) IN (
+                'FINA100', 'FINI100G',
+                'FINA550',
+                'FINA171', 'FINA181',
+                /*MI*/ 'FINA887', 'FINA085A' /*MI*/
+            ) OR (
+              (Trim(FK5_LOTE) <> ''
+              And FK5_RECPAG = 'P'
+              And TRIM(FK5_TPDOC) = 'DB'
+              And TRIM(FK5_IDDOC) = ''
+              And TRIM(FK5_ORIGEM) = 'FINA200'/* Retorno CNAB Receber */
+              )
+            ) Or (
+              Trim(Coalesce(FK5_NUMCH,'')) <> ''
+              And RTrim(FK5_TPDOC) IN ('CH','ES') --Baixas com cheque 
+            )
+          )
+        )
+    --timestamp-- and _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST(max_counter.maxStagingCounter AS INT64)))
+   )WHERE ranking = 1 AND (mdmDeleted = False OR mdmDeleted IS NULL)
+),
+
+fk8_consolidate as(
+  SELECT * EXCEPT(ranking, mdmDeleted ) FROM (
+    SELECT FK8_FILIAL,FK8_IDMOV,FK8_DEBITO,FK8_CREDIT,FK8_CCD,FK8_CCC,FK8_ITEMD,FK8_ITEMC,FK8_CLVLDB,FK8_CLVLCR,mdmDeleted,mdmTenantId,company_group,
+      ROW_NUMBER() OVER (PARTITION BY mdmTenantId, protheus_pk ORDER BY mdmCounterForEntity DESC, mdmLastUpdated Desc) ranking
+    FROM stg_protheus_carol_fk8 
+    where TRIM(Deleted)='false'
+   )WHERE ranking = 1 AND (mdmDeleted = False OR mdmDeleted IS NULL)
+),
+
+protheus_sharing as (     
+    SELECT mdmTenantId, company_group,               
+      (SELECT sharing.branch_code_size FROM UNNEST(arr) AS sharing
+        WHERE sharing.table = 'SA6') AS sa6               
+    FROM (
+          SELECT mdmTenantId, company_group, ARRAY_AGG(stg) AS arr
+          FROM (
+                SELECT mdmTenantId, mdmDeleted, company_group, `table`, branch_code_size,
+                      Row_Number() OVER (PARTITION BY mdmTenantId, `table`, company_group ORDER BY mdmCounterForEntity DESC, mdmLastUpdated Desc) ranking
+                From stg_protheus_carol_protheus_sharing
+                      Where `table` = 'SA6'
+                ) stg
+          WHERE ranking = 1 
+          And (mdmDeleted = False OR mdmDeleted IS NULL)
+          GROUP BY mdmTenantId, company_group
+        )
+),
+sa6_consolidate as (
+  SELECT * EXCEPT(ranking, mdmDeleted) FROM (
+    SELECT 
+      ROW_NUMBER() OVER (PARTITION BY mdmTenantId, protheus_pk ORDER BY mdmCounterForEntity DESC, mdmLastUpdated Desc) ranking, *
+    FROM stg_protheus_carol_sa6
+    WHERE TRIM(Deleted)='false'
+  ) WHERE ranking = 1 AND (mdmDeleted = False OR mdmDeleted IS NULL)
+),
+
+
+------------------------------------------------------------------------------------
+-- Movimento bancário
+movimento as (
+				select
+            CONCAT(stg.company_group,'|',IFNull(stg.company,''),'|',IFNull(stg.unity,''))        as businessUnit_2,            
+            CONCAT(stg.company_group,'|',IFNull(stg.company,''),'|',IFNull(stg.unity,''),'|',stg.branch)  as divisongroup,
+            CONCAT(stg.company_group,'|',IFNull(stg.company,''),'|',IFNull(stg.unity,''),'|',stg.branch)  as divisiongroup,
+            DATETIME(SAFE.PARSE_TIMESTAMP("%Y%m%d", TRIM(stg.FK5_DATA), "-0300"))                as dueDate2,
+            DATETIME(SAFE.PARSE_TIMESTAMP("%Y%m%d", TRIM(stg.FK5_DATA), "-0300"))                as payday2,
+            Concat(Lpad(sa6.A6_MOEDA,2,'0'),'-',IFNull(currency.name,''))                        as currency,
+            Concat(Lpad(sa6.A6_MOEDA,2,'0'),'-',IFNull(currency.name,''))                        as bankcurrency,
+            CAST(stg.FK5_VALOR AS FLOAT64)	                                                     as value,
+            stg.FK5_NATURE				                   	                                           as flexField001,
+            CONCAT(stg.company_group,'|',
+                  IFNull(stg.company,''),'|',
+                  IFNull(stg.unity,''),'|',
+                  stg.branch,'|',
+                  Trim(stg.FK5_BANCO),'|',Trim(stg.FK5_AGENCI),'|',Trim(stg.FK5_CONTA))          as currentAccount,
+            If(stg.FK5_RECPAG ='P','S','E')                                                      as eventType,
+            'MB'                                                                                 as beneficiary,
+            stg.FK5_TPDOC                                                                        as documentType, 
+            Case
+              When Trim(stg.FK5_ORDREC) <> '' Then -- MI -- Ordem de Pago
+                Trim(stg.FK5_ORDREC)
+              Else -- ERP Padrão 
+                If(Trim(IFNull(stg.FK5_DOC, '')) = '',
+                  '0',
+                  Trim(stg.FK5_DOC)
+                )
+            End                                                                                  as documentnumber,
+            CASE
+              When (Trim(Coalesce(stg.FK5_NUMCH,'')) <> ''
+                      And Trim(Coalesce(stg.FK5_ORDREC,'')) = '' -- MI não pode receber histórico de Cheque quando não houver ORDREC preenchido, no padrão estará sempre vazio
+                      And RTrim(stg.FK5_TPDOC) IN ('CH','ES')
+                   ) Then
+                Concat(Rtrim(stg.FK5_HISTOR),' - ','Cheque No: ',stg.FK5_NUMCH)
+              Else
+                stg.FK5_HISTOR
+            End                                                              as description,
+            stg.FK5_CCUSTO                                                                       as costCenter,
+            '0'                                                                                  as accountingAccount,
+            'Movimento Bancário.'                                                                as originSystemName,
+            CAST(stg.FK5_TXMOED	AS FLOAT64)           	                                         as conversionAccount, 
+            stg.FK5_IDMOV                                                                        as __mdmId,       
+            stg.FK5_IDMOV                                                                        as externalCodeHeader,
+            stg.FK5_IDMOV                                                                        as externalCodeDetail,
+            stg.FK5_ORIGEM                                                                       as originRoutine,
+            fk8.FK8_DEBITO                                                                       as accountDebit,
+            fk8.FK8_CREDIT                                                                       as accountCredit,
+            fk8.FK8_CCD                                                                          as costCenterDebit,
+            fk8.FK8_CCC                                                                          as costCenterCredit,
+            fk8.FK8_ITEMD                                                                        as itemDebit,
+            fk8.FK8_ITEMC                                                                        as itemCredit,
+            fk8.FK8_CLVLDB                                                                       as classValueDebit,
+            fk8.FK8_CLVLCR                                                                       as classValueCredit,
+            "MB"                                                                                 as originSystem,
+           -- FlexFields do App settings 
+            _FLEX_FIELD_VALUE(TO_JSON_STRING(
+              ARRAY_CONCAT(
+                  ARRAY(
+                  Select STRUCT(
+                      s.setting_name AS field,
+                      _TABLE_FIELD_VALUE(TO_JSON_STRING((ARRAY_AGG(stg) Over (Partition By stg.mdmTenantId, stg.mdmId))[SAFE_ORDINAL(1)]), s.setting_value) AS value
+                      ) From UNNEST(Lookup_app_setting.settings) AS s
+                  ),
+                  ARRAY(
+                  Select STRUCT(
+                      s.setting_name AS field,
+                      _TABLE_FIELD_VALUE(TO_JSON_STRING((ARRAY_AGG(sa6) Over (Partition By sa6.mdmTenantId, sa6.mdmId))[SAFE_ORDINAL(1)]), s.setting_value) AS value
+                      ) From UNNEST(Lookup_app_setting.settings) AS s
+                  )
+              )
+            )) as array_flex_values
+            
+
+          --metadataNoId-v2--
+					From fk5_consolidate as stg
+          Inner join protheus_sharing as sharing
+          on sharing.mdmTenantId = stg.mdmTenantId
+          and sharing.company_group = stg.company_group
+          inner Join sa6_consolidate as sa6
+                On stg.mdmTenantId=sa6.mdmTenantId
+                And stg.company_group=sa6.company_group
+                And sa6.A6_FILIAL=`labs-app-mdm-production.a_techfin`.sf4_filial_rule(stg.FK5_FILORI,CAST(sharing.sa6 as int64))
+                And sa6.A6_COD=stg.FK5_BANCO
+                And sa6.A6_AGENCIA=stg.FK5_AGENCI                
+                And sa6.A6_NUMCON=stg.FK5_CONTA
+
+          Left Join fk8_consolidate as fk8
+                On stg.mdmTenantId=fk8.mdmTenantId
+                And stg.company_group=fk8.company_group
+                And stg.FK5_FILIAL=fk8.FK8_FILIAL
+                And stg.FK5_IDMOV=fk8.FK8_IDMOV
+          
+          Left Join currency
+                On stg.mdmTenantId    = currency.mdmTenantId
+                And stg.company_group = currency.company_group                
+                And Trim(sa6.A6_MOEDA)= Trim(SPLIT(currency.protheus_pk,'|')[OFFSET(1)])
+           
+            -- Configurações de flex fields
+            Left join Lookup_app_setting 
+                On Lookup_app_setting.mdmTenantId = stg.mdmTenantId
+),
+
+processedData AS (
+    SELECT * Except(array_flex_values),
+        JSON_VALUE(array_flex_values, '$.movbcspsflex004') as flexField004,
+        JSON_VALUE(array_flex_values, '$.movbcspsflex005') as flexField005,
+        JSON_VALUE(array_flex_values, '$.movbcspsflex006') as flexField006,
+        JSON_VALUE(array_flex_values, '$.movbcspsflex007') as flexField007,
+        JSON_VALUE(array_flex_values, '$.movbcspsflex008') as flexField008,
+        false as mdmDeleted 
+  FROM movimento  
+)
+
+SELECT * FROM processedData

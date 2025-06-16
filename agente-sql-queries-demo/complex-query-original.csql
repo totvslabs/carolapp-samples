@@ -1,0 +1,48 @@
+CREATE TEMP FUNCTION _TABLE_FIELD_VALUE(json_row STRING, field STRING)
+RETURNS STRING
+LANGUAGE js
+AS r"""
+  function GetField(obj, stg) {
+    for (var field in obj) {
+      if (stg == field && obj.hasOwnProperty(field) && obj[field] != null) {
+        return obj[field];
+      }
+    }
+  }
+  var row = JSON.parse(json_row);
+  return GetField(row, field);
+""";
+
+with Lookup_app_setting AS (
+  SELECT s.mdmTenantId, ARRAY_AGG(s) AS settings
+  FROM (
+    Select * Except(ranking)
+    From (
+        Select mdmDeleted, mdmTenantId,app_name, setting_name, setting_value,
+               ROW_NUMBER() Over (Partition By mdmTenantId, setting_name Order By mdmCounterForEntity Desc, mdmLastUpdated Desc) as ranking
+        From stg_internal_app_setting
+        Where 
+              app_name = 'gesplanprotheuslink' 
+              And group_name = "Movimento_Bancario_Simples"  -- Movimento_Bancario_Simples
+              And setting_name like 'movbcspsflex%' -- movbcspsflex
+              And Coalesce(setting_value,'') <> ''
+    )
+    WHERE ranking = 1 And (mdmDeleted Is Null Or mdmDeleted = false)
+  ) AS s
+  GROUP BY s.mdmTenantId
+),
+sa6_consolidate as (
+  SELECT * EXCEPT(ranking, mdmDeleted) FROM (
+    SELECT 
+      ROW_NUMBER() OVER (PARTITION BY mdmTenantId, protheus_pk ORDER BY mdmCounterForEntity DESC, mdmLastUpdated Desc) ranking, *
+    FROM stg_protheus_carol_sa6
+    WHERE TRIM(Deleted)='false'
+  ) WHERE ranking = 1 AND (mdmDeleted = False OR mdmDeleted IS NULL)
+)
+
+Select STRUCT(
+s.setting_name AS field,
+_TABLE_FIELD_VALUE(TO_JSON_STRING((ARRAY_AGG(sa6) Over (Partition By sa6.mdmTenantId, sa6.mdmId))[SAFE_ORDINAL(1)]), s.setting_value) AS value
+) From sa6_consolidate as sa6, Lookup_app_setting, UNNEST(Lookup_app_setting.settings) AS s
+where Lookup_app_setting.mdmTenantId = sa6.mdmTenantId
+

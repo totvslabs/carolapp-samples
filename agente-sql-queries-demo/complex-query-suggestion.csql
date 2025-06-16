@@ -1,0 +1,45 @@
+CREATE TEMP FUNCTION _TABLE_FIELD_VALUE(json_row STRING, field STRING)
+RETURNS STRING
+LANGUAGE js
+AS r"""
+  // Função simplificada com acesso direto ao objeto
+  var row = JSON.parse(json_row);
+  return row[field] || null;
+""";
+
+WITH Lookup_app_setting AS (
+  SELECT s.mdmTenantId, ARRAY_AGG(s) AS settings
+  FROM (
+    SELECT mdmTenantId, app_name, setting_name, setting_value
+    FROM (
+        SELECT mdmDeleted, mdmTenantId, app_name, setting_name, setting_value,
+               ROW_NUMBER() OVER (PARTITION BY mdmTenantId, setting_name ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) as ranking
+        FROM `carol-b9df2f05cf4f4133b0db.b9df2f05cf4f4133b0db478461f16643`.stg_internal_app_setting
+        WHERE app_name = 'gesplanprotheuslink' 
+          AND group_name = "Movimento_Bancario_Simples"
+          AND setting_name LIKE 'movbcspsflex%'
+          AND COALESCE(setting_value,'') <> ''
+    ) subq
+    WHERE ranking = 1 AND (mdmDeleted IS NULL OR mdmDeleted = FALSE)
+  ) AS s
+  GROUP BY s.mdmTenantId
+),
+sa6_consolidate AS (
+  SELECT mdmTenantId, mdmId, protheus_pk, /* outras colunas necessárias */
+  FROM (
+    SELECT 
+      ROW_NUMBER() OVER (PARTITION BY mdmTenantId, protheus_pk ORDER BY mdmCounterForEntity DESC, mdmLastUpdated DESC) ranking,
+      mdmDeleted, mdmTenantId, mdmId, protheus_pk, /* outras colunas necessárias */
+    FROM `carol-b9df2f05cf4f4133b0db.b9df2f05cf4f4133b0db478461f16643`.stg_protheus_carol_sa6
+    WHERE TRIM(Deleted) = 'false'
+  ) subq
+  WHERE ranking = 1 AND (mdmDeleted = FALSE OR mdmDeleted IS NULL)
+)
+
+SELECT STRUCT(
+  s.setting_name AS field,
+  _TABLE_FIELD_VALUE(TO_JSON_STRING((ARRAY_AGG(sa6) OVER (PARTITION BY sa6.mdmTenantId, sa6.mdmId))[SAFE_ORDINAL(1)]), s.setting_value) AS value
+) 
+FROM sa6_consolidate AS sa6
+JOIN Lookup_app_setting ON Lookup_app_setting.mdmTenantId = sa6.mdmTenantId
+CROSS JOIN UNNEST(Lookup_app_setting.settings) AS s
