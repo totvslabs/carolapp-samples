@@ -118,7 +118,7 @@ fk5_consolidate as(
 
 fk8_consolidate as(
   SELECT * EXCEPT(ranking, mdmDeleted ) FROM (
-    SELECT FK8_FILIAL,FK8_IDMOV,FK8_DEBITO,FK8_CREDIT,FK8_CCD,FK8_CCC,FK8_ITEMD,FK8_ITEMC,FK8_CLVLDB,FK8_CLVLCR,mdmDeleted,mdmTenantId,company_group,
+    SELECT *,
       ROW_NUMBER() OVER (PARTITION BY mdmTenantId, protheus_pk ORDER BY mdmCounterForEntity DESC, mdmLastUpdated Desc) ranking
     FROM stg_protheus_carol_fk8 
     where TRIM(Deleted)='false'
