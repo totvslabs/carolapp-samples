@@ -1,0 +1,34 @@
+{
+  "defaults": {
+    "cronExpressions": ["0 0 * * * ?"],
+    "prepareScripts": [""]
+  },
+  "pipelines": [
+    {
+      "useBatchNotification": false,
+      "checkExistsDataToProcess": true,
+      "pipelineName": "employee_pipeline",
+      "pipelineDescription": "Pipeline para processar registros de employee e salvar em LL",
+      "outputDataModelName": "employee",
+      "overlapDeltaMinutes": 60,
+      "saveToCds": false,
+      "saveToUnified": true,
+      "sendToSubscriptions": true,
+      "sendLowLatency": true,
+      "cronExpressions": ["0 0 * * * ?"],
+      "tempTableRetentionPeriodDays": 100,
+      "timeZone": "America/Sao_Paulo",
+      "prepareScripts": [""],
+      "processScript": "employee.csql",
+      "sourceEntities": {
+        "dataModels": [],
+        "stagings": [
+          {
+            "connectorName": "meuconector",
+            "stagingName": "employee"
+          }
+        ]
+      }
+    }
+  ]
+} 
