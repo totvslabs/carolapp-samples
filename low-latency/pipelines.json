@@ -14,7 +14,7 @@
       "saveToCds": false,
       "saveToUnified": true,
       "sendToSubscriptions": true,
-      "sendLowLatency": true,
+      "sendToLowLatencyCustomer": true,
       "cronExpressions": ["0 0 * * * ?"],
       "tempTableRetentionPeriodDays": 100,
       "timeZone": "America/Sao_Paulo",
