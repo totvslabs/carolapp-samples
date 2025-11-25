@@ -1,6 +1,15 @@
-select stg.name as employeename,
-stg.code as employee_code,
-face_embedding
+
+select stg.* except(ml_generate_embedding_result), ml_generate_embedding_result as face_embedding
+FROM
+  ML.GENERATE_EMBEDDING(
+    MODEL `carol-782ab62fb3994c8e9b68.custom_data.embedding_model`,
+    (
+select name as employeename,
+code as employee_code,
+stg.name as content
 --metadata-v2--
-from stg_meuconector_employee stg
+from `carol-782ab62fb3994c8e9b68.782ab62fb3994c8e9b68506fb32e13e5.stg_meuconector_employee` stg
 --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    ),
+    STRUCT(TRUE AS flatten_json_output)
+) stg;
