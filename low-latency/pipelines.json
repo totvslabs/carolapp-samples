@@ -39,7 +39,7 @@
             [
                 "0 0 * * * ?"
             ],
-            "fanOut": false,
+            "fanOut": true,
             "outputDataModelName": "employee",
             "overlapDeltaMinutes": 60,
             "pipelineDescription": "Pipeline para processar registros de employee e salvar em LL",
