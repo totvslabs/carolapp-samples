@@ -1,34 +1,84 @@
 {
-  "defaults": {
-    "cronExpressions": ["0 0 * * * ?"],
-    "prepareScripts": [""]
-  },
-  "pipelines": [
+    "defaults":
     {
-      "useBatchNotification": false,
-      "checkExistsDataToProcess": true,
-      "pipelineName": "employee_pipeline",
-      "pipelineDescription": "Pipeline para processar registros de employee e salvar em LL",
-      "outputDataModelName": "employee",
-      "overlapDeltaMinutes": 60,
-      "saveToCds": false,
-      "saveToUnified": true,
-      "sendToSubscriptions": true,
-      "sendToLowLatencyCustomer": true,
-      "cronExpressions": ["0 0 * * * ?"],
-      "tempTableRetentionPeriodDays": 100,
-      "timeZone": "America/Sao_Paulo",
-      "prepareScripts": [""],
-      "processScript": "employee.csql",
-      "sourceEntities": {
-        "dataModels": [],
-        "stagings": [
-          {
-            "connectorName": "meuconector",
-            "stagingName": "employee"
-          }
+        "cronExpressions":
+        [
+            "0 0 * * * ?"
+        ],
+        "prepareScripts":
+        [
+            ""
         ]
-      }
-    }
-  ]
-} 
+    },
+    "pipelines":
+    [
+        {
+            "additionalParameters":
+            {
+                "manifestVersion":
+                [
+                    "v2"
+                ]
+            },
+            "checkExistsDataToProcess": true,
+            "clear":
+            {
+                "bigquery":
+                {
+                    "customer": false,
+                    "unified": false
+                },
+                "realtime": false,
+                "subscriptions":
+                {
+                    "customer": false,
+                    "unified": false
+                }
+            },
+            "cronExpressions":
+            [
+                "0 0 * * * ?"
+            ],
+            "fanOut": false,
+            "outputDataModelName": "employee",
+            "overlapDeltaMinutes": 60,
+            "pipelineDescription": "Pipeline para processar registros de employee e salvar em LL",
+            "pipelineName": "employee_pipeline",
+            "processScript": "employee.csql",
+            "sendTo":
+            {
+                "bigquery":
+                {
+                    "customer": true,
+                    "unified": false
+                },
+                "lowLatency":
+                {
+                    "customer": true,
+                    "unified": false
+                },
+                "realtime": false,
+                "subscriptions":
+                {
+                    "customer": true,
+                    "unified": false
+                }
+            },
+            "sourceEntities":
+            {
+                "dataModels":
+                [],
+                "stagings":
+                [
+                    {
+                        "connectorName": "meuconector",
+                        "stagingName": "employee"
+                    }
+                ]
+            },
+            "tempTableRetentionPeriodDays": 60,
+            "useBatchNotification": false
+        }
+    ],
+    "version": "V2"
+}
