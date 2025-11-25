@@ -1,4 +1,4 @@
 select * 
 --metadata-v2--
-from stg_meuconector_employee
+from stg_meuconector_employee stg
 --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
