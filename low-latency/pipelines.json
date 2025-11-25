@@ -20,7 +20,7 @@
                     "v2"
                 ]
             },
-            "checkExistsDataToProcess": true,
+            "checkExistsDataToProcess": false,
             "clear":
             {
                 "bigquery":
