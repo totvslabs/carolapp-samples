@@ -1,4 +1,5 @@
 {
+    "version": "V2",
     "defaults":
     {
         "cronExpressions":
@@ -79,6 +80,5 @@
             "tempTableRetentionPeriodDays": 60,
             "useBatchNotification": false
         }
-    ],
-    "version": "V2"
+    ]
 }
