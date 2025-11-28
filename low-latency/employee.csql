@@ -11,5 +11,6 @@ stg.name as content
 from `carol-782ab62fb3994c8e9b68.782ab62fb3994c8e9b68506fb32e13e5.stg_meuconector_employee` stg
 --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
     ),
-    STRUCT(TRUE AS flatten_json_output)
+    STRUCT(TRUE AS flatten_json_output
+    128 AS output_dimensionality))
 ) stg;
