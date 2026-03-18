@@ -154,7 +154,7 @@
             "tempTableRetentionPeriodDays": 1,
             "sendTo":
             {
-                "realtime": false,
+                "realtime": true,
                 "bigquery":
                 {
                     "customer": true,
