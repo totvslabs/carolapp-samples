@@ -158,7 +158,7 @@
                 "bigquery":
                 {
                     "customer": true,
-                    "unified": false
+                    "unified": true
                 },
                 "subscriptions":
                 {
