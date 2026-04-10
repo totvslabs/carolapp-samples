@@ -26,18 +26,18 @@ recebiveis AS (
 ),
 customer_base AS (
     SELECT
-        stg.a1_cod AS customer_code,
-        stg.a1_loja AS store_code,
-        stg.a1_nome AS customer_name,
+        stg.a1_cod AS customercode_1,
+        stg.a1_loja AS storecode,
+        stg.a1_nome AS customername,
         stg.a1_mun AS city,
         stg.a1_est AS state,
         stg.a1_vend AS sales_rep,
         stg.a1_risco AS risco_cadastral,
-        stg.a1_limcre AS limite_credito,
+        stg.a1_limcre AS limitecredito,
         COALESCE(f.faturamento, 0) AS faturamento,
-        COALESCE(r.saldo_aberto, 0) AS saldo_aberto,
-        COALESCE(r.saldo_vencido, 0) AS saldo_vencido,
-        COALESCE(r.dias_atraso, 0) AS dias_atraso
+        COALESCE(r.saldo_aberto, 0) AS saldoaberto,
+        COALESCE(r.saldo_vencido, 0) AS saldovencido,
+        COALESCE(r.dias_atraso, 0) AS diasatraso
         --metadata-v2--
     FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.ingestion_stg_carolprotheus_sa1_clientes` stg
     LEFT JOIN faturamento f
@@ -51,30 +51,30 @@ customer AS (
     SELECT
         *,
         CONCAT(
-            'Cliente ', customer_name,
+            'Cliente ', customername,
             ', localizado em ', COALESCE(city, 'cidade nao informada'), '-', COALESCE(state, 'UF nao informada'),
             ', representante ', COALESCE(sales_rep, 'nao informado'),
             ', risco cadastral ', COALESCE(risco_cadastral, 'nao informado'),
             ', faturamento total ', CAST(faturamento AS STRING),
-            ', saldo em aberto ', CAST(saldo_aberto AS STRING),
-            ', saldo vencido ', CAST(saldo_vencido AS STRING),
-            ', dias maximos de atraso ', CAST(dias_atraso AS STRING),
-            ', limite de credito ', CAST(limite_credito AS STRING),
+            ', saldo em aberto ', CAST(saldoaberto AS STRING),
+            ', saldo vencido ', CAST(saldovencido AS STRING),
+            ', dias maximos de atraso ', CAST(diasatraso AS STRING),
+            ', limite de credito ', CAST(limitecredito AS STRING),
             '. Perfil interpretado: ',
             CASE
-                WHEN saldo_vencido > 50000 AND dias_atraso >= 30 THEN 'cliente com alto risco de cobranca e atraso relevante'
-                WHEN saldo_vencido > 0 AND dias_atraso > 0 THEN 'cliente com atraso e exposicao financeira moderada'
-                WHEN faturamento > 200000 AND saldo_vencido = 0 THEN 'cliente de alto valor com carteira saudavel'
-                WHEN saldo_aberto > 0 AND saldo_vencido = 0 THEN 'cliente ativo com carteira em aberto mas sem atraso'
+                WHEN saldovencido > 50000 AND diasatraso >= 30 THEN 'cliente com alto risco de cobranca e atraso relevante'
+                WHEN saldovencido > 0 AND diasatraso > 0 THEN 'cliente com atraso e exposicao financeira moderada'
+                WHEN faturamento > 200000 AND saldovencido = 0 THEN 'cliente de alto valor com carteira saudavel'
+                WHEN saldoaberto > 0 AND saldovencido = 0 THEN 'cliente ativo com carteira em aberto mas sem atraso'
                 ELSE 'cliente com baixa criticidade financeira'
             END
-        ) AS content
+        ) AS content,
     FROM customer_base
 )
 
 SELECT
     stg.* EXCEPT(ml_generate_embedding_result),
-    ml_generate_embedding_result AS customer_embedding
+    ml_generate_embedding_result AS embedding
 FROM
     ML.GENERATE_EMBEDDING(
         MODEL `carol-c09e7887fe1e4a1eb97b.custom_data.embedding_model`,
