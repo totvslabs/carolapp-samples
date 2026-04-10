@@ -30,6 +30,11 @@
                     "customer": true,
                     "unified": true
                 },
+                "lowLatency":
+                {
+                    "customer": true,
+                    "unified": true
+                },
                 "subscriptions":
                 {
                     "customer": true,
