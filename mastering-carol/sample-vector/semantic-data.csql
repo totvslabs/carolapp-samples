@@ -1,0 +1,99 @@
+WITH faturamento AS (
+    SELECT
+        f2_cliente AS customer_code,
+        f2_loja AS store_code,
+        COALESCE(SUM(f2_valfat), 0) AS faturamento
+    FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.ingestion_stg_carolprotheus_sf2_nf_cab`
+    GROUP BY f2_cliente, f2_loja
+),
+recebiveis AS (
+    SELECT
+        e1_cliente AS customer_code,
+        e1_loja AS store_code,
+        COALESCE(SUM(e1_saldo), 0) AS saldo_aberto,
+        COALESCE(SUM(CASE WHEN e1_situacao = 'VENCIDO' THEN e1_saldo ELSE 0 END), 0) AS saldo_vencido,
+        COALESCE(
+            MAX(
+                CASE
+                    WHEN e1_situacao = 'VENCIDO' THEN DATE_DIFF(DATE '2026-04-01', e1_vencto, DAY)
+                    ELSE 0
+                END
+            ),
+            0
+        ) AS dias_atraso
+    FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.ingestion_stg_carolprotheus_se1_titulos_receber`
+    GROUP BY e1_cliente, e1_loja
+),
+customer_base AS (
+    SELECT
+        c.a1_cod AS customer_code,
+        c.a1_loja AS store_code,
+        c.a1_nome AS customer_name,
+        c.a1_mun AS city,
+        c.a1_est AS state,
+        c.a1_vend AS sales_rep,
+        c.a1_risco AS risco_cadastral,
+        c.a1_limcre AS limite_credito,
+        COALESCE(f.faturamento, 0) AS faturamento,
+        COALESCE(r.saldo_aberto, 0) AS saldo_aberto,
+        COALESCE(r.saldo_vencido, 0) AS saldo_vencido,
+        COALESCE(r.dias_atraso, 0) AS dias_atraso
+        --metadata-v2--
+    FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.ingestion_stg_carolprotheus_sa1_clientes` c
+    LEFT JOIN faturamento f
+        ON f.customer_code = c.a1_cod
+       AND f.store_code = c.a1_loja
+    LEFT JOIN recebiveis r
+        ON r.customer_code = c.a1_cod
+       AND r.store_code = c.a1_loja
+),
+customer AS (
+    SELECT
+        customer_name,
+        customer_code,
+        store_code,
+        customer_name AS title,
+        CONCAT(
+            'Cliente ', customer_name,
+            ', localizado em ', COALESCE(city, 'cidade nao informada'), '-', COALESCE(state, 'UF nao informada'),
+            ', representante ', COALESCE(sales_rep, 'nao informado'),
+            ', risco cadastral ', COALESCE(risco_cadastral, 'nao informado'),
+            ', faturamento total ', CAST(faturamento AS STRING),
+            ', saldo em aberto ', CAST(saldo_aberto AS STRING),
+            ', saldo vencido ', CAST(saldo_vencido AS STRING),
+            ', dias maximos de atraso ', CAST(dias_atraso AS STRING),
+            ', limite de credito ', CAST(limite_credito AS STRING),
+            '. Perfil interpretado: ',
+            CASE
+                WHEN saldo_vencido > 50000 AND dias_atraso >= 30 THEN 'cliente com alto risco de cobranca e atraso relevante'
+                WHEN saldo_vencido > 0 AND dias_atraso > 0 THEN 'cliente com atraso e exposicao financeira moderada'
+                WHEN faturamento > 200000 AND saldo_vencido = 0 THEN 'cliente de alto valor com carteira saudavel'
+                WHEN saldo_aberto > 0 AND saldo_vencido = 0 THEN 'cliente ativo com carteira em aberto mas sem atraso'
+                ELSE 'cliente com baixa criticidade financeira'
+            END
+        ) AS content,
+        faturamento,
+        saldo_aberto,
+        saldo_vencido,
+        dias_atraso,
+        limite_credito
+    FROM customer_base
+)
+
+SELECT
+    stg.* EXCEPT(ml_generate_embedding_result),
+    ml_generate_embedding_result AS customer_embedding
+FROM
+    ML.GENERATE_EMBEDDING(
+        MODEL `carol-c09e7887fe1e4a1eb97b.custom_data.embedding_model`,
+        (
+            SELECT *
+            FROM customer stg
+            --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+        ),
+        STRUCT(
+            TRUE AS flatten_json_output,
+            'RETRIEVAL_DOCUMENT' AS task_type,
+            1536 AS output_dimensionality
+        )
+    ) stg;

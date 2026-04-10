@@ -1,0 +1,71 @@
+{
+    "version": "V2",
+    "defaults":
+    {
+        "cronExpressions":
+        [
+            "0 0 * * * ?"
+        ],
+        "prepareScripts":
+        [
+            ""
+        ]
+    },
+    "pipelines":
+    [
+        {
+            "pipelineName": "semantic_data",
+            "pipelineDescription": "Pipeline para processar dados de clientes com dados semânticos para busca",
+            "outputDataModelName": "customersemanticprofile",
+            "checkExistsDataToProcess": true,
+            "overlapDeltaMinutes": 60,
+            "fanOut": true,
+            "useBatchNotification": false,
+            "tempTableRetentionPeriodDays": 5,
+            "sendTo":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": true,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": true,
+                    "unified": false
+                }
+            },
+            "clear":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": false,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": false,
+                    "unified": false
+                }
+            },
+            "additionalParameters":
+            {
+                "manifestVersion": ["v2"]
+            },
+            "cronExpressions":
+            [
+                "0 0 * * * ?"
+            ],
+            "processScript": "semantic-data.csql",
+            "sourceEntities":
+            {
+                "dataModels":
+                [],
+                "stagings":
+                []
+            }
+        }
+    ]
+}
