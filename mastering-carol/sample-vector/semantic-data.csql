@@ -26,26 +26,26 @@ recebiveis AS (
 ),
 customer_base AS (
     SELECT
-        c.a1_cod AS customer_code,
-        c.a1_loja AS store_code,
-        c.a1_nome AS customer_name,
-        c.a1_mun AS city,
-        c.a1_est AS state,
-        c.a1_vend AS sales_rep,
-        c.a1_risco AS risco_cadastral,
-        c.a1_limcre AS limite_credito,
+        stg.a1_cod AS customer_code,
+        stg.a1_loja AS store_code,
+        stg.a1_nome AS customer_name,
+        stg.a1_mun AS city,
+        stg.a1_est AS state,
+        stg.a1_vend AS sales_rep,
+        stg.a1_risco AS risco_cadastral,
+        stg.a1_limcre AS limite_credito,
         COALESCE(f.faturamento, 0) AS faturamento,
         COALESCE(r.saldo_aberto, 0) AS saldo_aberto,
         COALESCE(r.saldo_vencido, 0) AS saldo_vencido,
         COALESCE(r.dias_atraso, 0) AS dias_atraso
         --metadata-v2--
-    FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.ingestion_stg_carolprotheus_sa1_clientes` c
+    FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.ingestion_stg_carolprotheus_sa1_clientes` stg
     LEFT JOIN faturamento f
-        ON f.customer_code = c.a1_cod
-       AND f.store_code = c.a1_loja
+        ON f.customer_code = stg.a1_cod
+       AND f.store_code = stg.a1_loja
     LEFT JOIN recebiveis r
-        ON r.customer_code = c.a1_cod
-       AND r.store_code = c.a1_loja
+        ON r.customer_code = stg.a1_cod
+       AND r.store_code = stg.a1_loja
 ),
 customer AS (
     SELECT
