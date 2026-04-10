@@ -49,10 +49,7 @@ customer_base AS (
 ),
 customer AS (
     SELECT
-        customer_name,
-        customer_code,
-        store_code,
-        customer_name AS title,
+        *,
         CONCAT(
             'Cliente ', customer_name,
             ', localizado em ', COALESCE(city, 'cidade nao informada'), '-', COALESCE(state, 'UF nao informada'),
@@ -71,12 +68,7 @@ customer AS (
                 WHEN saldo_aberto > 0 AND saldo_vencido = 0 THEN 'cliente ativo com carteira em aberto mas sem atraso'
                 ELSE 'cliente com baixa criticidade financeira'
             END
-        ) AS content,
-        faturamento,
-        saldo_aberto,
-        saldo_vencido,
-        dias_atraso,
-        limite_credito
+        ) AS content
     FROM customer_base
 )
 
