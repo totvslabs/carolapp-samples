@@ -13,6 +13,7 @@ with base_table as (
       nm_secao,
       segmento_codigo,
       segmento_cnae,
+      ROW_NUMBER() OVER (ORDER BY cod_cnae) AS rn,
       CONCAT(
         'CNAE: ', COALESCE(cod_cnae, ''), ' - ', COALESCE(nm_cnae, ''), '. ',
         'Classe: ', COALESCE(cod_classe, ''), ' - ', COALESCE(nm_classe, ''), '. ',
@@ -37,4 +38,6 @@ FROM AI.GENERATE_EMBEDDING(
         'RETRIEVAL_DOCUMENT' AS task_type,
         1536 AS output_dimensionality
     )
-);
+)
+where CEIL(rn / 333.0) = 1
+order by cod_cnae;
