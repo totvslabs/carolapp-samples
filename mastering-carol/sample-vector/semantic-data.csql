@@ -35,6 +35,7 @@ customer_base AS (
         stg.a1_risco AS risco_cadastral,
         stg.a1_limcre AS limitecredito,
         stg._ingestionDatetime,
+        stg.cod_cnae,
         COALESCE(f.faturamento, 0) AS faturamento,
         COALESCE(r.saldo_aberto, 0) AS saldoaberto,
         COALESCE(r.saldo_vencido, 0) AS saldovencido,
