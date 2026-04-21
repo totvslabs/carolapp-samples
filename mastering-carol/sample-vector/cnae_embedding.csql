@@ -25,22 +25,7 @@ with base_table as (
     FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.stg_ibge_cnae_data` stg
 )
 
-SELECT
-    cod_cnae,
-    nm_cnae,
-    cod_classe,
-    nm_classe,
-    cod_grupo,
-    nm_grupo,
-    cod_divisao,
-    nm_divisao,
-    cod_secao,
-    nm_secao,
-    segmento_codigo,
-    segmento_cnae,
-    content,
-    embedding
-
+SELECT * EXCEPT(statistics, status)
 FROM AI.GENERATE_EMBEDDING(
     MODEL `carol-c09e7887fe1e4a1eb97b.custom_data.embedding_model`,
     (
