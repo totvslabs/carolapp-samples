@@ -74,10 +74,9 @@ customer AS (
 )
 
 SELECT
-    stg.* EXCEPT(ml_generate_embedding_result),
-    ml_generate_embedding_result AS embedding
+    stg.* EXCEPT(statistics, status)
 FROM
-    ML.GENERATE_EMBEDDING(
+    AI.GENERATE_EMBEDDING(
         MODEL `carol-c09e7887fe1e4a1eb97b.custom_data.embedding_model`,
         (
             SELECT *
@@ -85,7 +84,6 @@ FROM
             --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
         ),
         STRUCT(
-            TRUE AS flatten_json_output,
             'RETRIEVAL_DOCUMENT' AS task_type,
             1536 AS output_dimensionality
         )

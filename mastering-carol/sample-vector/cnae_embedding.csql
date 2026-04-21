@@ -1,0 +1,55 @@
+
+with base_table as (
+    SELECT
+      cod_cnae,
+      nm_cnae,
+      cod_classe,
+      nm_classe,
+      cod_grupo,
+      nm_grupo,
+      cod_divisao,
+      nm_divisao,
+      cod_secao,
+      nm_secao,
+      segmento_codigo,
+      segmento_cnae,
+      CONCAT(
+        'CNAE: ', COALESCE(cod_cnae, ''), ' - ', COALESCE(nm_cnae, ''), '. ',
+        'Classe: ', COALESCE(cod_classe, ''), ' - ', COALESCE(nm_classe, ''), '. ',
+        'Grupo: ', COALESCE(cod_grupo, ''), ' - ', COALESCE(nm_grupo, ''), '. ',
+        'Divisão: ', COALESCE(cod_divisao, ''), ' - ', COALESCE(nm_divisao, ''), '. ',
+        'Seção: ', COALESCE(cod_secao, ''), ' - ', COALESCE(nm_secao, ''), '. ',
+        'Segmento: ', COALESCE(segmento_cnae, '')
+      ) AS content
+      --metadata-v2--
+    FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.stg_ibge_cnae_data` stg
+)
+
+SELECT
+    cod_cnae,
+    nm_cnae,
+    cod_classe,
+    nm_classe,
+    cod_grupo,
+    nm_grupo,
+    cod_divisao,
+    nm_divisao,
+    cod_secao,
+    nm_secao,
+    segmento_codigo,
+    segmento_cnae,
+    content,
+    embedding
+
+FROM AI.GENERATE_EMBEDDING(
+    MODEL `carol-c09e7887fe1e4a1eb97b.custom_data.embedding_model`,
+    (
+        SELECT *
+        FROM base_table stg
+        --timestamp-- WHERE _ingestionDatetime > SAFE.DATETIME(TIMESTAMP_MICROS(SAFE_CAST({{start_from}} AS INT64)))
+    ),
+    STRUCT(
+        'RETRIEVAL_DOCUMENT' AS task_type,
+        1536 AS output_dimensionality
+    )
+);

@@ -71,6 +71,66 @@
                 "stagings":
                 []
             }
+        },
+
+        {
+            "pipelineName": "cnae_embedding",
+            "pipelineDescription": "Pipeline para processar dados de CNAE e preparar para busca sem^antica",
+            "outputDataModelName": "cnaedata",
+            "checkExistsDataToProcess": true,
+            "overlapDeltaMinutes": 60,
+            "fanOut": true,
+            "useBatchNotification": false,
+            "tempTableRetentionPeriodDays": 5,
+            "sendTo":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": true,
+                    "unified": true
+                },
+                "lowLatency":
+                {
+                    "customer": true,
+                    "unified": true
+                },
+                "subscriptions":
+                {
+                    "customer": true,
+                    "unified": false
+                }
+            },
+            "clear":
+            {
+                "realtime": false,
+                "bigquery":
+                {
+                    "customer": false,
+                    "unified": false
+                },
+                "subscriptions":
+                {
+                    "customer": false,
+                    "unified": false
+                }
+            },
+            "additionalParameters":
+            {
+                "manifestVersion": ["v2"]
+            },
+            "cronExpressions":
+            [
+                "0 0 * * * ?"
+            ],
+            "processScript": "cnae_embedding.csql",
+            "sourceEntities":
+            {
+                "dataModels":
+                [],
+                "stagings":
+                []
+            }
         }
     ]
 }
