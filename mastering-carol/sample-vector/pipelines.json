@@ -76,7 +76,7 @@
         {
             "pipelineName": "cnae_embedding",
             "pipelineDescription": "Pipeline para processar dados de CNAE e preparar para busca sem^antica",
-            "outputDataModelName": "cnaedata",
+            "outputDataModelName": "cnaegolden",
             "checkExistsDataToProcess": true,
             "overlapDeltaMinutes": 60,
             "fanOut": true,
