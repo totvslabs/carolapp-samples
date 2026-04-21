@@ -26,7 +26,7 @@ with base_table as (
     FROM `carol-c09e7887fe1e4a1eb97b.c09e7887fe1e4a1eb97b94f78a6042cb.stg_ibge_cnae_data` stg
 )
 
-SELECT * EXCEPT(statistics, status)
+SELECT * EXCEPT(statistics, status, rn)
 FROM AI.GENERATE_EMBEDDING(
     MODEL `carol-c09e7887fe1e4a1eb97b.custom_data.embedding_model`,
     (
