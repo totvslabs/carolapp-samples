@@ -39,4 +39,5 @@ FROM AI.GENERATE_EMBEDDING(
         1536 AS output_dimensionality
     )
 )
+where CEIL(rn / 333.0) = 0
 order by cod_cnae;
