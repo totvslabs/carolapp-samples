@@ -121,7 +121,7 @@
             },
             "cronExpressions":
             [
-                "0 0 * * * ?"
+                "0 0 0 ? * * 2099"
             ],
             "processScript": "cnae_embedding.csql",
             "sourceEntities":
