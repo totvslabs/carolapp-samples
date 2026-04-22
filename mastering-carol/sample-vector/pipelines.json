@@ -61,7 +61,7 @@
             },
             "cronExpressions":
             [
-                "0 0 * * * ?"
+                "0 0 0 ? * * 2099"
             ],
             "processScript": "semantic-data.csql",
             "sourceEntities":
