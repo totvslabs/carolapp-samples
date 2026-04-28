@@ -88,4 +88,6 @@ FROM
             'RETRIEVAL_DOCUMENT' AS task_type,
             1536 AS output_dimensionality
         )
-    ) stg;
+    ) stg;;;
+
+--teste
