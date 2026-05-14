@@ -22,6 +22,7 @@
             "fanOut": true,
             "useBatchNotification": false,
             "tempTableRetentionPeriodDays": 1,
+            "nextPipelines": ["organization_pipeline"]
             "sendTo":
             {
                 "realtime": false,
