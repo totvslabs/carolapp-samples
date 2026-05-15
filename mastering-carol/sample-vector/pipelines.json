@@ -15,7 +15,7 @@
     [
         {
             "pipelineName": "semantic_data",
-            "pipelineDescription": "Pipeline para processar dados de clientes com dados semânticos para busca",
+            "pipelineDescription": "Pipeline para processar dados de clientes com dados semânticos para busca.",
             "outputDataModelName": "customersemanticprofile",
             "checkExistsDataToProcess": true,
             "overlapDeltaMinutes": 60,
