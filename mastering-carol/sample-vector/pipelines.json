@@ -121,7 +121,7 @@
             },
             "cronExpressions":
             [
-                "0 0 0 1 JUN ? *"
+                "0 0 0 1 7 ? *"
             ],
             "processScript": "cnae_embedding.csql",
             "sourceEntities":
