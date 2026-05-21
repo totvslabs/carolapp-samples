@@ -1,0 +1,17 @@
+{
+    "version": "V2",
+    "defaults":
+    {
+        "cronExpressions":
+        [
+            "0 0 0 1 JUN ? *"
+        ],
+        "prepareScripts":
+        [
+            ""
+        ]
+    },
+    "pipelines":
+    [
+    ]
+}
