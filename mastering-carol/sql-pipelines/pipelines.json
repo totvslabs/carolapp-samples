@@ -24,11 +24,11 @@
         "stagings": [
           {
             "connectorName": "protheus_carol",
-            "stagingName": "sa1"
+            "stagingName": "sa2"
           },
           {
             "connectorName": "protheus_carol",
-            "stagingName": "se1"
+            "stagingName": "se2"
           }
         ]
       }
