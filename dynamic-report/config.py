@@ -1,2 +1,2 @@
 class BaseConfig:
-    SECRET_KEY = 'Hgt34fMM90loFg5tsrb357yu'
+    SECRET_KEY = "Hgt34fMM90loFg5tsrb357yu"
