@@ -36,7 +36,7 @@ google-cloud-storage==1.18.0
 google-resumable-media==0.3.2
 googleapis-common-protos==1.6.0
 HeapDict==1.0.0
-httplib2==0.13.1
+httplib2==0.18.0
 idna==2.8
 importlib-metadata==0.19
 ipython-genutils==0.2.0
@@ -159,7 +159,7 @@ google-resumable-media==0.3.2
 googleapis-common-protos==1.6.0
 gunicorn==19.9.0
 HeapDict==1.0.0
-httplib2==0.13.1
+httplib2==0.18.0
 idna==2.8
 importlib-metadata==0.19
 ipython-genutils==0.2.0
