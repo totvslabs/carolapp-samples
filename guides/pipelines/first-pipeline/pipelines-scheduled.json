@@ -1,0 +1,50 @@
+{
+  "version": "V2",
+  "pipelines": [
+    {
+      "pipelineName": "guia_pedidos",
+      "pipelineDescription": "Calcula o total dos pedidos de exemplo",
+      "outputDataModelName": "guiapedidos",
+      "processScript": "pedidos.csql",
+      "cronExpressions": [
+        "0 0 8 ? * MON-FRI *"
+      ],
+      "timeZone": "America/Sao_Paulo",
+      "overlapDeltaMinutes": 0,
+      "checkExistsDataToProcess": false,
+      "useBatchSQLEfficiency": false,
+      "fanOut": false,
+      "sourceEntities": {
+        "dataModels": [],
+        "stagings": [
+          {
+            "connectorName": "crm_demo",
+            "stagingName": "pedidos"
+          }
+        ]
+      },
+      "sendTo": {
+        "bigquery": {
+          "customer": false,
+          "unified": true
+        },
+        "subscriptions": {
+          "customer": false,
+          "unified": false
+        },
+        "realtime": false
+      },
+      "clear": {
+        "bigquery": {
+          "customer": false,
+          "unified": false
+        },
+        "subscriptions": {
+          "customer": false,
+          "unified": false
+        },
+        "realtime": false
+      }
+    }
+  ]
+}
