@@ -7,5 +7,4 @@ select
   preco_unitario_centavos,
   valor_total_centavos
 from `deduplicated_guiapedidos`
-where coalesce(mdmDeleted, false) = false
 order by pedido_id

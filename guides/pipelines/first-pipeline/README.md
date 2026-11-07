@@ -57,6 +57,6 @@ A consulta deve continuar mostrando três pedidos atuais após reexecutar a pipe
 
 ## Consultas e desempenho
 
-`check-results.sql` usa `deduplicated_guiapedidos`, a view que facilita a consulta da versão atual. Para tabelas maiores, avalie filtros de partição na query para reduzir a leitura.
+`check-results.sql` usa `deduplicated_guiapedidos`, a view que entrega a versão atual e já desconsidera os registros excluídos. Para tabelas maiores, avalie filtros de partição na query para reduzir a leitura.
 
 `check-results-partitioned.sql` considera apenas versões gravadas nos últimos sete dias. Registros sem versões nessa janela ficam fora do resultado. Ajuste o período conforme a necessidade do projeto.
