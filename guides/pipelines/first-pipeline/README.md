@@ -33,7 +33,6 @@ Na STG, configure `pedido_id`, `quantidade` e `preco_unitario_centavos` como **S
 | [check-staging.sql](check-staging.sql) | Consulta dos pedidos atuais na STG |
 | [check-results.sql](check-results.sql) | Consulta dos pedidos atuais no DM |
 | [check-results-partitioned.sql](check-results-partitioned.sql) | Exemplo de consulta com filtro de partição |
-| [tests/test_business_rules.py](tests/test_business_rules.py) | Testes locais da transformação |
 
 ## Use os arquivos
 
@@ -61,13 +60,3 @@ A consulta deve continuar mostrando três pedidos atuais após reexecutar a pipe
 `check-results.sql` usa `deduplicated_guiapedidos`, a view que facilita a consulta da versão atual. Para tabelas maiores, avalie filtros de partição na query para reduzir a leitura.
 
 `check-results-partitioned.sql` considera apenas versões gravadas nos últimos sete dias. Registros sem versões nessa janela ficam fora do resultado. Ajuste o período conforme a necessidade do projeto.
-
-## Testes locais
-
-Na raiz do repositório, execute com Python 3, sem instalar dependências:
-
-```sh
-PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s guides/pipelines/first-pipeline/tests -v
-```
-
-Os testes verificam cálculos, atualizações, versões repetidas, exclusões e a diferença entre os manifests. Usam SQLite com adaptação do `QUALIFY`; não executam a ingestão, a expansão de `--metadata-v2--`, o checkout ou o agendamento da Carol. Esses pontos exigem validação no ambiente antes da aprovação do guia.

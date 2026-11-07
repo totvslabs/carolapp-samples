@@ -26,9 +26,7 @@ guides/
         ├── pedido-atualizado.json
         ├── check-staging.sql
         ├── check-results.sql
-        ├── check-results-partitioned.sql
-        └── tests/
-            └── test_business_rules.py
+        └── check-results-partitioned.sql
 ```
 
 ## Padrão para novos guias
@@ -39,7 +37,6 @@ guides/
 * Mantenha no README as instruções necessárias para usar o código; deixe a explicação completa no docs
 * Inclua dados fictícios e instruções para uma tenant dev, sem tokens, credenciais ou dados de clientes
 * Mantenha os caminhos dos manifests iguais aos informados no tutorial
-* Inclua testes quando houver regras de negócio e diferencie os testes locais da validação na Carol
 * Antes da publicação, revise texto e código, valide o fluxo na Carol e atualize os links entre docs e samples
 
 > O primeiro guia está em preparação. A inclusão nesta branch não representa aprovação ou publicação do tutorial.
