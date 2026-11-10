@@ -1,0 +1,12 @@
+[
+  {
+    "pedido_id": "P001",
+    "quantidade": "4",
+    "preco_unitario_centavos": "1250"
+  },
+  {
+    "pedido_id": "P004",
+    "quantidade": "2",
+    "preco_unitario_centavos": "1500"
+  }
+]

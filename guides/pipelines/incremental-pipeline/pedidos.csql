@@ -1,0 +1,30 @@
+declare procedural_pipeline bool default true;
+
+-- O DM publicado deve existir, mesmo quando ainda estiver vazio.
+-- A watermark usa o recebimento da origem, preservado no resultado do DM.
+declare max_counter int64 default (
+  select coalesce(max(mdmStagingCounter), 0)
+  from `ingestion_guiapedidosincremental`
+);
+
+-- A leitura começa na watermark, convertida para o filtro de partição.
+declare partition_start datetime default datetime(timestamp_micros(max_counter));
+
+select
+  stg.pedido_id,
+  cast(stg.quantidade as int64) as quantidade,
+  cast(stg.preco_unitario_centavos as int64) as preco_unitario_centavos,
+  cast(stg.quantidade as int64) * cast(stg.preco_unitario_centavos as int64)
+    as valor_total_centavos,
+  coalesce(stg.mdmDeleted, false) as mdmDeleted
+  --metadata-v2--
+from `stg_crm_demo_pedidos_incrementais` as stg
+where stg._ingestionDatetime >= partition_start
+  and stg.mdmCounterForEntity >= max_counter
+qualify row_number() over (
+  partition by stg.mdmId
+  order by
+    stg.mdmCounterForEntity desc,
+    stg.mdmLastUpdated desc,
+    stg._ingestionDatetime desc
+) = 1;
