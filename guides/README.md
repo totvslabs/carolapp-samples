@@ -8,6 +8,7 @@ O docs apresenta a jornada; aqui ficam o código, os arquivos de configuração 
 | Tema | Guia | O que você vai fazer |
 |---|---|---|
 | Pipelines | [Sua primeira pipeline](pipelines/first-pipeline/README.md) | Receber pedidos, tratar os dados e conferir uma atualização |
+| Pipelines | [Sua primeira pipeline incremental](pipelines/incremental-pipeline/README.md) | Reaproveitar o app e retomar a leitura a partir do contador salvo |
 
 ## Organização
 
@@ -17,7 +18,7 @@ Cada exemplo fica em `guides/<tema>/<exemplo>/` e reúne os arquivos necessário
 guides/
 ├── README.md
 └── pipelines/
-    └── first-pipeline/
+    ├── first-pipeline/
         ├── README.md
         ├── pedidos.csql
         ├── pipelines.json
@@ -27,6 +28,16 @@ guides/
         ├── check-staging.sql
         ├── check-results.sql
         └── check-results-partitioned.sql
+    └── incremental-pipeline/
+        ├── README.md
+        ├── pedidos.csql
+        ├── pipelines.json
+        ├── pedidos.json
+        ├── pedidos-atualizados.json
+        ├── pedido-excluido.json
+        ├── check-staging.sql
+        ├── check-results.sql
+        └── check-counter.sql
 ```
 
 ## Padrão para novos guias
@@ -39,4 +50,5 @@ guides/
 * Mantenha os caminhos dos manifests iguais aos informados no tutorial
 * Antes da publicação, revise texto e código, valide o fluxo na Carol e atualize os links entre docs e samples
 
-> O primeiro guia está em preparação. A inclusão nesta branch não representa aprovação ou publicação do tutorial.
+Os dois exemplos usam a branch `master` deste repositório. Ao continuar para o incremental,
+mantenha a conexão Git do app e altere apenas o caminho do manifest no checkout.
