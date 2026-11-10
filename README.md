@@ -3,6 +3,8 @@ Content
 
 This project has a sample for the three types of Carol Apps: Online, Batch and Web.
 
+Practical guides and their code examples are available in [guides](guides/README.md).
+
 
 Online Carol App
 ---
