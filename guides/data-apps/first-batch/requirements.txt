@@ -1,0 +1,2 @@
+pycarol==2.56.15
+python-dotenv==1.2.4

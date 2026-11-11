@@ -8,7 +8,7 @@
         "algorithmDescription": {"pt-BR": "Processa itens e encerra.", "en-US": "Processes items and exits."},
         "dataModels": [],
         "instanceProperties": {
-          "environments": {"ITEM_LIMIT": "3"},
+          "environments": {"ITEM_LIMIT": "3", "LOG_LEVEL": "INFO"},
           "properties": {
             "dockerName": "lynn-guide-batch",
             "instanceType": "c1.nano",
@@ -22,7 +22,7 @@
   "docker": [
     {
       "dockerName": "lynn-guide-batch",
-      "dockerTag": "1.0.0",
+      "dockerTag": "1.1.0",
       "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples",
       "gitBranch": "master",
       "gitPath": "/guides/data-apps/first-batch",
