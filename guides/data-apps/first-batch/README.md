@@ -1,4 +1,4 @@
-# Seu primeiro processo batch no LYNN Data App
+# Seu primeiro processo batch no Data App
 
 Exemplo Python com pyCarol: processa itens fictícios, lê os Settings do app,
 registra eventos no console e na task e encerra. A linguagem é uma escolha do guia;
@@ -28,15 +28,15 @@ têm prioridade. `.env` fica fora do Git e da imagem.
 ## Teste com Docker
 
 ```bash
-docker build -t lynn-guide-batch:1.1.0 guides/data-apps/first-batch
-docker run --rm -e ITEM_LIMIT=3 lynn-guide-batch:1.1.0 --local
+docker build -t guide-batch:1.1.0 guides/data-apps/first-batch
+docker run --rm -e ITEM_LIMIT=3 guide-batch:1.1.0 --local
 ```
 
 ## Execução na plataforma
 
 1. Na tenant de desenvolvimento, criar um app separado para o exercício.
 2. Em Files, enviar `manifest.json` como Monitor Processes.
-3. Construir `lynn-guide-batch` pelo Build do app. Para o build, preferir `c1.small`
+3. Construir `guide-batch` pelo Build do app. Para o build, preferir `c1.small`
    ou `c1.medium`, conforme orientação operacional do time: menor concorrência e
    pool maior. A execução continua configurada separadamente com `c1.nano`.
 4. Em Process, executar `batch_demo` e conferir task e logs.

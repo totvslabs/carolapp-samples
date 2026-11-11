@@ -9,7 +9,7 @@ O docs apresenta a jornada; aqui ficam o código, os arquivos de configuração 
 |---|---|---|
 | Pipelines | [Sua primeira pipeline](pipelines/first-pipeline/README.md) | Receber pedidos, tratar os dados e conferir uma atualização |
 | Pipelines | [Sua primeira pipeline incremental](pipelines/incremental-pipeline/README.md) | Reaproveitar o app e retomar a leitura a partir do contador salvo |
-| LYNN Data Apps | [Seu primeiro processo batch](data-apps/first-batch/README.md) | Construir uma imagem, executar uma rotina e conferir sua configuração e seus logs |
+| Data Apps | [Seu primeiro processo batch](data-apps/first-batch/README.md) | Construir uma imagem, executar uma rotina e conferir sua configuração e seus logs |
 
 ## Organização
 
