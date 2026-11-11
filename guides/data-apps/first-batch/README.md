@@ -8,14 +8,15 @@ O manifesto utiliza a branch principal `master` deste repositório.
 
 ## Teste local
 
-Na raiz deste repositório:
+Entre na pasta do exemplo:
 
 ```bash
-python3 -m venv .venv
+cd guides/data-apps/first-batch
+python3.14 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r guides/data-apps/first-batch/requirements.txt
-python guides/data-apps/first-batch/main.py --local
-ITEM_LIMIT=5 python guides/data-apps/first-batch/main.py --local
+python -m pip install -r requirements.txt
+python main.py --local
+ITEM_LIMIT=5 python main.py --local
 ```
 
 No modo `--local`, não há chamadas nem autenticação na plataforma. A última linha
@@ -25,10 +26,25 @@ O arquivo `.env.example` contém apenas configurações não sensíveis e pode s
 copiado para `.env`, ao lado de `main.py`. Variáveis já presentes no ambiente
 têm prioridade. `.env` fica fora do Git e da imagem.
 
+### Teste local conectado à plataforma
+
+Para ler os Settings reais do app de desenvolvimento, configure no `.env` as
+variáveis de contexto comentadas no `.env.example`, usando um Connector Token
+(API Key) autorizado e seu Connector ID. Não envie o token ao repositório.
+
+Execute o mesmo comando **sem `--local`**. O programa carrega `.env` e cria
+`Carol()` sem argumentos; o SDK usa as variáveis de contexto. Sem `LONGTASKID`,
+o teste registra no console e não escreve em uma task existente. Na plataforma,
+o contexto é injetado e o código também envia os logs à task corrente.
+
+Consulte a [documentação do pyCarol](https://pycarol.readthedocs.io/),
+o [código e os exemplos](https://github.com/totvslabs/pyCarol) e as
+[versões publicadas](https://pypi.org/project/pycarol/).
+
 ## Teste com Docker
 
 ```bash
-docker build -t guide-batch:1.1.0 guides/data-apps/first-batch
+docker build -t guide-batch:1.1.0 .
 docker run --rm -e ITEM_LIMIT=3 guide-batch:1.1.0 --local
 ```
 
@@ -65,7 +81,7 @@ branch ou fazer push não reconstrói uma imagem nem publica uma nova versão do
 ## Verificações locais
 
 ```bash
-python -m unittest discover -s guides/data-apps/first-batch -p 'test_*.py' -v
+python -m unittest -v
 ```
 
 Os testes executam o programa como subprocesso e verificam quantidade de itens,
