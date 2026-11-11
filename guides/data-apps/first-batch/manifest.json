@@ -4,11 +4,20 @@
       {
         "name": "batch_demo",
         "algorithmName": "batch_demo",
-        "algorithmTitle": {"pt-BR": "Processar itens", "en-US": "Process items"},
-        "algorithmDescription": {"pt-BR": "Processa itens e encerra.", "en-US": "Processes items and exits."},
+        "algorithmTitle": {
+          "pt-BR": "Processar itens",
+          "en-US": "Process items"
+        },
+        "algorithmDescription": {
+          "pt-BR": "Processa itens e encerra.",
+          "en-US": "Processes items and exits."
+        },
         "dataModels": [],
         "instanceProperties": {
-          "environments": {"ITEM_LIMIT": "3", "LOG_LEVEL": "INFO"},
+          "environments": {
+            "ITEM_LIMIT": "3",
+            "LOG_LEVEL": "INFO"
+          },
           "properties": {
             "dockerName": "guide-batch",
             "instanceType": "c1.nano",

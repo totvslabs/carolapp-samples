@@ -42,14 +42,12 @@ def main():
     if args.local:
         logger = configure_logger()
     else:
-        # A plataforma fornece o contexto; nenhum token é embutido na imagem.
+        # Local: contexto autorizado no .env. Plataforma: contexto injetado.
         task_id = os.environ.get("LONGTASKID")
-        if not task_id:
-            raise RuntimeError("Use --local fora da plataforma ou configure o contexto autorizado")
         carol = Carol()
-        logger = configure_logger(carol, task_id)
+        logger = configure_logger(carol if task_id else None, task_id)
         settings = Apps(carol).get_settings()
-        task = Tasks(carol)
+        task = Tasks(carol) if task_id else None
 
     prefix = settings.get("message_prefix") or "Guia batch"
     logger.info(json.dumps({"event": "started", "total": limit, "local": args.local}))
