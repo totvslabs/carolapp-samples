@@ -11,4 +11,5 @@ where task_id = 'ID_DA_TASK'
     severity_number >= 500
     or regexp_contains(text_payload, r'(?i)traceback|exception|error')
   )
+order by timestamp desc
 limit 200;
