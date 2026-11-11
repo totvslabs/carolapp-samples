@@ -4,11 +4,7 @@ Exemplo mínimo: processa três itens fictícios, registra um evento por item e 
 Reutiliza a rotina da referência de Batch App da documentação, com manifesto
 apontando para este repositório público.
 
-## Revisão do exemplo
-
-O manifesto aponta para a branch `codex/first-lynn-data-app-batch` durante a validação
-do guia. Depois do merge, ajustar `gitBranch` para `master` antes de publicar o guia
-como definitivo. A branch de revisão deve permanecer disponível enquanto usada.
+O manifesto utiliza a branch principal `master` deste repositório.
 
 ## Teste local
 
@@ -33,7 +29,9 @@ docker run --rm -e ITEM_LIMIT=3 lynn-guide-batch:1.0.0
 
 1. Na tenant de desenvolvimento, criar um app separado para o exercício.
 2. Em Files, enviar `manifest.json` como Monitor Processes.
-3. Construir `lynn-guide-batch` pelo Build do app.
+3. Construir `lynn-guide-batch` pelo Build do app. Para o build, preferir `c1.small`
+   ou `c1.medium`, conforme orientação operacional do time: menor concorrência e
+   pool maior. A execução continua configurada separadamente com `c1.nano`.
 4. Em Process, executar `batch_demo` e conferir task e logs.
 5. Após a execução manual, configurar e conferir o agendamento.
 

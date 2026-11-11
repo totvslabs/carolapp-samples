@@ -24,7 +24,7 @@
       "dockerName": "lynn-guide-batch",
       "dockerTag": "1.0.0",
       "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples",
-      "gitBranch": "codex/first-lynn-data-app-batch",
+      "gitBranch": "master",
       "gitPath": "/guides/data-apps/first-batch",
       "gitDockerfileName": "Dockerfile"
     }
