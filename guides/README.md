@@ -9,6 +9,7 @@ O docs apresenta a jornada; aqui ficam o código, os arquivos de configuração 
 |---|---|---|
 | Pipelines | [Sua primeira pipeline](pipelines/first-pipeline/README.md) | Receber pedidos, tratar os dados e conferir uma atualização |
 | Pipelines | [Sua primeira pipeline incremental](pipelines/incremental-pipeline/README.md) | Reaproveitar o app e retomar a leitura a partir do contador salvo |
+| LYNN Data Apps | [Seu primeiro processo batch](data-apps/first-batch/README.md) | Construir uma imagem, executar uma rotina e conferir sua configuração e seus logs |
 
 ## Organização
 
@@ -50,5 +51,7 @@ guides/
 * Mantenha os caminhos dos manifests iguais aos informados no tutorial
 * Antes da publicação, revise texto e código, valide o fluxo na Carol e atualize os links entre docs e samples
 
-Os dois exemplos usam a branch `master` deste repositório. Ao continuar para o incremental,
+Os dois exemplos de pipelines usam a branch `master` deste repositório. Ao continuar para o incremental,
 mantenha a conexão Git do app e altere apenas o caminho do manifest no checkout.
+
+O exemplo batch também utiliza a branch `master`. Seu manifesto configura processos e imagens Docker, em um fluxo distinto do checkout das pipelines SQL.
