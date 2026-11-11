@@ -21,8 +21,7 @@
           "properties": {
             "dockerName": "guide-batch",
             "instanceType": "c1.nano",
-            "preemptible": false,
-            "deadline": "15m"
+            "preemptible": false
           }
         }
       }
