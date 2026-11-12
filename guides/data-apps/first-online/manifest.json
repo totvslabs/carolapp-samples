@@ -42,7 +42,7 @@
       "dockerName": "guide-online",
       "dockerTag": "1.0.0",
       "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples",
-      "gitBranch": "codex/first-online-guide",
+      "gitBranch": "master",
       "gitPath": "/guides/data-apps/first-online",
       "gitDockerfileName": "Dockerfile"
     }

@@ -49,7 +49,7 @@ Use a URL fornecida pela interface para acessar o serviço. O controle de acesso
 
 Alterar `GREETING` no manifesto requer reenviá-lo e reiniciar o processo para ler o novo valor. Alterar código, dependências ou Dockerfile requer novo build. O processo online permanece ativo até ser parado, diferentemente do batch. Ao terminar o teste, use **Stop** para interromper a execução e o consumo correspondente.
 
-A branch de validação é `codex/first-online-guide`; confirme sua existência e `gitBranch` antes do build. Não altere o campo de branch no modal: use o valor carregado do manifesto.
+Neste repositório, a branch principal é `master`; o manifesto aponta para ela. Não altere o campo de branch no modal: use o valor carregado do manifesto.
 
 ## Validação
 
