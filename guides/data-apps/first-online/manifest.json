@@ -1,0 +1,50 @@
+{
+  "online": {
+    "processes": [
+      {
+        "name": "online_demo",
+        "algorithmName": "online_demo",
+        "algorithmTitle": {
+          "pt-BR": "API do guia online",
+          "en-US": "Online guide API"
+        },
+        "algorithmDescription": {
+          "pt-BR": "Responde a requisições HTTP sem acessar dados de negócio.",
+          "en-US": "Handles HTTP requests without business data."
+        },
+        "instanceProperties": {
+          "profile": "",
+          "environments": {
+            "PORT": "8080",
+            "GREETING": "Olá, Data Apps!",
+            "LOG_LEVEL": "info"
+          },
+          "properties": {
+            "dockerName": "guide-online",
+            "instanceType": "c1.nano",
+            "preemptible": false,
+            "port": 8080,
+            "healthcheck": {
+              "path": "/healthz"
+            },
+            "autoscale": {
+              "enabled": false,
+              "minReplicas": 1,
+              "maxReplicas": 1
+            }
+          }
+        }
+      }
+    ]
+  },
+  "docker": [
+    {
+      "dockerName": "guide-online",
+      "dockerTag": "1.0.0",
+      "gitRepoUrl": "https://github.com/totvslabs/carolapp-samples",
+      "gitBranch": "codex/first-online-guide",
+      "gitPath": "/guides/data-apps/first-online",
+      "gitDockerfileName": "Dockerfile"
+    }
+  ]
+}
