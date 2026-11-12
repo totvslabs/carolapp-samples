@@ -21,7 +21,7 @@
           },
           "properties": {
             "dockerName": "guide-online",
-            "instanceType": "c1.nano",
+            "instanceType": "c1.pico",
             "preemptible": false,
             "port": 8080,
             "healthcheck": {
